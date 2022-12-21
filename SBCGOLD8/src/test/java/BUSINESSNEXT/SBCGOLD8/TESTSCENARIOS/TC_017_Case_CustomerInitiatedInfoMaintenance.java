@@ -18,7 +18,7 @@ Source=Branch Walkin
 */
 
 
-   public class TC_017_CustomerInitiatedInfoMaintenance extends HomePageMethod
+   public class TC_017_Case_CustomerInitiatedInfoMaintenance extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();

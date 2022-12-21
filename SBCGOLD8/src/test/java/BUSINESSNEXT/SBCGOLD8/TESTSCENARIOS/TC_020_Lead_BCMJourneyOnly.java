@@ -11,7 +11,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
-public class TC_021_Lead_BCMJourneyOnly extends HomePageMethod
+public class TC_020_Lead_BCMJourneyOnly extends HomePageMethod
 {
 
     //Object for methods class

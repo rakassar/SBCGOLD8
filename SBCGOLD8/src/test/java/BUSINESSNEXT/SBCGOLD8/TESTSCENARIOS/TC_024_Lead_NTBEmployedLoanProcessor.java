@@ -11,7 +11,7 @@ To run on G7 please change nature of work field and uncomment the CRRSC section
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
-public class TC_025_NTBEmployedLoanProcessor extends HomePageMethod
+public class TC_024_Lead_NTBEmployedLoanProcessor extends HomePageMethod
 {
 
     //Object for methods class

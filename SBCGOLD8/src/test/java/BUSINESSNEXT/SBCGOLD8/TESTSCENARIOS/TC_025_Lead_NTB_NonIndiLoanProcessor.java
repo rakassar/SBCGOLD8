@@ -2,6 +2,7 @@ package BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
+
 import BUSINESSNEXT.SBCGOLD8.COMMON.*;
 import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 /*Customer Onboarding process for NTB employed Indidvidual
@@ -11,7 +12,7 @@ To run on G7 please change nature of work field and uncomment the CRRSC section
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
-public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
+public class TC_025_Lead_NTB_NonIndiLoanProcessor extends HomePageMethod
 {
 
     //Object for methods class
@@ -30,22 +31,21 @@ public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
 	public void CreateNewLeadCollEmp() throws InterruptedException, IOException
 	{
     	launchBrowser();
-    	screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+    	screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
     	TestDataFromExcel.DataRead();
- 		EnterUserName(TestDataFromExcel.UserName_CA);
+ 		EnterUserName(TestDataFromExcel.UserName_LoanProcessor);
         EnterPassword(TestDataFromExcel.Password);
-    	screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+    	screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         LoginButtonClick();
         CheckRole();
-    	screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+    	screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         ClickOnsaleswidget();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
-        ClickOnsalesJouney();
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
+        ClickOnLoanJouney();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         lopm.ClickOnOnBoardingJourneyNonIndi();
-        cspm.ClickOnOnBoardingJourneynext();
         Thread.sleep(1000);
 	}
 
@@ -56,35 +56,29 @@ public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
 
         NTBSJPM.CompanyName();
         NTBSJPM.EnterMobile();
-        NTBSJPM.InterestedIn("Deposit");
-        Thread.sleep(300);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        NTBSJPM.LeadRating("Hot");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         NTBSJPM.NTBJourneynext1();
-        NTBSJPM.ProductCategory(TestDataFromExcel.ProductCategory);
-        Thread.sleep(500);
-        NTBSJPM.Product(TestDataFromExcel.Product);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
-        NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
-    	screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+    	screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-    	screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+    	screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
 
@@ -95,27 +89,27 @@ public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
 	{
         CLDLPM.selectstatuscode();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         CLDLPM.Enteremail();
         Thread.sleep(300);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         CLDLPM.dob(TestDataFromExcel.dobmonth, TestDataFromExcel.dobdate, TestDataFromExcel.dobyear); //business registration
 
 
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         CLDLPM.CustomerCategory("FINANCIAL CORPORATION (BANK)");
         CLDLPM.CustomerType("Foreign Banks");
         //CLDLPM.CivilStatus(TestDataFromExcel.CivilStatus);
         CLDLPM.CustomerContact(TestDataFromExcel.CustomerContact);
         CLDLPM.BusinnesSegment(TestDataFromExcel.BusinnesSegment);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         CLDLPM.ClientSegment(TestDataFromExcel.ClientSegment);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         //CLDLPM.SoleOwner(TestDataFromExcel.SoleOwner);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
 	}
 
 
@@ -126,7 +120,7 @@ public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
     	CLDLPM.PlcaeOfBirth();  //place of registration
     	CLDLPM.businessExpiry("04042025");
         Thread.sleep(500);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
         Thread.sleep(1000);
         CLDLPM.TypeOfCorp("Domestic Corporation");
@@ -138,7 +132,7 @@ public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
         CLDLPM.EntityType("Private");
         CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
 
         /*employed steps end */
 
@@ -153,21 +147,21 @@ public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
         CLDLPM.CorporateDocumentPickerCheck();
         Thread.sleep(500);
         lopm.ProcessApplicationPopUpClose();
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         CLDLPM.AoCode(TestDataFromExcel.AoCode);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         Thread.sleep(500);
         CLDLPM.AddressTabNonindi();
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         CLDLPM.streetfiedNonIndi();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         CLDLPM.ZipcodeNonIndi(TestDataFromExcel.Zipcode);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         Thread.sleep(1000);
         lopm.saveAndProceed();
         Thread.sleep(1000);
-   	    screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+   	    screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
 
 
         //LogoutButtonClick();
@@ -178,28 +172,28 @@ public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
  	public void CreateNewLeadCollEmp5() throws InterruptedException
  	{
     	 CLDLPM.clickClosePopup();
-    	 screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+    	 screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+         screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+         screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+         screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+         screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+         screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+         screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
          CLDLPM.clickCRRSCButtonNonIndi();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+         screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
     	//CLDLPM.leadredbutton();
 
 
@@ -208,13 +202,13 @@ public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
      	CRRSC.BankInternalChecklist(TestDataFromExcel.BankInternalChecklist);
      	CRRSC.AllegedPerdsonf(TestDataFromExcel.AllegedPerdsonf);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
      	CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
      	CRRSC.ForeignNational(TestDataFromExcel.ForeignNational);
         scrollBy();
      	CRRSC.IndustryCRRSC(TestDataFromExcel.IndustryCRRSC);
      	Thread.sleep(400);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
      	//CRRSC.EconomicActivityCRRSC(TestDataFromExcel.EconmicactivityeCRRSC);
         //Thread.sleep(1000);
     // 	CRRSC.ManagerialCRRSC(TestDataFromExcel.managerialCRRSC);
@@ -223,11 +217,11 @@ public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
      	//CRRSC.ProvinceCRRSC(TestDataFromExcel.ProvinceCRRSC);
      	//CRRSC.RiskCRRSC(TestDataFromExcel.RiskCRRSC);
      	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
      	CRRSC.vicinityRRSC(TestDataFromExcel.vicinityRRSC);
 
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
      	CRRSC.intialdepositeRRSC(TestDataFromExcel.intialdepositeRRSC);
 
      	CRRSC.InwprdOutwordRRSC(TestDataFromExcel.InwprdOutwordRRSC);
@@ -237,26 +231,26 @@ public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
 
 
 
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
      	CRRSC.ComfortableInformationRRSC(TestDataFromExcel.ComfortableInformationRRSC);
      	CRRSC.ComfortableDocumentsRRSC(TestDataFromExcel.ComfortableDocumentsRRSC);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
 
 
 
         /* //New CRRSC
          CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
          CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
-         screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+         screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
          CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
          CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
          CRRSC.Sbol(TestDataFromExcel.Sbol);
-         screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+         screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
          CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
          */
          CRRSC.RemarksCRRSC("I am Indian!");
-         screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+         screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
          CRRSC.Finish();
 
          Thread.sleep(1000);
@@ -267,98 +261,74 @@ public class TC_023_NTB_NonIndiDocsCollection extends HomePageMethod
  	{
     	Thread.sleep(1000);
    	    CLDLPM.clickClosePopup();
-    	screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+    	screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         lopm.ClickOnCRRSCtab();
         Thread.sleep(2000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
     	CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
     	CLDLPM.clickEditOFAC(TestDataFromExcel.Ofac);
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
     	lopm.saveAndProceed();
     	Thread.sleep(1000);
-    	screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+    	screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
 
  	}
+
+
+
 
     @Test(priority=8)
- 	public void CreateNewLeadCollEmp7() throws InterruptedException
- 	{
-    	Thread.sleep(500);
-    	scrolldown();
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
-        FAIPM.ClickFillAccountInformation();
-        FAIPM.RequestType(TestDataFromExcel.RequestTypef);
-        FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
-        Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
-        FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
-        FAIPM.PromsEmail(TestDataFromExcel.PromsEmail);
-        FAIPM.sel_PromsSMS(TestDataFromExcel.PromsSMS);
-        FAIPM.TransactionalEmail(TestDataFromExcel.TransactionalEmail);
-        FAIPM.TransactionalSMS(TestDataFromExcel.TransactionalSMS);
-        Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
-        CRRSC.Finish();
-        Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
-        Thread.sleep(1000);
-
- 	}
-
-
-    @Test(priority=9)
  	public void CreateNewLeadCollEmp8() throws InterruptedException
  	{
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         lopm.ProcessApplication();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
-        screen.ScreenshotMethod("TC_023_NTB_NonIndiDocsCollection-");
+        screen.ScreenshotMethod("TC_026_Lead_NTB_NonIndiLoanProcessor-");
  	}
 
 

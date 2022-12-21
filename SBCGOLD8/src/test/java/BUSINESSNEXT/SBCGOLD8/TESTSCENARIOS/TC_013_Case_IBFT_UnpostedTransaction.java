@@ -13,7 +13,7 @@ Source=Branch Walkin
 */
 
 
-   public class TC_013_IBFT_UnpostedTransaction extends HomePageMethod
+   public class TC_013_Case_IBFT_UnpostedTransaction extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();

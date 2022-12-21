@@ -16,7 +16,7 @@ Computation request=Account Balance Computation
 
 
 
-   public class TC_009_CaseAccountBalanceComputation extends HomePageMethod
+   public class TC_009_Case_AccountBalanceComputation extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();

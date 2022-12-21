@@ -21,7 +21,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
 
-   public class TC_001_NTBLeadCreation extends HomePageMethod
+   public class TC_001_Lead_NTBLeadCreation extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();

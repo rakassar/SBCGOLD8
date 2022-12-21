@@ -3,6 +3,7 @@ import org.testng.annotations.Test;
 import BUSINESSNEXT.SBCGOLD8.COMMON.*;
 import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 
+
 /*select a.statuscodeid,a.* from cases a
 where caseid in ( select CAS_EX1_id from CAS_EX1 where CAS_EX1_1='14300000797')
 order by caseid desc
@@ -12,13 +13,15 @@ order by caseid desc
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
 
-/*case creation by CA for SSC=Customer Initiated Info Maintenance
+
+/*case creation by CCA for SSC=DigiBanker - Unable To Print MC
+ * CCRSC=No
 Source=Branch Walkin
 
 */
 
 
-   public class TC_018_ContactInformation extends HomePageMethod
+   public class TC_016_Case_DigiBankerUnablePrintMC extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();
@@ -37,70 +40,67 @@ Source=Branch Walkin
 	public void CreateNewLead() throws Exception
 	{
 
-        //Vishal
+
     	launchBrowser();
     	TestDataFromExcel.DataRead();
     	Thread.sleep(5000);
- 		EnterUserName(TestDataFromExcel.UserName_CA);
+ 		EnterUserName(TestDataFromExcel.UserName_CCA);
  		Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
         EnterPassword(TestDataFromExcel.Password);
         LoginButtonClick();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
         ClickOnsaleswidget();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
         ClickOnCaseJouney();
         CJPM.IndividualCaseJorney();
         cspm.BBNFillForCustomerSearch(TestDataFromExcel.BBN);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
         cspm.ClickOnNextButtonOnCustomerSearch();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
         cspm.ChooseBBNfromList();
         Thread.sleep(1000);
         cspm.clickstartjourney();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
         Thread.sleep(1000);
         cspm.CustomerServiceJourney();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
         Thread.sleep(2000);
-        CJPM.FillSSC("Contact Information");
-       	CJPM.Source("Branch Walkin");
+        CJPM.FillSSC("DigiBanker - Unable To Print MC");
+       	CJPM.Source("Call Center");
 	    Thread.sleep(1000);
 	    CJPM.creditcardproduct();
 	    Thread.sleep(1000);
-		cs1pm.ContactInformationactipntype("Contact Creation");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+	    CJPM.PIDStatus("Pass");
 	    Thread.sleep(1000);
+	    CJPM.ComplaintCategory("CCU");
 		CJPM.NextOnCasePage();
-		//scrollBy();
-		Thread.sleep(2000);
-	   //Stage1 Case Journey
-
-
+		home.scrollBy();
 		Thread.sleep(1000);
-		cs1pm.casecountry("Albania");
-		Thread.sleep(1000);
-		cs1pm.CaseHosueNumber();
-		cs1pm.caseStreet();
-		cs1pm.casemobile();
-		//cs1pm.CaseCustomerType("Employed");
-		//Thread.sleep(1000);
-		//cs1pm.ForEmployement("Yes");
-
 
 		cs1pm.fill_DetailsInConcern("Test Details of Concern Field");
-		Thread.sleep(1000);
-	    //cs1pm.SelectComputationRequest("Available Balance Computation");
-		cs1pm.CaseTypeofRequest("Loan Availment");
+	   //Stage1 Case Journey
+		//cs1pm.ReportedSystem("SBOL1");
+		cs1pm.EmployeeInvolved("EmployeeInvolved");
+		cs1pm.UnitGroup("UnitGroup");
+		cs1pm.Employeeoutsource("Employeeoutsource");
+		cs1pm.Position("Position");
+		cs1pm.ActionTaken("ActionTaken");
+		cs1pm.OtherAction("OtherAction");
+
+		//cs1pm.SourceAccountNumber("787873281837");
+		//cs1pm.DestinatuionAccountNumber("78787328188");
+
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
 		Thread.sleep(1000);
 		cs1pm.fill_Remarks("Successful Case Creation");
 		Thread.sleep(1000);
@@ -112,33 +112,35 @@ Source=Branch Walkin
 
 		launchBrowser();
 	    //TDFX.DataRead();
-	 	EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+	 	EnterUserName(TestDataFromExcel.UserName_SQCCU);
 	 	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
 	    EnterPassword(TestDataFromExcel.Password);
 	    LoginButtonClick();
 	    Thread.sleep(1000);
 	    cs1pm.clk_caseobject();
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
 	    Thread.sleep(1000);
 	    cs1pm.clk_selfassigncase("Assigned to Department");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
 	    Thread.sleep(1000);
 	    cs1pm.sel_caseview("Assigned to Me");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
 	    //cs1pm.clk_onMycaseview_220("Assigned to Me");
 	    Thread.sleep(1000);
 	    cs1pm.clk_onMyBucketcase();
 	    cs1pm.clk_caseEditButton();
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
 	    cs1pm.sel_depetdecison("Accept");
+	    Thread.sleep(1000);
+	    cs1pm.ValidityTagging("VALID");
 	    cs1pm.fill_Remarks("rizwan");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_018_ContactInformation-");
+        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
 	    CJPM.casesaveAndProceed();
 	    Thread.sleep(5000);
 		//LogoutButtonClick();

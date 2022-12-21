@@ -14,7 +14,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 //screen shot via listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
 
-public class TC_002_NTBLeadAppointment extends HomePageMethod
+public class TC_002_Lead_NTBLeadAppointment extends HomePageMethod
 {
 
 
