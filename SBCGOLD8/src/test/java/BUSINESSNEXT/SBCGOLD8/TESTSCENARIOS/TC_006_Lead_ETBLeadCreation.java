@@ -137,6 +137,8 @@ ETB onboarding journey, Including open case dedupe
         	  CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         	  Thread.sleep(1000);
               screen.ScreenshotMethod("TC_006_ETBLeadCreation-");
+              CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  
+
 			  Thread.sleep(2000);
 			  System.out.println("EmployeeType is self-employed");
 
@@ -158,6 +160,9 @@ ETB onboarding journey, Including open case dedupe
              CLDLPM.workingsince(TestDataFromExcel.workingsincemonth, TestDataFromExcel.workingsinceyear);
              Thread.sleep(1000);
              CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
+             Thread.sleep(1000);
+
+             CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  
              Thread.sleep(1000);
              screen.ScreenshotMethod("TC_006_ETBLeadCreation-");
         	 System.out.println("EmployeeType is Employed");

@@ -143,7 +143,7 @@ public class TC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
         screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         Thread.sleep(1000);
-        CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);
+        CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed--");
 
@@ -205,39 +205,42 @@ public class TC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
         screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.clickCRRSCButton();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
+    	screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
    	//CLDLPM.leadredbutton();
+
+
+       /*  // OLD CRRSC
     	CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
     	CRRSC.BankInternalChecklist(TestDataFromExcel.BankInternalChecklist);
     	CRRSC.AllegedPerdsonf(TestDataFromExcel.AllegedPerdsonf);
        Thread.sleep(1000);
-       screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
+       screen.ScreenshotMethod("TC_003_NTBDocsCollectionEmployed-");
     	CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
     	CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
     	CRRSC.ForeignNational(TestDataFromExcel.ForeignNational);
     	CRRSC.NumberAccount(TestDataFromExcel.NeumberAccount);
        Thread.sleep(1000);
-       screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
+       screen.ScreenshotMethod("TC_003_NTBDocsCollectionEmployed-");
     	CRRSC.EmploymentTypeCRRSC(TestDataFromExcel.EmploymentTypeCRRSC);
     	CRRSC.IndustryCRRSC(TestDataFromExcel.IndustryCRRSC);
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
+       screen.ScreenshotMethod("TC_003_NTBDocsCollectionEmployed-");
     	//CRRSC.EconomicActivityCRRSC(TestDataFromExcel.EconmicactivityeCRRSC);
        //Thread.sleep(1000);
     	CRRSC.ManagerialCRRSC(TestDataFromExcel.managerialCRRSC);
     	CRRSC.DirectDealingCRRSC(TestDataFromExcel.DirectDealingCRRSC);
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
+       screen.ScreenshotMethod("TC_003_NTBDocsCollectionEmployed-");
        Thread.sleep(1000);
     	CRRSC.CityCRRSC(TestDataFromExcel.CityCRRSC);
     	//CRRSC.ProvinceCRRSC(TestDataFromExcel.ProvinceCRRSC);
     	//CRRSC.RiskCRRSC(TestDataFromExcel.RiskCRRSC);
     	Thread.sleep(1000);
-       screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
+       screen.ScreenshotMethod("TC_003_NTBDocsCollectionEmployed-");
     	CRRSC.vicinityRRSC(TestDataFromExcel.vicinityRRSC);
 
        Thread.sleep(1000);
-       screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
+       screen.ScreenshotMethod("TC_003_NTBDocsCollectionEmployed-");
     	CRRSC.intialdepositeRRSC(TestDataFromExcel.intialdepositeRRSC);
 
     	CRRSC.InwprdOutwordRRSC(TestDataFromExcel.InwprdOutwordRRSC);
@@ -247,14 +250,28 @@ public class TC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
 
 
 
-       screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
+       screen.ScreenshotMethod("TC_003_NTBDocsCollectionEmployed-");
     	CRRSC.ComfortableInformationRRSC(TestDataFromExcel.ComfortableInformationRRSC);
     	CRRSC.ComfortableDocumentsRRSC(TestDataFromExcel.ComfortableDocumentsRRSC);
        Thread.sleep(1000);
-       screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
-       CRRSC.RemarksCRRSC("I am Indian!");
-       CRRSC.Finish();
-       Thread.sleep(1000);
+       screen.ScreenshotMethod("TC_003_NTBDocsCollectionEmployed-");
+       */
+
+
+        //New CRRSC
+        CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
+        CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
+    	screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
+        CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
+        CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
+        CRRSC.Sbol(TestDataFromExcel.Sbol);
+    	screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
+        CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
+        CRRSC.RemarksCRRSC("I am Indian!");
+    	screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed-");
+        CRRSC.Finish();
+
+        Thread.sleep(1000);
  	}
 
     @Test

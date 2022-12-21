@@ -145,7 +145,7 @@ public class TC_003_Lead_NTBDocsCollectionEmployed extends HomePageMethod
         CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_003_NTBDocsCollectionEmployed-");
-        CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
+        CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  
         Thread.sleep(1000);
         CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         Thread.sleep(1000);
