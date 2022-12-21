@@ -1,0 +1,9 @@
+Go to project Location like
+
+D:\Rizwan\Automation\Code\SBCGOLD8
+
+type cmd
+
+then run 
+
+mvn test -PRegression

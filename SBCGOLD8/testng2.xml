@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_007_CaseAccountBalanceComputation"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_016_DigiBankerUnablePrintMC"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_011_CaseAccountBalanceComputationAIP"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_005_LeadDocsCollectedSelfEmployed"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_017_CustomerInitiatedInfoMaintenance"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_010_CaseAccountBalanceComputationAIR"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_025_NTBEmployedLoanProcessor"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_026_Lead_NTB_NonIndiLoanProcessor"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_006_ETBLeadCreation"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_009_CaseAccountBalanceComputation"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_028_Lead_NTBNonIndiPitches"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_012_AccountSpecialCondtion"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_008_CaseAccountBalanceComputation"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_014_ApplicationBeyondTAT"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_018_ContactInformation"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_002_NTBLeadAppointment"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_015_BankInitiatedInfoMaintenance"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_024_ETBLeadCreationNonIndi"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_004_LeadDocsCollectedUnEmployed"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_023_NTB_NonIndiDocsCollection"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.Retail_Journey_Low"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_019_Lead_BCMJourneyNewAccountOpen"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_027_Lead_NTBIndiPitches"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_001_NTBLeadCreation"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_022_NTBJointEmployed"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_029_Lead_NTBTrustIndi"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_013_IBFT_UnpostedTransaction"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_003_NTBDocsCollectionEmployed"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_021_Lead_BCMJourneyOnly"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.CaseCreationFormIndividual"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
