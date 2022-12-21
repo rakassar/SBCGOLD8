@@ -42,6 +42,9 @@ Computation request=Available Balance Computation
         LoginButtonClick();
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
+        CheckRole();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         ClickOnsaleswidget();
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
@@ -71,6 +74,8 @@ Computation request=Available Balance Computation
         screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    Thread.sleep(1000);
 		CJPM.NextOnCasePage();
+		 Thread.sleep(1000);
+	    screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 		home.scrollBy();
 		Thread.sleep(5000);
 	   //Stage1 Case Journey
@@ -81,9 +86,12 @@ Computation request=Available Balance Computation
         screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 		Thread.sleep(1000);
 		cs1pm.fill_Remarks("Successful Case Creation");
-		Thread.sleep(1000);
+		 Thread.sleep(1000);
+	        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 		CJPM.casesaveAndProceed();
 		cs1pm.GetCaseId();
+		 Thread.sleep(1000);
+	        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 		Thread.sleep(1000);
 		//LogoutButtonClick();
 		QuiteBrowser();
@@ -94,8 +102,13 @@ Computation request=Available Balance Computation
 	 	Thread.sleep(1000);
         screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    EnterPassword(TestDataFromExcel.Password);
-	    LoginButtonClick();
 	    Thread.sleep(1000);
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
+        LoginButtonClick();
+	    Thread.sleep(1000);
+	    CheckRole();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    cs1pm.clk_caseobject();
 	    Thread.sleep(1000);
         screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
@@ -119,6 +132,7 @@ Computation request=Available Balance Computation
         screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    CJPM.casesaveAndProceed();
 	    Thread.sleep(5000);
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 		//LogoutButtonClick();
 		QuiteBrowser();
 

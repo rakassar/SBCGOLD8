@@ -38,11 +38,13 @@ Computation request=TAD / MAD Computation
     	Thread.sleep(5000);
  		EnterUserName(TestDataFromExcel.UserName_CA);
  		Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_008_CaseAccountBalanceComputation-");
+        
         EnterPassword(TestDataFromExcel.Password);
+        screen.ScreenshotMethod("TC_008_CaseAccountBalanceComputation-");
         LoginButtonClick();
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_008_CaseAccountBalanceComputation-");
+        CheckRole();
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_008_CaseAccountBalanceComputation-");
         ClickOnsaleswidget();

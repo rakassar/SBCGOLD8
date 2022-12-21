@@ -142,7 +142,7 @@ public class TC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
         CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
-        CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);
+        CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);
         Thread.sleep(1000);
         CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         Thread.sleep(1000);
@@ -211,7 +211,7 @@ public class TC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
          screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
     	//CLDLPM.leadredbutton();
 
-
+/*
         //  OLD CRRSC
      	CRRSC.AmlcUnJmf("No");
      	CRRSC.BankInternalChecklist("No");
@@ -259,10 +259,10 @@ public class TC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
 
+*/
 
-
-		/*
 		  //New CRRSC CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
+         CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
 		  CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
 		  screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
 		  CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
@@ -270,7 +270,7 @@ public class TC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
 		  CRRSC.Sbol(TestDataFromExcel.Sbol);
 		  screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
 		  CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
-		 */
+		 
          CRRSC.RemarksCRRSC("I am Indian!");
          screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
          CRRSC.Finish();
