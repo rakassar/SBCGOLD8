@@ -13,7 +13,7 @@ To run on G7 please change nature of work field and uncomment the CRRSC section
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
-public class TC_003_NTBDocsCollectionEmployed extends HomePageMethod
+public class TC_003_Lead_NTBDocsCollectionEmployed extends HomePageMethod
 {
 
     //Object for methods class

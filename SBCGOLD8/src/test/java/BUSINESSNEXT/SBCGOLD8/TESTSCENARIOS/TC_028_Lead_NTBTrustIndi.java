@@ -11,7 +11,7 @@ To run on G7 please change nature of work field and uncomment the CRRSC section
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
-public class TC_029_Lead_NTBTrustIndi extends HomePageMethod
+public class TC_028_Lead_NTBTrustIndi extends HomePageMethod
 {
 
     //Object for methods class

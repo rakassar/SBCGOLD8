@@ -11,7 +11,7 @@ ETB onboarding journey, Including open case dedupe
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
 
-   public class TC_006_ETBLeadCreation extends HomePageMethod
+   public class TC_006_Lead_ETBLeadCreation extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();

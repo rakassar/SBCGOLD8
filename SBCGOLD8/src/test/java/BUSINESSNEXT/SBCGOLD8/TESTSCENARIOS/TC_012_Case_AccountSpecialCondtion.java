@@ -12,7 +12,7 @@ Source=Branch Walkin
 */
 
 
-   public class TC_012_AccountSpecialCondtion extends HomePageMethod
+   public class TC_012_Case_AccountSpecialCondtion extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();

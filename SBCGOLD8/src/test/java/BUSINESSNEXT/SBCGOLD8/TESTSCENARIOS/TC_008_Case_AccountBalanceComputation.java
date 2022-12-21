@@ -14,7 +14,7 @@ Computation request=TAD / MAD Computation
 
 
 
-   public class TC_008_CaseAccountBalanceComputation extends HomePageMethod
+   public class TC_008_Case_AccountBalanceComputation extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();

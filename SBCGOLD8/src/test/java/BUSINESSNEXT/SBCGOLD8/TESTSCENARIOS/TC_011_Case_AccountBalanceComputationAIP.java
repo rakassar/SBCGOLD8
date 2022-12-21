@@ -1,16 +1,18 @@
 package BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS;
 import org.testng.annotations.Test;
+
 import BUSINESSNEXT.SBCGOLD8.COMMON.*;
 import BUSINESSNEXT.SBCGOLD8.METHOD.*;
+
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
 
-/*case AIR
+/*case AIP by CA
 */
 
 
-   public class TC_010_CaseAccountBalanceComputationAIR extends HomePageMethod
+   public class TC_011_Case_AccountBalanceComputationAIP extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();
@@ -28,26 +30,24 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
     @Test(priority=1)
 	public void CreateNewLead() throws Exception
 	{
-
-
     	launchBrowser();
     	TestDataFromExcel.DataRead();
     	Thread.sleep(5000);
  		EnterUserName(TestDataFromExcel.UserName_CA);
  		Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         EnterPassword(TestDataFromExcel.Password);
         LoginButtonClick();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         ClickOnsaleswidget();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         ClickOnCaseJouney();
         CJPM.IndividualCaseJorney();
         cspm.BBNFillForCustomerSearch(TestDataFromExcel.BBN);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         cspm.ClickOnNextButtonOnCustomerSearch();
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
@@ -55,18 +55,18 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         Thread.sleep(1000);
         cspm.clickstartjourney();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         Thread.sleep(1000);
         cspm.CustomerServiceJourney();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         Thread.sleep(2000);
         CJPM.FillSSC("Account Balance Computation");
        	CJPM.Source("Branch Walkin");
 	    Thread.sleep(1000);
 	    CJPM.creditcardproduct();
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    Thread.sleep(1000);
 		CJPM.NextOnCasePage();
 		home.scrollBy();
@@ -76,7 +76,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 		Thread.sleep(1000);
 	    cs1pm.SelectComputationRequest("Available Balance Computation");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 		Thread.sleep(1000);
 		cs1pm.fill_Remarks("Successful Case Creation");
 		Thread.sleep(1000);
@@ -86,39 +86,45 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 		//LogoutButtonClick();
 		QuiteBrowser();
 
-		launchBrowser();
-	    //TDFX.DataRead();
-	 	EnterUserName(TestDataFromExcel.UserName_CCGInboundTeamLeader_Pro);
-	 	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
-	    EnterPassword(TestDataFromExcel.Password);
-	    LoginButtonClick();
+
+    	launchBrowser();
+    	//TDFX.DataRead();
+    	Thread.sleep(5000);
+ 		EnterUserName(TestDataFromExcel.UserName_CA);
+ 		Thread.sleep(1000);
+        screen.ScreenshotMethod("TC_011__CaseAccountBalanceComputationAIP-");
+        EnterPassword(TestDataFromExcel.Password);
+        LoginButtonClick();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("TC_011__CaseAccountBalanceComputationAIP-");
+
 	    Thread.sleep(1000);
 	    cs1pm.clk_caseobject();
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
+        screen.ScreenshotMethod("TC_011__CaseAccountBalanceComputationAIP-");
+	    //Thread.sleep(1000);
+	   // cs1pm.clk_selfassigncase("Assigned to Department");
+	    //Thread.sleep(1000);
+        //screen.ScreenshotMethod("TC_011__CaseAccountBalanceComputationAIP-");
 	    Thread.sleep(1000);
-	    cs1pm.clk_selfassigncase("Assigned to Department");
+	    cs1pm.sel_caseview("Additional Info Required/ Re-categorize");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
-	    Thread.sleep(1000);
-	    cs1pm.sel_caseview("Assigned to Me");
-	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
+        screen.ScreenshotMethod("TC_011__CaseAccountBalanceComputationAIP-");
 	    //cs1pm.clk_onMycaseview_220("Assigned to Me");
 	    Thread.sleep(1000);
 	    cs1pm.clk_onMyBucketcase();
 	    cs1pm.clk_caseEditButton();
-	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
-	    cs1pm.sel_depetdecison("Additional Information Required");
+	    Thread.sleep(3000);
+        screen.ScreenshotMethod("TC_011__CaseAccountBalanceComputationAIP-");
+	    cs1pm.sel_depetdecisonreverse("Additional Info Provided");
 	    cs1pm.fill_Remarks("rizwan");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_010_CaseAccountBalanceComputationAIR");
+        screen.ScreenshotMethod("TC_011__CaseAccountBalanceComputationAIP-");
 	    CJPM.casesaveAndProceed();
 	    Thread.sleep(5000);
 		//LogoutButtonClick();
 		QuiteBrowser();
+
 
 
 	}

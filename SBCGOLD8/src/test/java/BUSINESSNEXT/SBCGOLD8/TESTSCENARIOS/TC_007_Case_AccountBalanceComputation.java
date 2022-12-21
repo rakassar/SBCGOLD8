@@ -6,13 +6,13 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
 
-/*case creation by CCA for SSC=Application Beyond TAT
+/*case creation by CA for SSC=Account Balance Computation
 Source=Branch Walkin
-
+Computation request=Available Balance Computation
 */
 
 
-   public class TC_014_ApplicationBeyondTAT extends HomePageMethod
+   public class TC_007_Case_AccountBalanceComputation extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();
@@ -35,63 +35,50 @@ Source=Branch Walkin
     	launchBrowser();
     	TestDataFromExcel.DataRead();
     	Thread.sleep(5000);
- 		EnterUserName(TestDataFromExcel.UserName_CCA);
+ 		EnterUserName(TestDataFromExcel.UserName_CA);
  		Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         EnterPassword(TestDataFromExcel.Password);
         LoginButtonClick();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         ClickOnsaleswidget();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         ClickOnCaseJouney();
         CJPM.IndividualCaseJorney();
         cspm.BBNFillForCustomerSearch(TestDataFromExcel.BBN);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         cspm.ClickOnNextButtonOnCustomerSearch();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         cspm.ChooseBBNfromList();
         Thread.sleep(1000);
         cspm.clickstartjourney();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         Thread.sleep(1000);
         cspm.CustomerServiceJourney();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
         Thread.sleep(2000);
-        CJPM.FillSSC("Application Beyond TAT");
-       	CJPM.Source("Call Center");
+        CJPM.FillSSC("Account Balance Computation");
+       	CJPM.Source("Branch Walkin");
 	    Thread.sleep(1000);
 	    CJPM.creditcardproduct();
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    Thread.sleep(1000);
-	    CJPM.PIDStatus("Pass");
-	    Thread.sleep(1000);
-	    CJPM.ComplaintCategory("CCU");
 		CJPM.NextOnCasePage();
 		home.scrollBy();
-		Thread.sleep(1000);
-
-		cs1pm.fill_DetailsInConcern("Test Details of Concern Field");
+		Thread.sleep(5000);
 	   //Stage1 Case Journey
-		//cs1pm.ReportedSystem("SBOL1");
-		cs1pm.EmployeeInvolved("EmployeeInvolved");
-		cs1pm.UnitGroup("UnitGroup");
-		cs1pm.Employeeoutsource("Employeeoutsource");
-		cs1pm.Position("Position");
-		cs1pm.ActionTaken("ActionTaken");
-		cs1pm.OtherAction("OtherAction");
-
-		//cs1pm.SourceAccountNumber("787873281837");
-		//cs1pm.DestinatuionAccountNumber("78787328188");
-
+		cs1pm.fill_DetailsInConcern("Test Details of Concern Field");
+		Thread.sleep(1000);
+	    cs1pm.SelectComputationRequest("Available Balance Computation");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 		Thread.sleep(1000);
 		cs1pm.fill_Remarks("Successful Case Creation");
 		Thread.sleep(1000);
@@ -103,35 +90,33 @@ Source=Branch Walkin
 
 		launchBrowser();
 	    //TDFX.DataRead();
-	 	EnterUserName(TestDataFromExcel.UserName_SQCCU);
+	 	EnterUserName(TestDataFromExcel.UserName_CCGInboundTeamLeader_Pro);
 	 	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    EnterPassword(TestDataFromExcel.Password);
 	    LoginButtonClick();
 	    Thread.sleep(1000);
 	    cs1pm.clk_caseobject();
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    Thread.sleep(1000);
 	    cs1pm.clk_selfassigncase("Assigned to Department");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    Thread.sleep(1000);
 	    cs1pm.sel_caseview("Assigned to Me");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    //cs1pm.clk_onMycaseview_220("Assigned to Me");
 	    Thread.sleep(1000);
 	    cs1pm.clk_onMyBucketcase();
 	    cs1pm.clk_caseEditButton();
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    cs1pm.sel_depetdecison("Accept");
-	    Thread.sleep(1000);
-	    cs1pm.ValidityTagging("VALID");
 	    cs1pm.fill_Remarks("rizwan");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_014_ApplicationBeyondTAT-");
+        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
 	    CJPM.casesaveAndProceed();
 	    Thread.sleep(5000);
 		//LogoutButtonClick();
