@@ -79,11 +79,13 @@ public class TC_002_Lead_NTBLeadAppointment extends HomePageMethod
         screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
         CAPM.selectstatuscodeappointment();
         screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
-        CAPM.PreferredDayTime("11:50 PM");
+        CAPM.PreferredDayTime();
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
         lopm.saveAndProceed();
         Thread.sleep(1000);
+        lopm.GetLeadId();
+
         screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
         scrollBy();
         Thread.sleep(1000);

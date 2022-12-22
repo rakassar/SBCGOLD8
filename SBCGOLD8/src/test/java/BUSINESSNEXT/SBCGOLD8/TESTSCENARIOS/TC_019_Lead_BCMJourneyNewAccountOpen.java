@@ -262,7 +262,8 @@ public class TC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
 */
 
 		  //New CRRSC CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
-         CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
+         CRRSC.AmlcUnJmf("Yes");
+         CRRSC.typeOfWatchlist("SBC Internal Watchlist - POI");
 		  CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
 		  screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
 		  CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
@@ -448,6 +449,8 @@ public class TC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
         screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        lopm.GetLeadId();
+
         screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
  	}
 

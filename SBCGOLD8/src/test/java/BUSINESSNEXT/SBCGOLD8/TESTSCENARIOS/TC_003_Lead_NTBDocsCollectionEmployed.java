@@ -376,6 +376,7 @@ public class TC_003_Lead_NTBDocsCollectionEmployed extends HomePageMethod
         screen.ScreenshotMethod("TC_003_NTBDocsCollectionEmployed-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        lopm.GetLeadId();
         screen.ScreenshotMethod("TC_003_NTBDocsCollectionEmployed-");
     	QuiteBrowser();
  	}

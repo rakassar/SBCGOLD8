@@ -13,6 +13,10 @@ public LeadObjectPageObject (WebDriver driver)
 
 }
 
+
+@FindBy(xpath="//div[contains(@class,'form-element__control')]//div/span[contains(@data-autoid,'LE_NUMBER_ctrl')]")
+public static WebElement get_leadIDCreated ;
+
 //quick link and OnBaording journey option
     @FindBy(id="1")
     public static WebElement clk_salesonbaordingjourney ;
@@ -101,6 +105,8 @@ public LeadObjectPageObject (WebDriver driver)
   //BM  comments box button
     @FindBy(name="LE_DESCRIPTION")
 	public static WebElement clk_BmComments;
+    
+    
 
 
 
