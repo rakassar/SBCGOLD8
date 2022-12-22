@@ -1,6 +1,9 @@
 package BUSINESSNEXT.SBCGOLD8.METHOD;
 
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
 public class CreateLeadAppointmentPageMethod extends HomePageMethod{
 
@@ -17,16 +20,18 @@ public class CreateLeadAppointmentPageMethod extends HomePageMethod{
 
 	}
 
-	public void PreferredDayTime(String time)
+	public void PreferredDayTime()
 	{
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy");  
+		LocalDateTime now = LocalDateTime.now().plusDays(1); 
+		System.out.println(dtf.format(now));
 
-
-		  CreateLeadAppointmentPageObject.clk_ldPreferredDay.click();
+		  CreateLeadAppointmentPageObject.clk_ldPreferredDay.sendKeys(dtf.format(now));
 		  //CreateLeadAppointmentPageObject.clk_ldPreferredDay.sendKeys();
 
 
 		//CreateLeadAppointmentPageObject.clk_ldPreferredTime.click();
-	    CreateLeadAppointmentPageObject.clk_ldPreferredTime.sendKeys(time);
+	    CreateLeadAppointmentPageObject.clk_ldPreferredTime.sendKeys("11:50 PM");
 
 		//CreateLeadAppointmentPageObject.snd_ldPreferredTime.sendKeys(time);
 
