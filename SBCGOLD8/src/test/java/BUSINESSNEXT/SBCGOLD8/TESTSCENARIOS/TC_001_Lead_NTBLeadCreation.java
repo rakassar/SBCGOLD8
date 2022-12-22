@@ -92,6 +92,8 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        Thread.sleep(1000);
+        lopm.GetLeadId();
         scrollBy();
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_001_NTBLeadCreation-");

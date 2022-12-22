@@ -11,6 +11,12 @@ import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
 public class LeadObjectPageMethod extends HomePageMethod{
 
    public static String leadid;
+   
+   public void GetLeadId()
+	  {
+	   leadid=LeadObjectPageObject.get_leadIDCreated.getText();
+	     System.out.println("Lead created succesfully ,Lead id:"+leadid);
+	  }
 
    public void ClickOnOnBoardingJourney()
 

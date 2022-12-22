@@ -19,8 +19,8 @@ public CreateLeadAppointmentPageObject (WebDriver driver)
 @FindBy(id="1")
 public static WebElement clk_statuscodeappointment;
 
-//@FindBy(xpath="//*[contains(@placeholder,'MM/DD/YYYY')]")
-@FindBy(xpath="//a[contains(@title,'Today') and @data-autoid='cust_192_today']")//added this one to choose today;s date
+@FindBy(xpath="//*[contains(@placeholder,'MM/DD/YYYY')]")
+//@FindBy(xpath="//a[contains(@title,'Today') and @data-autoid='cust_192_today']")//added this one to choose today;s date
 public static WebElement clk_ldPreferredDay;
 
 //@FindBy(css="div[class='timepickerContainer']")

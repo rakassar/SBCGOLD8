@@ -21,6 +21,9 @@ import org.openqa.selenium.support.FindBy;
 		public static WebElement sel_Sbol;
 		@FindBy(name="cust_2846")
 		public static WebElement sel_OtherRskFctr;
+		@FindBy(name="cust_2843")
+		public static WebElement sel_typeOfWatchlist;
+		
 
 
 
