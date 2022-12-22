@@ -1,4 +1,5 @@
 package BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 //import crm.mhc.common.BrowserStart;
@@ -20,6 +21,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
+@Listeners(BUSINESSNEXT.SBCGOLD8.COMMON.ListnersClassAnotation.class)
 
    public class TC_001_Lead_NTBLeadCreation extends HomePageMethod
    {
@@ -36,7 +38,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	//************************Fill the Info for SD process*****************************-------------//
 	//ListnersClassAnotation css=new ListnersClassAnotation();
     @Test(priority=1)
-	public void CreateNewLead() throws Exception
+	public void TC_001() throws Exception
 	{
 
     	//rizwan
@@ -70,7 +72,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	}
 
     @Test(priority=2)
-	public void CreateNewLead1() throws Exception
+	public void TC_002() throws Exception
 	{
     {
         NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
