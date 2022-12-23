@@ -68,6 +68,7 @@ public class SC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
+        lopm.GetLeadId();
     	screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
         scrollBy();
         Thread.sleep(1000);
@@ -452,6 +453,7 @@ public class SC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
         lopm.GetLeadId();
 
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
+        QuiteBrowser();
  	}
 
 

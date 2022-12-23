@@ -135,6 +135,14 @@ public void ClickOnActivitiestab()
 	   LeadObjectPageObject.clk_BmApproveBttn.click();
 	   Thread.sleep(1000);
 	}
+   public void TustOpsConvertLeadCLK() throws InterruptedException
+
+	{
+	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+
+	   LeadObjectPageObject.clk_TustOpsConvertLead.click();
+	   Thread.sleep(1000);
+	}
 
 
 

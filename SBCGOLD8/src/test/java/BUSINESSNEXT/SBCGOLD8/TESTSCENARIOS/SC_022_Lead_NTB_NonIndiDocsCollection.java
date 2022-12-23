@@ -66,6 +66,8 @@ public class SC_022_Lead_NTB_NonIndiDocsCollection extends HomePageMethod
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
+        lopm.GetLeadId();
+
     	screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
         scrollBy();
         Thread.sleep(1000);
@@ -359,6 +361,7 @@ public class SC_022_Lead_NTB_NonIndiDocsCollection extends HomePageMethod
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+        QuiteBrowser();
  	}
 
 

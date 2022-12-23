@@ -78,6 +78,8 @@ ETB onboarding journey, Including open case dedupe
             screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
             NTBSJPM.NTBJourneynext2();
             Thread.sleep(2000);
+            lopm.GetLeadId();
+
             screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
             scrollBy();
             Thread.sleep(1000);

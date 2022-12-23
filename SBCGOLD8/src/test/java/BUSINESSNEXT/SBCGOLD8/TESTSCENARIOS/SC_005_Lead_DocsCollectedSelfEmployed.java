@@ -71,6 +71,8 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
+        lopm.GetLeadId();
+
         screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
         scrollBy();
         Thread.sleep(1000);

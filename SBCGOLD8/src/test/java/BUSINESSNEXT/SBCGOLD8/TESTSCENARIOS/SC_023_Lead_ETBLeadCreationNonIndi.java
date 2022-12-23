@@ -79,6 +79,8 @@ ETB onboarding journey, Including open case dedupe
             screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
             NTBSJPM.NTBJourneynext2();
             Thread.sleep(2000);
+            lopm.GetLeadId();
+
             screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
             scrollBy();
             Thread.sleep(1000);
@@ -159,6 +161,7 @@ ETB onboarding journey, Including open case dedupe
 			 * catch(NoSuchElementException e) { System.out.println("no case dedupe");
 			 */
             NTBSJPM.CaseDedupeOnDocsLead();
+           
     	}
     @Test(priority=6)
     	public void SC_023_TC_006() throws InterruptedException, IOException
@@ -175,6 +178,7 @@ ETB onboarding journey, Including open case dedupe
         screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
     	lopm.saveAndProceed();
     	Thread.sleep(1000);
+    	NTBSJPM.CaseDedupeOnDocsLead();
         screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
         scrollBy();
         Thread.sleep(1000);
@@ -232,6 +236,7 @@ ETB onboarding journey, Including open case dedupe
             lopm.ProcessApplicationPopUpClose();
             Thread.sleep(2000);
             screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
+            QuiteBrowser();
      	}
 
       //screen shot using listner class

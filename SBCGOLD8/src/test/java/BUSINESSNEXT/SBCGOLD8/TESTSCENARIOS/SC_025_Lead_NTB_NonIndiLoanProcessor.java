@@ -5,8 +5,7 @@ import org.testng.annotations.Test;
 
 import BUSINESSNEXT.SBCGOLD8.COMMON.*;
 import BUSINESSNEXT.SBCGOLD8.METHOD.*;
-/*Customer Onboarding process for NTB employed Indidvidual
-
+/*Customer Onboarding process for NTB Nonindi Loan process(To create customer only not account)
 To run on G7 please change nature of work field and uncomment the CRRSC section
 */
 
@@ -60,6 +59,7 @@ public class SC_025_Lead_NTB_NonIndiLoanProcessor extends HomePageMethod
         screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
         NTBSJPM.NTBJourneynext1();
         Thread.sleep(1000);
+        lopm.GetLeadId();
     	screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
@@ -329,6 +329,8 @@ public class SC_025_Lead_NTB_NonIndiLoanProcessor extends HomePageMethod
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
         screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+    	QuiteBrowser();
+
  	}
 
 
