@@ -62,6 +62,8 @@ public class SC_024_Lead_NTBEmployedLoanProcessor extends HomePageMethod
         NTBSJPM.NTBJourneynext1();
 
         Thread.sleep(1000);
+        lopm.GetLeadId();
+
     	screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
         scrollBy();
         Thread.sleep(1000);
@@ -206,7 +208,7 @@ public class SC_024_Lead_NTBEmployedLoanProcessor extends HomePageMethod
     	//CLDLPM.leadredbutton();
 
 
-        // OLD CRRSC
+  /*      // OLD CRRSC
      	CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
      	CRRSC.BankInternalChecklist(TestDataFromExcel.BankInternalChecklist);
      	CRRSC.AllegedPerdsonf(TestDataFromExcel.AllegedPerdsonf);
@@ -252,9 +254,7 @@ public class SC_024_Lead_NTBEmployedLoanProcessor extends HomePageMethod
      	CRRSC.ComfortableDocumentsRRSC(TestDataFromExcel.ComfortableDocumentsRRSC);
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
-
-
-        /*
+        */
          //New CRRSC
          CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
          CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
@@ -265,7 +265,7 @@ public class SC_024_Lead_NTBEmployedLoanProcessor extends HomePageMethod
          screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
          CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
 
-         */
+         
 
          CRRSC.RemarksCRRSC("I am Indian!");
          screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
@@ -345,6 +345,7 @@ public class SC_024_Lead_NTBEmployedLoanProcessor extends HomePageMethod
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
         screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+        QuiteBrowser();
 
 
  	}

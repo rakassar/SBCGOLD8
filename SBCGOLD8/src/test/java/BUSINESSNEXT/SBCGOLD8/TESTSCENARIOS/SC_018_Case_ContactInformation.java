@@ -37,16 +37,16 @@ Source=Branch Walkin
 	public void SC_018_TC_001() throws Exception
 	{
 
-        //Vishal
     	launchBrowser();
     	TestDataFromExcel.DataRead();
-    	Thread.sleep(5000);
+    	Thread.sleep(2000);
  		EnterUserName(TestDataFromExcel.UserName_CA);
- 		Thread.sleep(1000);
+ 		Thread.sleep(500);
         screen.ScreenshotMethod("SC_018_ContactInformation-");
         EnterPassword(TestDataFromExcel.Password);
         LoginButtonClick();
         Thread.sleep(1000);
+        CheckRole();
         screen.ScreenshotMethod("SC_018_ContactInformation-");
         ClickOnsaleswidget();
         Thread.sleep(1000);
@@ -61,6 +61,7 @@ Source=Branch Walkin
         screen.ScreenshotMethod("SC_018_ContactInformation-");
         cspm.ChooseBBNfromList();
         Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
         cspm.clickstartjourney();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_018_ContactInformation-");
@@ -71,8 +72,6 @@ Source=Branch Walkin
         Thread.sleep(2000);
         CJPM.FillSSC("Contact Information");
        	CJPM.Source("Branch Walkin");
-	    Thread.sleep(1000);
-	    CJPM.creditcardproduct();
 	    Thread.sleep(1000);
 		cs1pm.ContactInformationactipntype("Contact Creation");
 	    Thread.sleep(1000);
@@ -90,6 +89,8 @@ Source=Branch Walkin
 		cs1pm.CaseHosueNumber();
 		cs1pm.caseStreet();
 		cs1pm.casemobile();
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+
 		//cs1pm.CaseCustomerType("Employed");
 		//Thread.sleep(1000);
 		//cs1pm.ForEmployement("Yes");
@@ -104,9 +105,30 @@ Source=Branch Walkin
 		Thread.sleep(1000);
 		cs1pm.fill_Remarks("Successful Case Creation");
 		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
 		CJPM.casesaveAndProceed();
 		cs1pm.GetCaseId();
-		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");		
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
 		//LogoutButtonClick();
 		QuiteBrowser();
 
@@ -116,8 +138,12 @@ Source=Branch Walkin
 	 	Thread.sleep(1000);
         screen.ScreenshotMethod("SC_018_ContactInformation-");
 	    EnterPassword(TestDataFromExcel.Password);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
 	    LoginButtonClick();
 	    Thread.sleep(1000);
+        CheckRole();
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+	    Thread.sleep(500);
 	    cs1pm.clk_caseobject();
 	    Thread.sleep(1000);
         screen.ScreenshotMethod("SC_018_ContactInformation-");
@@ -136,11 +162,33 @@ Source=Branch Walkin
 	    Thread.sleep(1000);
         screen.ScreenshotMethod("SC_018_ContactInformation-");
 	    cs1pm.sel_depetdecison("Accept");
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
 	    cs1pm.fill_Remarks("rizwan");
 	    Thread.sleep(1000);
         screen.ScreenshotMethod("SC_018_ContactInformation-");
 	    CJPM.casesaveAndProceed();
 	    Thread.sleep(5000);
+	    screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");		
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_018_ContactInformation-");
 		//LogoutButtonClick();
 		QuiteBrowser();
 

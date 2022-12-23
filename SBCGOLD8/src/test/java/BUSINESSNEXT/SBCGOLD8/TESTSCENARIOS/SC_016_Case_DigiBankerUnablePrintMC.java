@@ -107,6 +107,14 @@ Source=Branch Walkin
 		CJPM.casesaveAndProceed();
 		cs1pm.GetCaseId();
 		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
+        scrollBy();
+        screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
+        scrollBy();
+        screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
+        scrollBy();
+        screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
+        scrollBy();
 		//LogoutButtonClick();
 		QuiteBrowser();
 
@@ -137,13 +145,25 @@ Source=Branch Walkin
         screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
 	    cs1pm.sel_depetdecison("Accept");
 	    Thread.sleep(1000);
+	    screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
+        scrollBy();
 	    cs1pm.ValidityTagging("VALID");
+	    screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
+        
 	    cs1pm.fill_Remarks("rizwan");
 	    Thread.sleep(1000);
         screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
 	    CJPM.casesaveAndProceed();
 	    Thread.sleep(5000);
 		//LogoutButtonClick();
+        screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
+        scrollBy();
+        screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
+        scrollBy();
+        screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
+        scrollBy();
+        screen.ScreenshotMethod("SC_016_DigiBankerUnablePrintMC-");
+        scrollBy();
 		QuiteBrowser();
 
 

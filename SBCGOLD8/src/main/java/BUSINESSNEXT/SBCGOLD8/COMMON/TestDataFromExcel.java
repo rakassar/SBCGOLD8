@@ -28,6 +28,7 @@ public class TestDataFromExcel implements Properties {
 	public static String   UserName_CCA;
 	public static String   UserName_SQCCU;
 	public static String UserName_LoanProcessor;
+	public static String UserName_TrustOps;
 
 
 
@@ -144,6 +145,7 @@ UserName_BBGCDMaintenanceAnalyst=sheet3.getRow(10).getCell(1).getStringCellValue
  UserName_CCA=sheet3.getRow(11).getCell(1).getStringCellValue();
  UserName_SQCCU=sheet3.getRow(12).getCell(1).getStringCellValue();
  UserName_LoanProcessor = sheet3.getRow(13).getCell(1).getStringCellValue();
+ UserName_TrustOps =  sheet3.getRow(14).getCell(1).getStringCellValue();
 
 
 SalutationID=sheet.getRow(2).getCell(1).getStringCellValue();

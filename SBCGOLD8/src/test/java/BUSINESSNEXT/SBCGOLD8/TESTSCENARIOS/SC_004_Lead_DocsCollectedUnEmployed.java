@@ -66,6 +66,8 @@ public class SC_004_Lead_DocsCollectedUnEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
+        lopm.GetLeadId();
+
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
         scrollBy();
         Thread.sleep(1000);
