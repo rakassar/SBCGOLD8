@@ -110,6 +110,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	public void SC_027_TC_004() throws Exception
 	{
     	Thread.sleep(7000);
+        lopm.GetLeadId();
         screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         scrollBy();
         screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
@@ -119,6 +120,8 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         LogoutButtonClick();
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+    	QuiteBrowser();
+
 	}
 
   //screen shot using listner class

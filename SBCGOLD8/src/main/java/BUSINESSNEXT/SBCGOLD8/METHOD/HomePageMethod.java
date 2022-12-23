@@ -114,7 +114,6 @@ public void scrollBy()
        JavascriptExecutor js = (JavascriptExecutor) driver;
       // js.executeScript("window.scrollBy(0,500)");
        // identify element
-       System.out.println("scrolling by down:");
        // scroll down up 500 pixels with Javascript Executor
        js.executeScript("window.scrollBy(0,500)");
 

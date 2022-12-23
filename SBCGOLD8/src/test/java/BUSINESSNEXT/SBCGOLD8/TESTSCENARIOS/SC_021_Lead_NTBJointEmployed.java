@@ -69,6 +69,9 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
+        System.out.print("Primary ");
+        lopm.GetLeadId();
+
     	screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
         scrollBy();
         Thread.sleep(1000);
@@ -149,7 +152,7 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
         CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
-        CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
+        CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
         Thread.sleep(1000);
         CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         Thread.sleep(1000);
@@ -219,7 +222,7 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
     	//CLDLPM.leadredbutton();
 
 
-        //   OLD CRRSC
+      /*  //   OLD CRRSC
      	CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
      	CRRSC.BankInternalChecklist(TestDataFromExcel.BankInternalChecklist);
      	CRRSC.AllegedPerdsonf(TestDataFromExcel.AllegedPerdsonf);
@@ -265,10 +268,10 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
      	CRRSC.ComfortableDocumentsRRSC(TestDataFromExcel.ComfortableDocumentsRRSC);
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+*/
 
 
-
-        /* //New CRRSC
+         //New CRRSC
          CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
          CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
          screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
@@ -278,7 +281,7 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
          screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
          CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
 
-         */
+         
          CRRSC.RemarksCRRSC("I am Indian!");
          screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
          CRRSC.Finish();
@@ -357,6 +360,9 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
         NTBSJPM.EnterMobile();
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
+        System.out.print("Child ");
+        lopm.GetLeadId();
+
     	screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
         scrollBy();
         Thread.sleep(1000);
@@ -417,7 +423,7 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
         CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
-        CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
+        CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
         Thread.sleep(1000);
         CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         Thread.sleep(1000);
@@ -467,7 +473,7 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
      Thread.sleep(1000);
      screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
 
-  // OLD CRRSC
+ /* // OLD CRRSC
   	CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
   	CRRSC.BankInternalChecklist(TestDataFromExcel.BankInternalChecklist);
   	CRRSC.AllegedPerdsonf(TestDataFromExcel.AllegedPerdsonf);
@@ -511,6 +517,16 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
      screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
   	CRRSC.ComfortableInformationRRSC(TestDataFromExcel.ComfortableInformationRRSC);
   	CRRSC.ComfortableDocumentsRRSC(TestDataFromExcel.ComfortableDocumentsRRSC);
+  	*/
+     //New CRRSC
+     CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
+     CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
+     screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+     CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
+     CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
+     CRRSC.Sbol(TestDataFromExcel.Sbol);
+     screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+     CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
      Thread.sleep(1000);
      screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
 
@@ -573,6 +589,7 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
      screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
      lopm.ProcessApplication();
      Thread.sleep(60000);
+     QuiteBrowser();
 
 
 
@@ -620,6 +637,7 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
         screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+        QuiteBrowser();
  	}
 
 

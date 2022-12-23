@@ -138,6 +138,7 @@ public class SC_020_Lead_BCMJourneyOnly extends HomePageMethod
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
         screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+        QuiteBrowser();
  	}
 
 

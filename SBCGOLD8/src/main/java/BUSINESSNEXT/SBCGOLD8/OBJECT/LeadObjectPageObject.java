@@ -101,10 +101,15 @@ public static WebElement get_leadIDCreated ;
     //BM  approve button
     @FindBy(xpath="//span[normalize-space()='Approved']")
 	public static WebElement clk_BmApproveBttn;
-
+  
+    
   //BM  comments box button
     @FindBy(name="LE_DESCRIPTION")
 	public static WebElement clk_BmComments;
+    
+  //Trust Ops convert lead
+    @FindBy(xpath="//span[normalize-space()='Convert Lead']")
+	public static WebElement clk_TustOpsConvertLead;
     
     
 
