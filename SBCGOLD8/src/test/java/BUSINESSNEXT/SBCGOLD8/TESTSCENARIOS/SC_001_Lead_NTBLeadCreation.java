@@ -1,4 +1,5 @@
 package BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 //import crm.mhc.common.BrowserStart;
@@ -20,8 +21,9 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
+@Listeners(BUSINESSNEXT.SBCGOLD8.COMMON.ListnersClassAnotation.class)
 
-   public class TC_001_NTBLeadCreation extends HomePageMethod
+   public class SC_001_Lead_NTBLeadCreation extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();
@@ -36,41 +38,41 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	//************************Fill the Info for SD process*****************************-------------//
 	//ListnersClassAnotation css=new ListnersClassAnotation();
     @Test(priority=1)
-	public void CreateNewLead() throws Exception
+	public void SC_001_TC_001() throws Exception
 	{
 
     	//rizwan
 
     	launchBrowser();
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
     	TestDataFromExcel.DataRead();
     	Thread.sleep(500);
  		EnterUserName(TestDataFromExcel.UserName_CA);
  		Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         EnterPassword(TestDataFromExcel.Password);
         LoginButtonClick();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         CheckRole();
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
 
         ClickOnsaleswidget();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         ClickOnsalesJouney();
 
         lopm.ClickOnOnBoardingJourney();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         cspm.ClickOnOnBoardingJourneynext();
         Thread.sleep(2000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
 	}
 
     @Test(priority=2)
-	public void CreateNewLead1() throws Exception
+	public void SC_001_TC_002() throws Exception
 	{
     {
         NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
@@ -79,37 +81,39 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         NTBSJPM.EntermiddleName();
         NTBSJPM.EnterMobile();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         NTBSJPM.NTBJourneynext1();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         Thread.sleep(1000);
         NTBSJPM.ProductCategory(TestDataFromExcel.ProductCategory);
         Thread.sleep(500);
         NTBSJPM.Product(TestDataFromExcel.Product);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
+        Thread.sleep(1000);
+        lopm.GetLeadId();
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_001_NTBLeadCreation-");
+        screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
     	QuiteBrowser();
 
         //CLDLPM.CreatedNewLeadEdit();

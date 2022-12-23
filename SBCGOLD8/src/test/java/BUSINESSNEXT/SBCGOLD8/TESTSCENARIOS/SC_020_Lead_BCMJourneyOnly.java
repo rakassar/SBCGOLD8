@@ -11,7 +11,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
-public class TC_021_Lead_BCMJourneyOnly extends HomePageMethod
+public class SC_020_Lead_BCMJourneyOnly extends HomePageMethod
 {
 
     //Object for methods class
@@ -28,16 +28,16 @@ public class TC_021_Lead_BCMJourneyOnly extends HomePageMethod
 
 
     @Test(priority=1)
- 	public void LeadHighRiskBCM7() throws InterruptedException, IOException
+ 	public void SC_020_TC_001() throws InterruptedException, IOException
  	{
     //LogoutButtonClick();
     launchBrowser();
     TestDataFromExcel.DataRead();
     Thread.sleep(1000);
-    screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+    screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
     EnterUserName(TestDataFromExcel.UserName_BranchBCM);
     EnterPassword(TestDataFromExcel.Password);
-	screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+	screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
     LoginButtonClick();
     CheckRole();
 	Thread.sleep(500);
@@ -52,42 +52,42 @@ public class TC_021_Lead_BCMJourneyOnly extends HomePageMethod
     Thread.sleep(500);
     lopm.BmApproveComments("BM Comments");
     lopm.BmApproveUpdate();
-    screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+    screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
     scrollBy();
     Thread.sleep(1000);
-    screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+    screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
     scrollBy();
     Thread.sleep(1000);
-    screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+    screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
     scrollBy();
     Thread.sleep(1000);
-    screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+    screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
     scrollBy();
     Thread.sleep(1000);
-    screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+    screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
     scrollBy();
     Thread.sleep(1000);
-    screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+    screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
     scrollBy();
     Thread.sleep(1000);
-    screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+    screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
     QuiteBrowser();
  	}
 
     @Test(priority=2)
- 	public void LeadHighRiskBCM8() throws InterruptedException
+ 	public void SC_020_TC_002() throws InterruptedException
 
  	{
 
     	launchBrowser();
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         EnterUserName(TestDataFromExcel.UserName_CA);
         EnterPassword(TestDataFromExcel.Password);
-    	screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+    	screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         LoginButtonClick();
         CheckRole();
-    	screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+    	screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         clk_leadobject();
         lopm.categoryview("Deposit-Individual");
         lopm.leadview("Assigned Leads");
@@ -99,27 +99,27 @@ public class TC_021_Lead_BCMJourneyOnly extends HomePageMethod
 
 
     @Test(priority=3)
- 	public void LeadHighRiskBCM9() throws InterruptedException
+ 	public void SC_020_TC_003() throws InterruptedException
  	{
     	Thread.sleep(500);
     	scrolldown();
-        screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         FAIPM.ClickFillAccountInformation();
         FAIPM.RequestType(TestDataFromExcel.RequestTypef);
         FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
-        screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         FAIPM.PromsEmail(TestDataFromExcel.PromsEmail);
         FAIPM.sel_PromsSMS(TestDataFromExcel.PromsSMS);
         FAIPM.TransactionalEmail(TestDataFromExcel.TransactionalEmail);
         FAIPM.TransactionalSMS(TestDataFromExcel.TransactionalSMS);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         CRRSC.Finish();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
 
         //
 
@@ -128,16 +128,17 @@ public class TC_021_Lead_BCMJourneyOnly extends HomePageMethod
 
 
       @Test(priority=4)
- 	public void LeadHighRiskBCM10() throws InterruptedException
+ 	public void SC_020_TC_004() throws InterruptedException
  	{
-        screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         Thread.sleep(1000);
         lopm.ProcessApplication();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
-        screen.ScreenshotMethod("TC_019__Lead_BCMJourneyNewAccount-");
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+        QuiteBrowser();
  	}
 
 

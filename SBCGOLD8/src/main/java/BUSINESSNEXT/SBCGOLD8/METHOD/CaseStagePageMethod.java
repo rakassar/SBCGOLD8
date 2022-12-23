@@ -24,10 +24,8 @@ public class CaseStagePageMethod extends HomePageMethod {
 		   Thread.sleep(1000);
            js = (JavascriptExecutor) driver;
            js.executeScript("window.scrollBy(0,1500)","" );
-		   Thread.sleep(5000);
-		   CaseStagePageObject.fill_DetailsInConcern.click();
+		   Thread.sleep(2000);
            CaseStagePageObject.fill_DetailsInConcern.sendKeys(data1);
-	       System.out.println("Entered text in Details of Concern field");
 	}
 
 

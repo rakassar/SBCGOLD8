@@ -13,6 +13,10 @@ public LeadObjectPageObject (WebDriver driver)
 
 }
 
+
+@FindBy(xpath="//div[contains(@class,'form-element__control')]//div/span[contains(@data-autoid,'LE_NUMBER_ctrl')]")
+public static WebElement get_leadIDCreated ;
+
 //quick link and OnBaording journey option
     @FindBy(id="1")
     public static WebElement clk_salesonbaordingjourney ;
@@ -97,10 +101,17 @@ public LeadObjectPageObject (WebDriver driver)
     //BM  approve button
     @FindBy(xpath="//span[normalize-space()='Approved']")
 	public static WebElement clk_BmApproveBttn;
-
+  
+    
   //BM  comments box button
     @FindBy(name="LE_DESCRIPTION")
 	public static WebElement clk_BmComments;
+    
+  //Trust Ops convert lead
+    @FindBy(xpath="//span[normalize-space()='Convert Lead']")
+	public static WebElement clk_TustOpsConvertLead;
+    
+    
 
 
 

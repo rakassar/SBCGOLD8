@@ -40,6 +40,12 @@ public class CRRSCLeadPageMethod  extends HomePageMethod{
     	//sel.selectByValue(Product);
     	sel.selectByVisibleText(AmlcUnJmf);
     }
+	public void typeOfWatchlist(String AmlcUnJmf)
+    {
+    	Select sel=new Select(CRRSCLeadPageObject.sel_typeOfWatchlist);
+    	//sel.selectByValue(Product);
+    	sel.selectByVisibleText(AmlcUnJmf);
+    }
 	public void BankInternalChecklist(String BankInternalChecklist)
     {
     	Select sel=new Select(CRRSCLeadPageObject.sel_BankInternalChecklist);

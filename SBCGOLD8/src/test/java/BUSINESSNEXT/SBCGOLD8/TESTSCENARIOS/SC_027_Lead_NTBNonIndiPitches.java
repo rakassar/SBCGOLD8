@@ -9,7 +9,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
 
-   public class TC_028_Lead_NTBNonIndiPitches extends HomePageMethod
+   public class SC_027_Lead_NTBNonIndiPitches extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();
@@ -23,62 +23,62 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	//************************Fill the Info for SD process*****************************-------------//
 	//ListnersClassAnotation css=new ListnersClassAnotation();
     @Test(priority=1)
-	public void CreateNewLead() throws Exception
+	public void SC_027_TC_001() throws Exception
 	{
 
     	//rizwan
 
     	launchBrowser();
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
     	TestDataFromExcel.DataRead();
     	Thread.sleep(500);
  		EnterUserName(TestDataFromExcel.UserName_CA);
  		Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         EnterPassword(TestDataFromExcel.Password);
         LoginButtonClick();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         CheckRole();
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
 
         ClickOnsaleswidget();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         ClickOnsalesJouney();
 
         lopm.ClickOnOnBoardingJourneyNonIndi();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         cspm.ClickOnOnBoardingJourneynext();
         Thread.sleep(2000);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
 	}
 
     @Test(priority=2)
-	public void CreateNewLead1() throws Exception
+	public void SC_027_TC_002() throws Exception
 	{
 
     	NTBSJPM.CompanyName();
     	NTBSJPM.EnterMobile();
     	NTBSJPM.pitchMultipleProduct("Yes");
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         NTBSJPM.NTBJourneynext1();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         Thread.sleep(1000);
         NTBSJPM.SDBranch("Acropolis");
         Thread.sleep(500);
         CLDLPM.salesID("0014-Velasco, Jacqueline L.");
         Thread.sleep(500);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
     }
 
 
     @Test(priority=3)
-	public void CreateNewLead2() throws Exception
+	public void SC_027_TC_003() throws Exception
 	{
         scrollBy();
         NTBSJPM.checkboxSaving();
@@ -88,7 +88,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         NTBSJPM.checkboxAutoloan();
         NTBSJPM.checkboxHomeLoan();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         NTBSJPM.checkboxCreditCard();
         NTBSJPM.checkboxOtherloan();
         NTBSJPM.checkboxTrust();
@@ -96,29 +96,32 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         NTBSJPM.checkBoxBanca();
         NTBSJPM.checkboxTreasury();
         Thread.sleep(500);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         scrollBy();
         CLDLPM.ZipcodeNonIndi(TestDataFromExcel.Zipcode);
         Thread.sleep(500);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         lopm.saveAndProceed();
 
 
 
     }
     @Test(priority=4)
-	public void CreateNewLead3() throws Exception
+	public void SC_027_TC_004() throws Exception
 	{
     	Thread.sleep(7000);
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        lopm.GetLeadId();
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         scrollBy();
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
     	Thread.sleep(1000);
         scrollBy();
-        screen.ScreenshotMethod("TC_027_Lead_NTBNonIndiPitches-");
+        screen.ScreenshotMethod("SC_027_Lead_NTBNonIndiPitches-");
         LogoutButtonClick();
         Thread.sleep(1000);
         screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+    	QuiteBrowser();
+
 	}
 
   //screen shot using listner class

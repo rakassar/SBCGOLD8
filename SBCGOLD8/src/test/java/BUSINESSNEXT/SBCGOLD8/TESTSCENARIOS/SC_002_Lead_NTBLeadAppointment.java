@@ -14,14 +14,14 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 //screen shot via listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
 
-public class TC_002_NTBLeadAppointment extends HomePageMethod
+public class SC_002_Lead_NTBLeadAppointment extends HomePageMethod
 {
 
 
 	//************************Fill the Info for SD process*****************************-------------//
 
     @Test
-	public void CreateSNewLead() throws InterruptedException, IOException
+	public void SC_002_TC_001() throws InterruptedException, IOException
 	{
 
 	    //Object for methods class
@@ -35,81 +35,83 @@ public class TC_002_NTBLeadAppointment extends HomePageMethod
 
     	launchBrowser();
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
     	TestDataFromExcel.DataRead();
     	Thread.sleep(500);
  		EnterUserName(TestDataFromExcel.UserName_CA);
  		Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         EnterPassword(TestDataFromExcel.Password);
         LoginButtonClick();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         CheckRole();
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         ClickOnsaleswidget();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         ClickOnsalesJouney();
         lopm.ClickOnOnBoardingJourney();
         cspm.ClickOnOnBoardingJourneynext();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         NTBSJPM.EnterFirstName();
         NTBSJPM.EnterlastName();
         NTBSJPM.EntermiddleName();
         NTBSJPM.EnterMobile();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         NTBSJPM.NTBJourneynext1();
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         Thread.sleep(1000);
         NTBSJPM.ProductCategory(TestDataFromExcel.ProductCategory);
         Thread.sleep(500);
         NTBSJPM.Product(TestDataFromExcel.Product);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         CAPM.selectstatuscodeappointment();
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
-        CAPM.PreferredDayTime("11:50 PM");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
+        CAPM.PreferredDayTime();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         lopm.saveAndProceed();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        lopm.GetLeadId();
+
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         lopm.ClickOnActivitiestab();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
 
         LogoutButtonClick();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         QuiteBrowser();
     	
 

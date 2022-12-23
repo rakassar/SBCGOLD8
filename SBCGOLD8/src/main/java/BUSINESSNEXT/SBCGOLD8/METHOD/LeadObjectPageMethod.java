@@ -11,6 +11,12 @@ import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
 public class LeadObjectPageMethod extends HomePageMethod{
 
    public static String leadid;
+   
+   public void GetLeadId()
+	  {
+	   leadid=LeadObjectPageObject.get_leadIDCreated.getText();
+	     System.out.println("Lead created succesfully ,Lead id:"+leadid);
+	  }
 
    public void ClickOnOnBoardingJourney()
 
@@ -127,6 +133,14 @@ public void ClickOnActivitiestab()
 	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
 
 	   LeadObjectPageObject.clk_BmApproveBttn.click();
+	   Thread.sleep(1000);
+	}
+   public void TustOpsConvertLeadCLK() throws InterruptedException
+
+	{
+	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+
+	   LeadObjectPageObject.clk_TustOpsConvertLead.click();
 	   Thread.sleep(1000);
 	}
 

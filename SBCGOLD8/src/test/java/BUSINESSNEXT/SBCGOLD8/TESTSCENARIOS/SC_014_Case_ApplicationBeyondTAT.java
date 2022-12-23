@@ -3,25 +3,16 @@ import org.testng.annotations.Test;
 import BUSINESSNEXT.SBCGOLD8.COMMON.*;
 import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 
-
-/*select a.statuscodeid,a.* from cases a
-where caseid in ( select CAS_EX1_id from CAS_EX1 where CAS_EX1_1='14300000797')
-order by caseid desc
---update cases set statuscodeid=5 where caseid in ( select CAS_EX1_id from CAS_EX1 where CAS_EX1_1='14300000797')
-*/
-
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
 
-
-/*case creation by CCA for SSC=DigiBanker - Unable To Print MC
- * CCRSC=No
+/*case creation by CCA for SSC=Application Beyond TAT
 Source=Branch Walkin
 
 */
 
 
-   public class TC_016_DigiBankerUnablePrintMC extends HomePageMethod
+   public class SC_014_Case_ApplicationBeyondTAT extends HomePageMethod
    {
 	//Object for methods class
 	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();
@@ -37,7 +28,7 @@ Source=Branch Walkin
 	//************************Fill the Info for SD process*****************************-------------//
 	//ListnersClassAnotation css=new ListnersClassAnotation();
     @Test(priority=1)
-	public void CreateNewLead() throws Exception
+	public void SC_014_TC_001() throws Exception
 	{
 
 
@@ -46,38 +37,38 @@ Source=Branch Walkin
     	Thread.sleep(5000);
  		EnterUserName(TestDataFromExcel.UserName_CCA);
  		Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
         EnterPassword(TestDataFromExcel.Password);
         LoginButtonClick();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
         ClickOnsaleswidget();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
         ClickOnCaseJouney();
         CJPM.IndividualCaseJorney();
         cspm.BBNFillForCustomerSearch(TestDataFromExcel.BBN);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
         cspm.ClickOnNextButtonOnCustomerSearch();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
         cspm.ChooseBBNfromList();
         Thread.sleep(1000);
         cspm.clickstartjourney();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
         Thread.sleep(1000);
         cspm.CustomerServiceJourney();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
         Thread.sleep(2000);
-        CJPM.FillSSC("DigiBanker - Unable To Print MC");
+        CJPM.FillSSC("Application Beyond TAT");
        	CJPM.Source("Call Center");
 	    Thread.sleep(1000);
 	    CJPM.creditcardproduct();
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
 	    Thread.sleep(1000);
 	    CJPM.PIDStatus("Pass");
 	    Thread.sleep(1000);
@@ -100,7 +91,7 @@ Source=Branch Walkin
 		//cs1pm.DestinatuionAccountNumber("78787328188");
 
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
 		Thread.sleep(1000);
 		cs1pm.fill_Remarks("Successful Case Creation");
 		Thread.sleep(1000);
@@ -114,33 +105,33 @@ Source=Branch Walkin
 	    //TDFX.DataRead();
 	 	EnterUserName(TestDataFromExcel.UserName_SQCCU);
 	 	Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
 	    EnterPassword(TestDataFromExcel.Password);
 	    LoginButtonClick();
 	    Thread.sleep(1000);
 	    cs1pm.clk_caseobject();
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
 	    Thread.sleep(1000);
 	    cs1pm.clk_selfassigncase("Assigned to Department");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
 	    Thread.sleep(1000);
 	    cs1pm.sel_caseview("Assigned to Me");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
 	    //cs1pm.clk_onMycaseview_220("Assigned to Me");
 	    Thread.sleep(1000);
 	    cs1pm.clk_onMyBucketcase();
 	    cs1pm.clk_caseEditButton();
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
 	    cs1pm.sel_depetdecison("Accept");
 	    Thread.sleep(1000);
 	    cs1pm.ValidityTagging("VALID");
 	    cs1pm.fill_Remarks("rizwan");
 	    Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_016_DigiBankerUnablePrintMC-");
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
 	    CJPM.casesaveAndProceed();
 	    Thread.sleep(5000);
 		//LogoutButtonClick();
