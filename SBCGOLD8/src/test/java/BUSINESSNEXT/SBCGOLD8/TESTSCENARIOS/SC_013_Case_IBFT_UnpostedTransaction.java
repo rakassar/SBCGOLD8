@@ -136,6 +136,12 @@ Source=Branch Walkin
 	    CJPM.casesaveAndProceed();
 	    Thread.sleep(5000);
 		//LogoutButtonClick();
+	    Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_013_IBFT_UnpostedTransaction-");
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_013_IBFT_UnpostedTransaction-");
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_013_IBFT_UnpostedTransaction-");
 		QuiteBrowser();
 
 
