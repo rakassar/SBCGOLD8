@@ -53,6 +53,7 @@ public class BrowserStart implements Properties{
 	new FillAccountInformationPageObject(driver);
 	new CaseJourneyPageObject(driver);
 	new CaseStagePageObject(driver);
+	new ReportPageObject(driver);
 
 	}
 
