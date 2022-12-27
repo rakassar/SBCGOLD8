@@ -51,7 +51,7 @@ public class CaseStagePageMethod extends HomePageMethod {
 	 public void GetCaseId()
 	  {
 		 caseIDCreated=CaseStagePageObject.caseIDCreated.getText();
-	     System.out.println("Account Balance Computation CaseID:"+caseIDCreated);
+	     System.out.println("Case created succesfully, CaseID:"+caseIDCreated);
 	  }
 
 
