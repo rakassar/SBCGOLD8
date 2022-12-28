@@ -89,9 +89,7 @@ Computation request=TAD / MAD Computation
 		CJPM.casesaveAndProceed();
 		Thread.sleep(1000);
         screen.ScreenshotMethod("SC_008_CaseAccountBalanceComputation-");
-		cs1pm.GetCaseId();
-		Thread.sleep(1000);
-		CJPM.casesaveAndProceed();
+		cs1pm.GetCaseId();		
 		Thread.sleep(1000);
 		//LogoutButtonClick();
 		QuiteBrowser();
