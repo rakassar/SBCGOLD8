@@ -67,7 +67,6 @@ Source=Branch Walkin
         cspm.clickstartjourney();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
-        Thread.sleep(1000);
         cspm.CustomerServiceJourney();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
@@ -75,10 +74,7 @@ Source=Branch Walkin
         CJPM.FillSSC("Bank Initiated Info Maintenance");
        	CJPM.Source("Call Center");
 	    Thread.sleep(1000);
-	    CJPM.creditcardproduct();
-	    Thread.sleep(1000);
         screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
-	    Thread.sleep(1000);
 	    CJPM.PIDStatus("Pass");
 	    Thread.sleep(1000);
 	    //CJPM.ComplaintCategory("CCU");
@@ -147,9 +143,27 @@ Source=Branch Walkin
         screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
 	    CJPM.casesaveAndProceed();
 	    Thread.sleep(5000);
+        screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
+        scrollBy();
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
+        scrollBy();
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
+        scrollBy();
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
+        scrollBy();
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
+        scrollBy();
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
+        scrollBy();
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
 		//LogoutButtonClick();
 		QuiteBrowser();
-
 
 	}
     }

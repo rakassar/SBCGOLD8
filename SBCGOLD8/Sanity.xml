@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+
+         <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_001_Lead_NTBLeadCreation"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_002_Lead_NTBLeadAppointment"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_003_Lead_NTBDocsCollectionEmployed"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_004_Lead_DocsCollectedUnEmployed"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_005_Lead_DocsCollectedSelfEmployed"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_006_Lead_ETBLeadCreation"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_007_Case_AccountBalanceComputation"/>
+
+ 
+
+ 
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_010_Case_AccountBalanceComputationAIR"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_011_Case_AccountBalanceComputationAIP"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.TC_012_Case_AccountSpecialCondtion"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_013_Case_IBFT_UnpostedTransaction"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_014_Case_ApplicationBeyondTAT"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_015_Case_BankInitiatedInfoMaintenance"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_016_Case_DigiBankerUnablePrintMC"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_017_Case_CustomerInitiatedInfoMaintenance"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_018_Case_ContactInformation"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_019_Lead_BCMJourneyNewAccountOpen"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_020_Lead_BCMJourneyOnly"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_021_Lead_NTBJointEmployed"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_022_Lead_NTB_NonIndiDocsCollection"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_023_Lead_ETBLeadCreationNonIndi"/>
+
+<!-- skipeed 24 for nature of work field-->
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_025_Lead_NTB_NonIndiLoanProcessor"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_026_Lead_NTBIndiPitches"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_027_Lead_NTBNonIndiPitches"/>
+
+<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_028_Lead_NTBTrustIndi"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+

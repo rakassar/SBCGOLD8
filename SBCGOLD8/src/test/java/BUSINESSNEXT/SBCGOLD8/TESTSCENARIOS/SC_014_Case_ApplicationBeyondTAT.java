@@ -135,6 +135,14 @@ Source=Branch Walkin
 	    CJPM.casesaveAndProceed();
 	    Thread.sleep(5000);
 		//LogoutButtonClick();
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
+        scrollBy();
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
+        scrollBy();
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
+        scrollBy();
+        screen.ScreenshotMethod("SC_014_ApplicationBeyondTAT-");
+        scrollBy();
 		QuiteBrowser();
 
 
