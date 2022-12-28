@@ -91,8 +91,6 @@ Computation request=Account Balance Computation
         screen.ScreenshotMethod("SC_009_CaseAccountBalanceComputation-");
 		cs1pm.GetCaseId();
 		Thread.sleep(1000);
-		CJPM.casesaveAndProceed();
-		Thread.sleep(1000);
 		//LogoutButtonClick();
 		QuiteBrowser();
 
