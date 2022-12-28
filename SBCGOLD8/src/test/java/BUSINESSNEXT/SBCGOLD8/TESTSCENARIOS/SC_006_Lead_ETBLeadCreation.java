@@ -38,6 +38,8 @@ ETB onboarding journey, Including open case dedupe
         CheckRole();
         Thread.sleep(500);
         screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+        CheckRole();
+        Thread.sleep(100);
         ClickOnsaleswidget();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_006_ETBLeadCreation-");

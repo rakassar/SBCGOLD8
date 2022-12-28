@@ -81,6 +81,8 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 		cs1pm.fill_Remarks("Successful Case Creation");
 		Thread.sleep(1000);
 		CJPM.casesaveAndProceed();
+		Thread.sleep(1000);
+
 		cs1pm.GetCaseId();
 		Thread.sleep(1000);
 		//LogoutButtonClick();
