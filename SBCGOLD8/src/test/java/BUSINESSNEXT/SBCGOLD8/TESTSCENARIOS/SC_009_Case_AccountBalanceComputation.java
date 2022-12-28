@@ -97,7 +97,7 @@ Computation request=Account Balance Computation
 
 		launchBrowser();
 	    //TDFX.DataRead();
-	 	EnterUserName(TestDataFromExcel.UserName_CCGVendorCoordinator_Pro);
+	 	EnterUserName(TestDataFromExcel.UserName_CCGInboundTeamLeader_Pro);
 	 	Thread.sleep(1000);
 	    screen.ScreenshotMethod("SC_009_CaseAccountBalanceComputation-");
 	    EnterPassword(TestDataFromExcel.Password);
@@ -135,7 +135,7 @@ Computation request=Account Balance Computation
     	Thread.sleep(1500);
 	    launchBrowser();
 	    //TDFX.DataRead();
-	 	EnterUserName(TestDataFromExcel.UserName_CCGVendorCoordinator_Sup);
+	 	EnterUserName(TestDataFromExcel.UserName_CCGEGS);
 	 	Thread.sleep(1000);
 	    screen.ScreenshotMethod("SC_009_CaseAccountBalanceComputation-");
 	    EnterPassword(TestDataFromExcel.Password);
@@ -159,44 +159,12 @@ Computation request=Account Balance Computation
 	    cs1pm.sel_depetdecison("Accept");
 	    cs1pm.fill_Remarks("rizwan");
 	    CJPM.casesaveAndProceed();
-	    Thread.sleep(500);
+	    Thread.sleep(2000);
 		//LogoutButtonClick();
 		QuiteBrowser();
-		Thread.sleep(1500);
+		
 
 
-		Thread.sleep(1500);
-	    launchBrowser();
-	    //TDFX.DataRead();
-	 	EnterUserName(TestDataFromExcel.UserName_CallCenterThirdPartyTeamLeader_Sup);
-	 	Thread.sleep(1000);
-	    screen.ScreenshotMethod("SC_009_CaseAccountBalanceComputation-");
-	    EnterPassword(TestDataFromExcel.Password);
-	    LoginButtonClick();
-	    Thread.sleep(1000);
-	    cs1pm.clk_caseobject();
-	    Thread.sleep(3000);
-	    cs1pm.clk_selfassigncase("Assigned to Department");
-	    Thread.sleep(1000);
-	    cs1pm.sel_caseview("Assigned to Me");
-	    Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_009_CaseAccountBalanceComputation-");
-	    Thread.sleep(1000);
-	    //cs1pm.clk_onMycaseview_220("Assigned to Me");
-	    cs1pm.clk_onMyBucketcase();
-	    Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_009_CaseAccountBalanceComputation-");
-	    cs1pm.clk_caseEditButton();
-	    cs1pm.sel_depetdecison("Accept");
-	    cs1pm.fill_Remarks("rizwan");
-	    Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_009_CaseAccountBalanceComputation-");
-	    CJPM.casesaveAndProceed();
-	    Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_009_CaseAccountBalanceComputation-");
-	    Thread.sleep(5000);
-		//LogoutButtonClick();
-		QuiteBrowser();
 
 
 	}
