@@ -40,6 +40,8 @@ public class SC_003_Lead_NTBDocsCollectionEmployed extends HomePageMethod
         LoginButtonClick();
         CheckRole();
     	screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CheckRole();
+        Thread.sleep(100);
         ClickOnsaleswidget();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
