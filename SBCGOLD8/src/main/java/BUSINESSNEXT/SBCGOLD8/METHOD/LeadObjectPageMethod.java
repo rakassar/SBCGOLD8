@@ -302,4 +302,17 @@ public void ClickOnOnBoardingJourneyNonIndi()
   // LeadObjectPageObject.clk_salesonbaordingjourney.get(2).click();;
 }
 
+
+public void btn_LeadReject() throws InterruptedException
+
+{
+	LeadObjectPageObject.btn_RejectButton.click();
+	Thread.sleep(1000);
+	LeadObjectPageObject.ent_RejectRemarks.sendKeys("Customer is not interested");
+	Thread.sleep(1000);
+	LeadObjectPageObject.btn_RejectRemarkupdate.click();
+}
+
+
+
 }

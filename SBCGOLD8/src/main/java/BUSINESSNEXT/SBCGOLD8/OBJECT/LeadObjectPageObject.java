@@ -113,7 +113,20 @@ public static WebElement get_leadIDCreated ;
     
     
 
-
+  //Lead Reject Button
+    @FindBy(xpath="//span[normalize-space()='Reject']")
+	public static WebElement btn_RejectButton;
+    
+    //Reject Reamrks
+    @FindBy(name="cust_1331")
+	public static WebElement ent_RejectRemarks;
+   
+    //Reject Reamrks update btn
+    @FindBy(css="span[class='ff-bold']")
+	public static WebElement btn_RejectRemarkupdate;
+     
+      
+    
 
 
 
