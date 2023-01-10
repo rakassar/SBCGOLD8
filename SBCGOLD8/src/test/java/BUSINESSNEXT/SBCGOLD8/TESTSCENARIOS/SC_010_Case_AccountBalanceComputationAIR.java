@@ -50,7 +50,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         screen.ScreenshotMethod("SC_010_CaseAccountBalanceComputationAIR");
         cspm.ClickOnNextButtonOnCustomerSearch();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_007_CaseAccountBalanceComputation-");
+        screen.ScreenshotMethod("SC_007_CaseAccountBalanceComputation-");
         cspm.ChooseBBNfromList();
         Thread.sleep(1000);
         cspm.clickstartjourney();
