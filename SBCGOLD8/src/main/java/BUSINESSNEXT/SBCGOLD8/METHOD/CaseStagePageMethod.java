@@ -280,7 +280,20 @@ public class CaseStagePageMethod extends HomePageMethod {
 
 	    }
 
-
+		 public String getStatusCode() {
+			   return CaseStagePageObject.get_CaseStatusCode.getText();
+		   }
+		 
+		   public void waitTillClosed() throws InterruptedException {
+			  do{
+				  Refresh();
+				  Thread.sleep(1500);
+				  
+			  }while(getStatusCode().equalsIgnoreCase("sent for processing"));
+			  
+		   }
+			  
+		   
 
 		public void SourceAccountNumber(String txt_SourceAccountNumber)
 	    {
