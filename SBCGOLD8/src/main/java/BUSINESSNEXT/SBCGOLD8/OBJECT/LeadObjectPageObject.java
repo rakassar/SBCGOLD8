@@ -31,6 +31,10 @@ public static WebElement get_leadIDCreated ;
 		@FindBy(xpath="//button[normalize-space()='Ok']")
 		public static WebElement clk_closeProcessApplicationPopup;
 
+		@FindBy(xpath="//span[@data-autoid= 'LE_STATUSCODE_ctrl']")
+		public static WebElement get_LeadStatusCode;
+		
+		
 		@FindBy(xpath="//span[@title = 'CRRSC']")
 		 public static WebElement clk_CRRSCtab ;
 

@@ -141,8 +141,10 @@ Source=Branch Walkin
 	    cs1pm.fill_Remarks("rizwan");
 	    Thread.sleep(1000);
         screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
-	    CJPM.casesaveAndProceed();
-	    Thread.sleep(5000);
+        CJPM.casesaveAndProceed();
+        Thread.sleep(5000);
+
+	    cs1pm.waitTillClosed();
         screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
         scrollBy();
         Thread.sleep(500);
