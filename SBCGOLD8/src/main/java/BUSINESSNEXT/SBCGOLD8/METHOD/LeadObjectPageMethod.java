@@ -204,7 +204,21 @@ public void ClickOnActivitiestab()
 
 
 	}
-
+   public String getStatusCode() {
+	   return LeadObjectPageObject.get_LeadStatusCode.getText();
+   }
+ 
+   public void waitTillAccountOpen() throws InterruptedException {
+	  do{
+		  Refresh();
+		  Thread.sleep(1500);
+		  
+	  }while(getStatusCode().equalsIgnoreCase("sent for processing"));
+	  
+   }
+	  
+   
+   
 
 
 

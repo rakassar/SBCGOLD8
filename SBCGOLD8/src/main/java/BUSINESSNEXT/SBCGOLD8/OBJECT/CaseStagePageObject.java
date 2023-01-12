@@ -159,6 +159,9 @@ public static WebElement Sel_UpdateCRRSC;
 public static WebElement sel_ContactInformationactipntype;
 
 
+@FindBy(xpath="//span[@data-autoid= 'CASE_STATUSCODE_ctrl']")
+public static WebElement get_CaseStatusCode;
+
 @FindBy(name="cust_723")
 public static WebElement sel_CustomerType;
 @FindBy(name="cust_1817")

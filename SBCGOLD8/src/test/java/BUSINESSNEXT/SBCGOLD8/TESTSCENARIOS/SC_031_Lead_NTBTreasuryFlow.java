@@ -30,6 +30,11 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
     @Test(priority=1)
 	public void SC_028_TC_001() throws InterruptedException, IOException
 	{
+    	
+    	
+    	StringBuilder s1 = new StringBuilder();
+    	s1.reverse();
+    	
     	launchBrowser();
     	screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
     	TestDataFromExcel.DataRead();
@@ -445,6 +450,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
      Thread.sleep(1000);
      screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
      CRRSC.Finish();
+     
      Thread.sleep(1000);
      screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
      lopm.ProcessApplication();
@@ -452,6 +458,9 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
      screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
      lopm.ProcessApplicationPopUpClose();
      Thread.sleep(2000);
+     lopm.GetLeadId();
+     lopm.waitTillAccountOpen();
+     
      screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
      Thread.sleep(60000);  // for soap hit
      QuiteBrowser();

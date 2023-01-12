@@ -161,7 +161,9 @@ Source=Branch Walkin
 	    Thread.sleep(1000);
         screen.ScreenshotMethod("SC_017_CustomerInitiatedInfoMaintenance-");
 	    CJPM.casesaveAndProceed();
-	    Thread.sleep(5000);
+        Thread.sleep(2000);
+
+	    cs1pm.waitTillClosed();
         screen.ScreenshotMethod("SC_017_CustomerInitiatedInfoMaintenance-");
         scrollBy();
         Thread.sleep(500);

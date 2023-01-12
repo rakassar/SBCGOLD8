@@ -74,7 +74,10 @@ public class BrowserStart implements Properties{
 
 		 driver.quit(); }
 
-
+	public void Refresh() {
+		driver.navigate().refresh();
+	}
+	
 }
 
 
