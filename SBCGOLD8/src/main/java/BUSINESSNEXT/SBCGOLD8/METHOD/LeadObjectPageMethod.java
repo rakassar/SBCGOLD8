@@ -114,6 +114,11 @@ public void ClickOnActivitiestab()
 
 
  	}
+   public void bttnUpdateCreate() throws InterruptedException {
+	   Thread.sleep(1000);
+	   LeadObjectPageObject.clk_ldUpdateCreate.click();
+	   
+   }
    public void update360() throws InterruptedException
 
 	{
@@ -149,8 +154,7 @@ public void ClickOnActivitiestab()
    public void SwitchToSecondaryWindow()
 
    {
-   	//String mainWindowHandle = driver.getWindowHandle();
-       //System.out.println("Main Window"+mainWindowHandle);
+   	
        Set<String> multiplewindows=driver.getWindowHandles();
        Iterator<String> iterator = multiplewindows.iterator();
        String mainWindow = iterator.next();
@@ -160,7 +164,24 @@ public void ClickOnActivitiestab()
        driver.switchTo().window(ChildWindow);
 
    }
+   
+   public void SwitchToLastWindow()
 
+   {
+       Set<String> multiplewindows=driver.getWindowHandles();    
+       Iterator<String> iterator = multiplewindows.iterator();
+       while(iterator.hasNext()) {
+    	   String  Window = iterator.next();
+    	    driver.switchTo().window(Window);
+       }
+        
+   }
+   
+   public void goToParentLead() {
+	   LeadObjectPageObject.clk_ldParentleadField.click();;
+			
+		}
+   
    public void SwitchToParentWindow()
 
    {
@@ -211,11 +232,20 @@ public void ClickOnActivitiestab()
    public void waitTillAccountOpen() throws InterruptedException {
 	  do{
 		  Refresh();
-		  Thread.sleep(1500);
+		  Thread.sleep(2000);
 		  
 	  }while(getStatusCode().equalsIgnoreCase("sent for processing"));
 	  
    }
+   
+   public void waitTillCSQPerform() throws InterruptedException {
+		  do{
+			  Refresh();
+			  Thread.sleep(2000);
+			  
+		  }while(getStatusCode().equalsIgnoreCase("Documents Collection"));
+		  
+	   }
 	  
    
    

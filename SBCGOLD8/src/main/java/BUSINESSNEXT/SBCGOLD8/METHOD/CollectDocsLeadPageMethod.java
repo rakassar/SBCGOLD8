@@ -472,7 +472,7 @@ public class CollectDocsLeadPageMethod extends HomePageMethod{
 		    	eco.sendKeys(economic);
 		    	Thread.sleep(1000);
 				eco.sendKeys(Keys.DOWN);
-				Thread.sleep(700);
+				Thread.sleep(1000);
 		    	eco.sendKeys(Keys.ENTER);
 		    	Thread.sleep(1000);
 

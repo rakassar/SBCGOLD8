@@ -236,6 +236,15 @@ public class CaseStagePageMethod extends HomePageMethod {
 		    System.out.println("Reported System");
 		    Thread.sleep(2000);
 	    }
+		
+		public void documentClassification(String ForEmployement) throws InterruptedException
+	    {
+
+		    Select sForEmployement= new Select(CaseStagePageObject.sel_documentClassification);
+		    Thread.sleep(2000);
+		    sForEmployement.selectByVisibleText(ForEmployement);
+		   
+	    }
 
 		public void EmployeeInvolved(String txt_EmployeeInvolved)
 	    {
@@ -243,6 +252,21 @@ public class CaseStagePageMethod extends HomePageMethod {
 			CaseStagePageObject.txt_EmployeeInvolved.sendKeys(txt_EmployeeInvolved);
 
 	    }
+		public void ent_deliveryAdress(String txt_EmployeeInvolved)
+	    {
+			//CaseStagePageObject.fill_Remarks.click();
+			CaseStagePageObject.ent_deliveryAdress.sendKeys(txt_EmployeeInvolved);
+
+	    }
+		public void emailAddress(String txt_EmployeeInvolved)
+	    {
+			//CaseStagePageObject.fill_Remarks.click();
+			CaseStagePageObject.ent_emailAddress.sendKeys(txt_EmployeeInvolved);
+
+	    }
+		
+		
+		
 
 
 		public void UnitGroup(String txt_UnitGroup)
