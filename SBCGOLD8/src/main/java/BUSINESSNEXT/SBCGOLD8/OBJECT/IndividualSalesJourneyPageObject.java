@@ -303,6 +303,9 @@ public static WebElement chk_ldUITF;
 public static WebElement chk_ldBanca;
 @FindBy(xpath="//label[@for = 'chk_15']")
 public static WebElement chk_ldTreasury;
+@FindBy(xpath="//label[@for = 'chk_16']")
+public static WebElement chk_ldTreasuryForETB;
+
 
 
 

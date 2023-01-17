@@ -28,42 +28,42 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 	public void SC_006_TC_001() throws Exception {
 
 		launchBrowser();
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		TestDataFromExcel.DataRead();
 		Thread.sleep(500);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		EnterUserName(TestDataFromExcel.UserName_CA);
 		EnterPassword(TestDataFromExcel.Password);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		LoginButtonClick();
 		CheckRole();
 		Thread.sleep(500);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		CheckRole();
 		Thread.sleep(100);
 		ClickOnsaleswidget();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		ClickOnsalesJouney();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.ClickOnOnBoardingJourney();
 		cspm.BBNFillForCustomerSearch(TestDataFromExcel.BBN);
 		Thread.sleep(1000);
 		cspm.ClickOnOnBoardingJourneynext();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		cspm.ChooseBBNfromList();
 		Thread.sleep(2000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		cspm.clickstartjourney();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		cspm.ETBIndividualSalesJorney();
 		// cspm.clickonredbutton();
 		// cspm.ClickOnOnBoardingJourneynext2();
 		Thread.sleep(2000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 
 	}
 
@@ -71,63 +71,63 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 	public void SC_006_TC_002() throws Exception {
 
 		NTBSJPM.LeadRating("Hot");
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		NTBSJPM.NTBJourneynext1();
 		Thread.sleep(1000);
 		NTBSJPM.ProductCategory(TestDataFromExcel.ProductCategory);
 		Thread.sleep(500);
 		NTBSJPM.Product(TestDataFromExcel.Product);
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		NTBSJPM.NTBJourneynext2();
 		Thread.sleep(2000);
 		lopm.GetLeadId();
 
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		// NTBSJPM.NTBignoreandCreate();
 		CLDLPM.CheckEmployeetype();
 		Thread.sleep(500);
 		lopm.ClickOnAddresstab();
 		Thread.sleep(500);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		CLDLPM.CreatedNewLeadEdit();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 	}
 
 	@Test
 	public void SC_006_TC_003() throws InterruptedException, IOException {
 		CLDLPM.selectstatuscode();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		CLDLPM.SoleOwner("No");
 		Thread.sleep(1000);
 		CLDLPM.CustomerRelationship("And");
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 
 		/*
 		 * CLDLPM.businessname(); CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
@@ -140,7 +140,7 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 			CLDLPM.Sourceoffunds("Business");
 			CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);
 
 			Thread.sleep(2000);
@@ -150,14 +150,14 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 
 		{
 			CLDLPM.Sourceoffunds("Inheritance");
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			Thread.sleep(1000);
 			System.out.println("EmployeeType is unemployed");
 		} else if (CollectDocsLeadPageMethod.Employeetype.equals("Employed")) {
 			CLDLPM.employername();
 			CLDLPM.Sourceoffunds("Salary");
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			CLDLPM.workingsince(TestDataFromExcel.workingsincemonth, TestDataFromExcel.workingsinceyear);
 			Thread.sleep(1000);
 			CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
@@ -165,7 +165,7 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 
 			CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			System.out.println("EmployeeType is Employed");
 		}
 
@@ -188,13 +188,13 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 		Thread.sleep(2000);
 		CLDLPM.ClickOnAddress();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		CLDLPM.PermanentAddresssameasPresentAddress(TestDataFromExcel.PermanentAddresssameasPresentAddress);
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.saveAndProceed();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		Thread.sleep(3000);
 
 		/*
@@ -214,40 +214,40 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 
 		Thread.sleep(1000);
 		CLDLPM.clickClosePopup();
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		CLDLPM.CreatedNewLeadEdit();
 		Thread.sleep(1000);
 		CLDLPM.clickEditOFAC(TestDataFromExcel.Ofac);
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.saveAndProceed();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		NTBSJPM.CaseDedupeOnDocsLead();
 		Thread.sleep(2000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		CLDLPM.clickClosePopup();
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 
 		scrollBy();
 		Thread.sleep(500);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(500);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(500);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(200);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 
 	}
 
 	@Test(priority = 8)
 	public void SC_021_TC_008() throws InterruptedException {
 		CLDLPM.clickaddScndryLeadButton();
-		lopm.SwitchToSecondaryWindow();
+		
 		NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
 		NTBSJPM.EnterFirstName();
 		NTBSJPM.EnterlastName();
@@ -256,50 +256,50 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 		NTBSJPM.NTBJourneynext2();
 		Thread.sleep(2000);
 		NTBSJPM.chooseDedupe();
-		screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.bttnUpdateCreate();
 		Thread.sleep(3000);
 		System.out.print("Child ");
 		Thread.sleep(2000);
 		lopm.GetLeadId();
 
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		// NTBSJPM.NTBignoreandCreate();
 		CLDLPM.CheckEmployeetype();
 		Thread.sleep(500);
 		lopm.ClickOnAddresstab();
 		Thread.sleep(500);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrollBy();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		CLDLPM.CreatedNewLeadEdit();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		CLDLPM.selectstatuscode();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		
 
 		/*
@@ -313,7 +313,7 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 			CLDLPM.Sourceoffunds("Business");
 			CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);
 
 			Thread.sleep(2000);
@@ -323,14 +323,14 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 
 		{
 			CLDLPM.Sourceoffunds("Inheritance");
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			Thread.sleep(1000);
 			System.out.println("EmployeeType is unemployed");
 		} else if (CollectDocsLeadPageMethod.Employeetype.equals("Employed")) {
 			CLDLPM.employername();
 			CLDLPM.Sourceoffunds("Salary");
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			//CLDLPM.workingsince(TestDataFromExcel.workingsincemonth, TestDataFromExcel.workingsinceyear);
 			Thread.sleep(1000);
 			CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
@@ -338,7 +338,7 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 
 			CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			System.out.println("EmployeeType is Employed");
 			CLDLPM.IDPrrof(TestDataFromExcel.IDPrrof);
 			CLDLPM.IDNumner();
@@ -347,13 +347,13 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 			Thread.sleep(2000);
 			CLDLPM.ClickOnAddress();
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			CLDLPM.PermanentAddresssameasPresentAddress(TestDataFromExcel.PermanentAddresssameasPresentAddress);
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			lopm.saveAndProceed();
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			Thread.sleep(3000);
 
 			/*
@@ -366,84 +366,84 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 			NTBSJPM.CaseDedupeOnDocsLead();
 			Thread.sleep(1000);
 			CLDLPM.clickClosePopup();
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			CLDLPM.CreatedNewLeadEdit();
 			Thread.sleep(1000);
 			CLDLPM.clickEditOFAC(TestDataFromExcel.Ofac);
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			lopm.saveAndProceed();
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			NTBSJPM.CaseDedupeOnDocsLead();
 			Thread.sleep(2000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			scrollBy();
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			scrollBy();
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			scrollBy();
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			Thread.sleep(500);
 			lopm.ClickOnUpdtButton();
 			Thread.sleep(500);
-			screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			lopm.popupdate360("No");
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			lopm.update360();
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			scrolldown();
-			screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			lopm.ProcessApplication();
 			Thread.sleep(1000);
-			screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			lopm.ProcessApplicationPopUpClose();
 			Thread.sleep(3000);
-			screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			lopm.waitTillAccountOpen();
-			QuiteBrowser();
-		}
+			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+			}
 	}
 
 	@Test(priority = 9)
 	public void SC_021_TC_009() throws InterruptedException {
-		lopm.SwitchToParentWindow();
+		lopm.goToParentLead();
 		Refresh();
 		Thread.sleep(500);
 		lopm.ClickOnUpdtButton();
 		Thread.sleep(500);
-		screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.popupdate360("No");
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.update360();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		scrolldown();
-		screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		FAIPM.ClickFillAccountInformation();
 		FAIPM.RequestType(TestDataFromExcel.RequestTypef);
 		FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
-		screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		FAIPM.PromsEmail(TestDataFromExcel.PromsEmail);
 		FAIPM.sel_PromsSMS(TestDataFromExcel.PromsSMS);
 		FAIPM.TransactionalEmail(TestDataFromExcel.TransactionalEmail);
 		FAIPM.TransactionalSMS(TestDataFromExcel.TransactionalSMS);
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		CRRSC.Finish();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		Thread.sleep(1000);
 
 	}
@@ -451,14 +451,15 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 	@Test(priority = 10)
 	public void SC_021_TC_010() throws InterruptedException {
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.ProcessApplication();
 		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.ProcessApplicationPopUpClose();
 		Thread.sleep(3000);
-		screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.waitTillAccountOpen();
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		QuiteBrowser();
 	}
 

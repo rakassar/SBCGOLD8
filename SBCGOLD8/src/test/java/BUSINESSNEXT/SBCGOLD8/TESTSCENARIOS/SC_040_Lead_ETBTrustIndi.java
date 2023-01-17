@@ -30,42 +30,42 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
     @Test(priority=1)
 	public void SC_040_TC_001() throws InterruptedException, IOException
 	{launchBrowser();
-	screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+	screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
 	TestDataFromExcel.DataRead();
 	Thread.sleep(500);
-	screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+	screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
 		EnterUserName(TestDataFromExcel.UserName_CA);
     EnterPassword(TestDataFromExcel.Password);
-	screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+	screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     LoginButtonClick();
     CheckRole();
     Thread.sleep(500);
-    screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+    screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     CheckRole();
     Thread.sleep(100);
     ClickOnsaleswidget();
     Thread.sleep(1000);
-    screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+    screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     ClickOnsalesJouney();
     Thread.sleep(1000);
-    screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+    screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     lopm.ClickOnOnBoardingJourney();
     cspm.BBNFillForCustomerSearch(TestDataFromExcel.BBN);
     Thread.sleep(1000);
     cspm.ClickOnOnBoardingJourneynext();
     Thread.sleep(1000);
-    screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+    screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     cspm.ChooseBBNfromList();
     Thread.sleep(2000);
-    screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+    screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     cspm.clickstartjourney();
     Thread.sleep(1000);
-    screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+    screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     cspm.ETBIndividualSalesJorney();
     //cspm.clickonredbutton();
     //cspm.ClickOnOnBoardingJourneynext2();
    
-    screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+    screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
 
 }
     @Test(priority=2)
@@ -75,43 +75,43 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
     	NTBSJPM.LeadRating("Hot");
         NTBSJPM.InterestedIn("Trust");
 
-    	screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+    	screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         NTBSJPM.NTBJourneynext1();
         Thread.sleep(1000);
       
-        screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
       
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         NTBSJPM.ProductCategory("UITF");
         Thread.sleep(500);
         NTBSJPM.Product("SB PESO BOND FUND");
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
         System.out.print("Trust ");
         lopm.GetLeadId();
 
-    	screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+    	screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         scrollBy();
         Thread.sleep(1000);
-    	screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+    	screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         scrollBy();
         CLDLPM.CheckEmployeetype();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
 
@@ -122,24 +122,24 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
 	{
         CLDLPM.selectstatuscode();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         
         CLDLPM.settlementaccntType("Choose from Existing Account");
         Thread.sleep(500);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         CLDLPM.settlementaccntPickerclk();
         Thread.sleep(500);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         CLDLPM.settlementaccntclk();
         Thread.sleep(500);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         scrolldown();
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         
         CLDLPM.SoleOwner("Yes");
         CLDLPM.GroupID("Groupid123");
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         
 	}
 
@@ -154,7 +154,7 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
        	  CLDLPM.Sourceoffunds("Business");
        	  CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
        	  Thread.sleep(1000);
-             screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+             screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
              CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);  
 
 			  Thread.sleep(2000);
@@ -165,7 +165,7 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
 
         {
        	 CLDLPM.Sourceoffunds("Inheritance");
-            screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
             Thread.sleep(1000);
        	 System.out.println("EmployeeType is unemployed");
         }
@@ -174,7 +174,7 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
       		 CLDLPM.employername();
       		CLDLPM.Sourceoffunds("Salary");
             Thread.sleep(1000);
-            screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
             CLDLPM.workingsince(TestDataFromExcel.workingsincemonth, TestDataFromExcel.workingsinceyear);
             Thread.sleep(1000);
             CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
@@ -182,7 +182,7 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
 
             CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);  
             Thread.sleep(1000);
-            screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
        	 System.out.println("EmployeeType is Employed");
         }
        
@@ -194,28 +194,28 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
 	{
         CLDLPM.IDPrrof(TestDataFromExcel.IDPrrof);
         CLDLPM.IDNumner();
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
        
         //CLDLPM.Tin("");
         CLDLPM.dosriFlag("No");
         CLDLPM.fatcaFlag("Yes");
         Thread.sleep(500);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         CLDLPM.UpdateDetailsTrustTreasury("No");
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         CLDLPM.ClickOnAddress();
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         
         Thread.sleep(1000);
         scrollBy();
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         CLDLPM.PermanentAddresssameasPresentAddress("Yes");
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+        screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         lopm.saveAndProceed();
         NTBSJPM.CaseDedupeOnDocsLead();
-   	    screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+   	    screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
         }
 
 
@@ -223,26 +223,26 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
  	public void SC_040_TC_006() throws InterruptedException
  	{
     	lopm.waitTillCSQPerform();
-    	 CLDLPM.clickClosePopup();
-    	 screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+    	 
+    	 screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+         screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+         screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+         screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+         screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+         screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
          scrollBy();
          Thread.sleep(1000);
-         screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+         screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
          QuiteBrowser();
 
  	}
@@ -255,10 +255,10 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
     	 launchBrowser();
     	    TestDataFromExcel.DataRead();
     	    Thread.sleep(1000);
-            screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
             EnterUserName(TestDataFromExcel.UserName_TrustOps);
     	    EnterPassword(TestDataFromExcel.Password);
-            screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     	    LoginButtonClick();
     	    CheckRole();
     		Thread.sleep(500);
@@ -276,25 +276,25 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
     	    lopm.TustOpsConvertLeadCLK();
     	    Thread.sleep(500);
     		LeadObjectPageObject.clk_closeProcessApplicationPopup.click();
-            screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     	    scrollBy();
     	    Thread.sleep(1000);
-            screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     	    scrollBy();
     	    Thread.sleep(1000);
-            screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     	    scrollBy();
     	    Thread.sleep(1000);
-            screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     	    scrollBy();
     	    Thread.sleep(1000);
-            screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     	    scrollBy();
     	    Thread.sleep(1000);
-            screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     	    scrollBy();
     	    Thread.sleep(1000);
-            screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+            screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
     	    QuiteBrowser();
     	 	}
 

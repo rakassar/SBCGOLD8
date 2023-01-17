@@ -30,61 +30,63 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
     	//rizwan
 
     	launchBrowser();
-    	screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
-    	TestDataFromExcel.DataRead();
-    	Thread.sleep(500);
-    	screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
- 		EnterUserName(TestDataFromExcel.UserName_CA);
-        EnterPassword(TestDataFromExcel.Password);
-    	screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
-        LoginButtonClick();
-        CheckRole();
-        Thread.sleep(500);
-        screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
-        ClickOnsaleswidget();
-        Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
-        ClickOnsalesJouney();
-        Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
-        lopm.ClickOnOnBoardingJourneyNonIndi();
-        cspm.BBNFillForCustomerSearchNonIndi("10200000980");
-        Thread.sleep(1000);
-        cspm.ClickOnOnBoardingJourneynext();
-        Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
-        cspm.ChooseBBNfromListNonIndi();
-        Thread.sleep(2000);
-        screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
-        cspm.clickstartjourney();
-        Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
-        cspm.ETBIndividualSalesJorney();
-        //cspm.clickonredbutton();
-        //cspm.ClickOnOnBoardingJourneynext2();
-        Thread.sleep(2000);
-        screen.ScreenshotMethod("SC_023_ETBLeadCreationNonIndi-");
+		screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
+		TestDataFromExcel.DataRead();
+		Thread.sleep(500);
+		screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
+		EnterUserName(TestDataFromExcel.UserName_CA);
+		EnterPassword(TestDataFromExcel.Password);
+		screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
+		LoginButtonClick();
+		CheckRole();
+		Thread.sleep(500);
+		screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
+		CheckRole();
+		Thread.sleep(100);
+		ClickOnsaleswidget();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
+		ClickOnsalesJouney();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
+		lopm.ClickOnOnBoardingJourney();
+		cspm.BBNFillForCustomerSearch(TestDataFromExcel.BBN);
+		Thread.sleep(1000);
+		cspm.ClickOnOnBoardingJourneynext();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
+		cspm.ChooseBBNfromList();
+		Thread.sleep(2000);
+		screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
+		cspm.clickstartjourney();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
+		cspm.ETBIndividualSalesJorney();
+		// cspm.clickonredbutton();
+		// cspm.ClickOnOnBoardingJourneynext2();
+		Thread.sleep(2000);
+		screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
 	}
 
     @Test(priority=2)
 	public void SC_026_TC_002() throws Exception
 	{
 
-        NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
+      
         NTBSJPM.LeadRating("Hot");
         NTBSJPM.pitchMultipleProduct("Yes");
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_026_Lead_NTBIndiPitches-");
+        screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
         NTBSJPM.NTBJourneynext1();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_026_Lead_NTBIndiPitches-");
+        screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
         Thread.sleep(1000);
        
         NTBSJPM.SDBranch("Acropolis");
         Thread.sleep(500);
         CLDLPM.salesID("0014-Velasco, Jacqueline L.");
         Thread.sleep(500);
-        screen.ScreenshotMethod("SC_026_Lead_NTBIndiPitches-");
+        screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
     }
 
 
@@ -92,25 +94,26 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	public void SC_026_TC_003() throws Exception
 	{
         scrollBy();
-        NTBSJPM.checkboxSaving();
-        NTBSJPM.checkboxChecking();
+       // NTBSJPM.checkboxSaving(); // ETB field serial number was one ahead so using ntb one's
+        NTBSJPM.checkboxChecking();    
         NTBSJPM.checkboxDeal();
         NTBSJPM.checkboxPersonalLoan();
         NTBSJPM.checkboxAutoloan();
         NTBSJPM.checkboxHomeLoan();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_026_Lead_NTBIndiPitches-");
+        screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
         NTBSJPM.checkboxCreditCard();
         NTBSJPM.checkboxOtherloan();
         NTBSJPM.checkboxTrust();
         NTBSJPM.checkboxUITF();
         NTBSJPM.checkBoxBanca();
         NTBSJPM.checkboxTreasury();
+        NTBSJPM.checkboxTreasuryETB();
         Thread.sleep(500);
-        screen.ScreenshotMethod("SC_026_Lead_NTBIndiPitches-");
+        screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
         scrollBy();
        
-        screen.ScreenshotMethod("SC_026_Lead_NTBIndiPitches-");
+        screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
         lopm.saveAndProceed();
 
 
@@ -123,16 +126,16 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
     	Thread.sleep(7000);
         lopm.GetLeadId();
 
-        screen.ScreenshotMethod("SC_026_Lead_NTBIndiPitches-");
+        screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
         scrollBy();
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_026_Lead_NTBIndiPitches-");
+        screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
         scrollBy();
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_026_Lead_NTBIndiPitches-");
+        screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
         LogoutButtonClick();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("TC_002_NTBLeadAppointment-");
+        screen.ScreenshotMethod("SC_035_Lead_ETBIndiPitches-");
     	QuiteBrowser();
 
 	}

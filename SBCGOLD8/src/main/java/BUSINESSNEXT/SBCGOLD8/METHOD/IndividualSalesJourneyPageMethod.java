@@ -473,6 +473,14 @@ public void checkboxTreasury() throws InterruptedException
   IndividualSalesJourneyPageObject.chk_ldTreasury.click();
   Thread.sleep(200);
 	}
+public void checkboxTreasuryETB() throws InterruptedException
+
+{
+
+
+IndividualSalesJourneyPageObject.chk_ldTreasuryForETB.click();
+Thread.sleep(200);
+}
 
 
 	public void SDAdvanceSearchByMobile() throws InterruptedException {
