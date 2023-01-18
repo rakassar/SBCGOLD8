@@ -31,10 +31,6 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
 	public void SC_028_TC_001() throws InterruptedException, IOException
 	{
     	
-    	
-    	StringBuilder s1 = new StringBuilder();
-    	s1.reverse();
-    	
     	launchBrowser();
     	screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
     	TestDataFromExcel.DataRead();
@@ -75,8 +71,10 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
         screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
-        System.out.print("Trust ");
+        System.out.print("Treasury ");
         lopm.GetLeadId();
+		lopm.saveLeadId();
+
 
     	screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
         scrollBy();
@@ -227,7 +225,6 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
  	public void SC_028_TC_007() throws InterruptedException
  	{
     	CLDLPM.clickIndiAccntCreateBtn();
-
         NTBSJPM.LeadRating("Hot");
         NTBSJPM.ProductCategory(TestDataFromExcel.ProductCategory);
         Thread.sleep(500);
@@ -460,22 +457,35 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
      Thread.sleep(2000);
      lopm.GetLeadId();
      lopm.waitTillAccountOpen();
-     
      screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
-     Thread.sleep(60000);  // for soap hit
-     QuiteBrowser();
-
-
-
-
-
-
+     CLDLPM.clickClosePopup();
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
 
  	}
     @Test(priority=8)
     public void SC_028_TC_008() throws InterruptedException
  	{
-    	lopm.SwitchToParentWindow();
+    	clk_leadobject();
+		lopm.leadSearch(lopm.tLeadID);
+        screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+		CLDLPM.clickClosePopup();
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
         CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
         CLDLPM.settlementaccntType("Choose from Existing Account");
@@ -531,7 +541,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
         Thread.sleep(500);
         screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
         NTBSJPM.CaseDedupeOnDocsLead();
-        System.out.println("Please fill csq");
+        lopm.waitTillCSQPerform();
         Thread.sleep(30000);
         QuiteBrowser();
 
@@ -552,8 +562,8 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
     	    CheckRole();
     		Thread.sleep(500);
     	    clk_leadobject();
-    	    lopm.categoryview("Trust-Individual");
-    	    lopm.selfassignlead("Assigned to Trust");
+    	    lopm.categoryview("Treasury-Individual ");
+    	    lopm.selfassignlead("Assigned to Treasury");
     	    lopm.leadview("Assigned Leads");
     	    Thread.sleep(500);
     	    lopm.onMyBucketlead();

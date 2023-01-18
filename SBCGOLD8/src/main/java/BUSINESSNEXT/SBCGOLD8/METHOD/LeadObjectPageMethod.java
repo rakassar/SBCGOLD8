@@ -4,6 +4,7 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 
 import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
@@ -11,6 +12,8 @@ import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
 public class LeadObjectPageMethod extends HomePageMethod{
 
    public static String leadid;
+   public static String tLeadID;
+   
    
    public void GetLeadId()
 	  {
@@ -262,6 +265,23 @@ public void ClickOnActivitiestab()
 
 
 
+   public void leadSearch(String leadid) throws InterruptedException
+
+	{
+		LeadObjectPageObject.ent_ldLeadID.sendKeys(leadid);  //input lead id
+		LeadObjectPageObject.ent_ldLeadID.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+		try {
+		LeadObjectPageObject.clk_topLead1.click();}
+		catch(Exception e) {
+			LeadObjectPageObject.clk_topLead.click();}
+		}
+		
+	
+public void goToTChildLead() {
+	LeadObjectPageObject.clk_topLead.click();
+	
+}
 
 
 
@@ -356,6 +376,11 @@ public void btn_LeadReject() throws InterruptedException
 	Thread.sleep(1000);
 	LeadObjectPageObject.btn_RejectRemarkupdate.click();
 }
+public void saveLeadId()
+{
+	tLeadID =  LeadObjectPageObject.get_leadIDCreated.getText();
+}
+
 
 
 

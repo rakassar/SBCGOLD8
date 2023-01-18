@@ -493,7 +493,7 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
 			lopm.ClickOnUpdtButton();
 			Thread.sleep(500);
 			screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
-			lopm.popupdate360("Yes");
+			lopm.popupdate360("No");
 			Thread.sleep(1000);
 			screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
 			lopm.update360();

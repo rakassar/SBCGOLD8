@@ -74,6 +74,7 @@ public class SC_039_Lead_NTBJointTreauryIndi extends HomePageMethod
         Thread.sleep(1000);
         System.out.print("Trust ");
         lopm.GetLeadId();
+        lopm.saveLeadId();
 
     	screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
         scrollBy();
@@ -837,14 +838,35 @@ public class SC_039_Lead_NTBJointTreauryIndi extends HomePageMethod
      Thread.sleep(2000);
      lopm.waitTillAccountOpen();
      screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
-     Thread.sleep(3000);  // 
+     CLDLPM.clickClosePopup();
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
 
  	}
      
     @Test(priority=11)
     public void SC_028_TC_011() throws InterruptedException
  	{
-    	
+    	clk_leadobject();
+		lopm.leadSearch(lopm.tLeadID);
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+		CLDLPM.clickClosePopup();
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+		scrollBy();
+		Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
         CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
         CLDLPM.settlementaccntType("Choose from Existing Account");
@@ -901,10 +923,32 @@ public class SC_039_Lead_NTBJointTreauryIndi extends HomePageMethod
         screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
         NTBSJPM.CaseDedupeOnDocsLead();
         System.out.println("Please fill csq");
-        lopm.waitTillAccountOpen();
-        Thread.sleep(30000);
-        QuiteBrowser();
+        lopm.waitTillCSQPerform();
+        Thread.sleep(3000);
+        lopm.goToTChildLead();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
 
+        CLDLPM.CreatedNewLeadEdit();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        scrolldown();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        Thread.sleep(500);
+        scrolldown();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        Thread.sleep(500);
+        scrolldown();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        Thread.sleep(500);
+        CLDLPM.UpdateDetailsTrustTreasury("No");
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        lopm.saveAndProceed();
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        lopm.waitTillCSQPerform();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+
+        
  	}
 
 
@@ -915,15 +959,50 @@ public class SC_039_Lead_NTBJointTreauryIndi extends HomePageMethod
     	    TestDataFromExcel.DataRead();
     	    Thread.sleep(1000);
             screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
-            EnterUserName(TestDataFromExcel.UserName_TrustOps);
+            EnterUserName(TestDataFromExcel.UserName_TreasuryOps);
     	    EnterPassword(TestDataFromExcel.Password);
             screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
     	    LoginButtonClick();
     	    CheckRole();
     		Thread.sleep(500);
     	    clk_leadobject();
-    	    lopm.categoryview("Trust-Individual");
-    	    lopm.selfassignlead("Assigned to Trust");
+    	    lopm.categoryview("Treasury-Individual ");
+    	    lopm.selfassignlead("Assigned to Treasury");
+    	    lopm.leadview("Assigned Leads");
+    	    Thread.sleep(500);
+    	    lopm.onMyBucketlead();
+    	    Thread.sleep(500);
+    	    lopm.ProcessApplication();
+    	    Thread.sleep(1500);
+    		LeadObjectPageObject.clk_closeProcessApplicationPopup.click();
+    	    Thread.sleep(1500);
+    	    lopm.TustOpsConvertLeadCLK();
+    	    Thread.sleep(500);
+    		LeadObjectPageObject.clk_closeProcessApplicationPopup.click();
+            screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+    	    scrollBy();
+    	    Thread.sleep(1000);
+            screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+    	    scrollBy();
+    	    Thread.sleep(1000);
+            screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+    	    scrollBy();
+    	    Thread.sleep(1000);
+            screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+    	    scrollBy();
+    	    Thread.sleep(1000);
+            screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+    	    scrollBy();
+    	    Thread.sleep(1000);
+            screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+    	    scrollBy();
+    	    Thread.sleep(1000);
+            screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+            
+            
+            clk_leadobject();  //secondary lead
+    	    lopm.categoryview("Treasury-Individual ");
+    	    lopm.selfassignlead("Assigned to Treasury");
     	    lopm.leadview("Assigned Leads");
     	    Thread.sleep(500);
     	    lopm.onMyBucketlead();

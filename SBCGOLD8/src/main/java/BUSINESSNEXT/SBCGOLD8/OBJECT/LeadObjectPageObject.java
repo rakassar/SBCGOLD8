@@ -135,6 +135,16 @@ public static WebElement get_leadIDCreated ;
     //Reject Reamrks update btn
     @FindBy(css="span[class='ff-bold']")
 	public static WebElement btn_RejectRemarkupdate;
+    
+    //Lead search box
+    @FindBy(name="10001659")
+	public static WebElement ent_ldLeadID;
+    
+    @FindBy(xpath="//a[@data-autoid='LeadID_0']")
+    public static WebElement clk_topLead;
+    
+    @FindBy(xpath="(//a[@data-autoid='LeadID_0'])[2]")
+    public static WebElement clk_topLead1;
      
       
     
