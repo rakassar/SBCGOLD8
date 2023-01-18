@@ -352,7 +352,7 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
  	public void SC_021_TC_008() throws InterruptedException
  	{
         CLDLPM.clickaddScndryLeadButton();
-        lopm.SwitchToSecondaryWindow();
+        //lopm.SwitchToSecondaryWindow();
         NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
         NTBSJPM.EnterFirstName();
         NTBSJPM.EnterlastName();
@@ -588,12 +588,11 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
      Thread.sleep(1000);
      screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
      lopm.ProcessApplication();
-     Thread.sleep(60000);
-     QuiteBrowser();
-
-
-
-
+     Thread.sleep(1000);
+     lopm.ProcessApplicationPopUpClose();
+     Thread.sleep(5000);
+     lopm.waitTillAccountOpen();
+     screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
 
 
 
@@ -601,10 +600,26 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
     @Test(priority=9)
     public void SC_021_TC_009() throws InterruptedException
  	{
-    	lopm.SwitchToParentWindow();
-
-    	scrolldown();
+    	lopm.goToParentLead();
+    	CLDLPM.clickClosePopup();
+   	 screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
         screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
+        scrollBy();
+    	
         FAIPM.ClickFillAccountInformation();
         FAIPM.RequestType(TestDataFromExcel.RequestTypef);
         FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);

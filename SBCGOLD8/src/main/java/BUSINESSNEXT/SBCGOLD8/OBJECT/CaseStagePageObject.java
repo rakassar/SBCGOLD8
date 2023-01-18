@@ -175,6 +175,20 @@ public static WebElement ent_Mobile;
 @FindBy(name="cust_2371")
 public static WebElement sel_forEmployment;
 
+@FindBy(name="cust_2768")
+public static WebElement sel_documentClassification;
+
+
+@FindBy(name="cust_2792")
+public static WebElement ent_deliveryAdress;
+
+@FindBy(name="cust_2766")
+public static WebElement ent_emailAddress;
+
+
+
+
+
 @FindBy(name="cust_670")
 public static WebElement sel_TypeofRequest
 ;
