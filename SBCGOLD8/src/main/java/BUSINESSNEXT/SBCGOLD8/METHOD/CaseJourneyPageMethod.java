@@ -38,6 +38,15 @@ public class CaseJourneyPageMethod extends HomePageMethod {
           SSCSearch.sendKeys(Keys.ENTER);
 
 	      }
+        
+       public void loanProduct() throws InterruptedException
+       {
+    	   CaseJourneyPageObject.fillcardproduct.click();
+    	   Thread.sleep(1500);
+    	   CaseJourneyPageObject.loanProduct.click();
+    	   
+    	   
+       }
 
 
 			  public void creditcardproduct() throws InterruptedException

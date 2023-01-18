@@ -39,6 +39,9 @@ public static WebElement sel_ldPitchMProduct;
 @FindBy(name="LE_MOBILE")
 public static WebElement ent_ldmobile;
 
+@FindBy(xpath="//label[@for='checkbox0']")
+public static WebElement clk_ldDedupeSelect;
+
 @FindBy(xpath="//*[@id=\"object-action-button\"]/div/a")
 public static WebElement clk_NTBONBourneynext1;
 @FindBy(id="LEA_EX3_41month")
@@ -300,6 +303,9 @@ public static WebElement chk_ldUITF;
 public static WebElement chk_ldBanca;
 @FindBy(xpath="//label[@for = 'chk_15']")
 public static WebElement chk_ldTreasury;
+@FindBy(xpath="//label[@for = 'chk_16']")
+public static WebElement chk_ldTreasuryForETB;
+
 
 
 
@@ -309,6 +315,8 @@ public static WebElement ent_ldCompanyName;
 
 @FindBy(name="cust_1261")
 public static WebElement sel_ldInterestedIn;
+
+
 
 
 

@@ -30,10 +30,14 @@ public static WebElement get_leadIDCreated ;
 	//process Application
 		@FindBy(xpath="//button[normalize-space()='Ok']")
 		public static WebElement clk_closeProcessApplicationPopup;
+		
+		
 
 		@FindBy(xpath="//span[@data-autoid= 'LE_STATUSCODE_ctrl']")
 		public static WebElement get_LeadStatusCode;
 		
+		@FindBy(xpath="//button[normalize-space()='Update/Create']")
+		public static WebElement clk_ldUpdateCreate;
 		
 		@FindBy(xpath="//span[@title = 'CRRSC']")
 		 public static WebElement clk_CRRSCtab ;
@@ -111,6 +115,9 @@ public static WebElement get_leadIDCreated ;
     @FindBy(name="LE_DESCRIPTION")
 	public static WebElement clk_BmComments;
     
+    @FindBy(xpath="//a[@data-autoid='cust_1948_ctrl']")
+    public static WebElement clk_ldParentleadField;
+    
   //Trust Ops convert lead
     @FindBy(xpath="//span[normalize-space()='Convert Lead']")
 	public static WebElement clk_TustOpsConvertLead;
@@ -128,6 +135,16 @@ public static WebElement get_leadIDCreated ;
     //Reject Reamrks update btn
     @FindBy(css="span[class='ff-bold']")
 	public static WebElement btn_RejectRemarkupdate;
+    
+    //Lead search box
+    @FindBy(name="10001659")
+	public static WebElement ent_ldLeadID;
+    
+    @FindBy(xpath="//a[@data-autoid='LeadID_0']")
+    public static WebElement clk_topLead;
+    
+    @FindBy(xpath="(//a[@data-autoid='LeadID_0'])[2]")
+    public static WebElement clk_topLead1;
      
       
     

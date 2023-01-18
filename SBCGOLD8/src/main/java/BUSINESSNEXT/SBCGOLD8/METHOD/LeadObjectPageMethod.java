@@ -4,6 +4,7 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 
 import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
@@ -11,6 +12,8 @@ import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
 public class LeadObjectPageMethod extends HomePageMethod{
 
    public static String leadid;
+   public static String tLeadID;
+   
    
    public void GetLeadId()
 	  {
@@ -114,6 +117,11 @@ public void ClickOnActivitiestab()
 
 
  	}
+   public void bttnUpdateCreate() throws InterruptedException {
+	   Thread.sleep(1000);
+	   LeadObjectPageObject.clk_ldUpdateCreate.click();
+	   
+   }
    public void update360() throws InterruptedException
 
 	{
@@ -149,8 +157,7 @@ public void ClickOnActivitiestab()
    public void SwitchToSecondaryWindow()
 
    {
-   	//String mainWindowHandle = driver.getWindowHandle();
-       //System.out.println("Main Window"+mainWindowHandle);
+   	
        Set<String> multiplewindows=driver.getWindowHandles();
        Iterator<String> iterator = multiplewindows.iterator();
        String mainWindow = iterator.next();
@@ -160,7 +167,24 @@ public void ClickOnActivitiestab()
        driver.switchTo().window(ChildWindow);
 
    }
+   
+   public void SwitchToLastWindow()
 
+   {
+       Set<String> multiplewindows=driver.getWindowHandles();    
+       Iterator<String> iterator = multiplewindows.iterator();
+       while(iterator.hasNext()) {
+    	   String  Window = iterator.next();
+    	    driver.switchTo().window(Window);
+       }
+        
+   }
+   
+   public void goToParentLead() {
+	   LeadObjectPageObject.clk_ldParentleadField.click();;
+			
+		}
+   
    public void SwitchToParentWindow()
 
    {
@@ -211,11 +235,20 @@ public void ClickOnActivitiestab()
    public void waitTillAccountOpen() throws InterruptedException {
 	  do{
 		  Refresh();
-		  Thread.sleep(1500);
+		  Thread.sleep(2000);
 		  
 	  }while(getStatusCode().equalsIgnoreCase("sent for processing"));
 	  
    }
+   
+   public void waitTillCSQPerform() throws InterruptedException {
+		  do{
+			  Refresh();
+			  Thread.sleep(2000);
+			  
+		  }while(getStatusCode().equalsIgnoreCase("Documents Collection"));
+		  
+	   }
 	  
    
    
@@ -232,6 +265,23 @@ public void ClickOnActivitiestab()
 
 
 
+   public void leadSearch(String leadid) throws InterruptedException
+
+	{
+		LeadObjectPageObject.ent_ldLeadID.sendKeys(leadid);  //input lead id
+		LeadObjectPageObject.ent_ldLeadID.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+		try {
+		LeadObjectPageObject.clk_topLead1.click();}
+		catch(Exception e) {
+			LeadObjectPageObject.clk_topLead.click();}
+		}
+		
+	
+public void goToTChildLead() {
+	LeadObjectPageObject.clk_topLead.click();
+	
+}
 
 
 
@@ -326,6 +376,11 @@ public void btn_LeadReject() throws InterruptedException
 	Thread.sleep(1000);
 	LeadObjectPageObject.btn_RejectRemarkupdate.click();
 }
+public void saveLeadId()
+{
+	tLeadID =  LeadObjectPageObject.get_leadIDCreated.getText();
+}
+
 
 
 

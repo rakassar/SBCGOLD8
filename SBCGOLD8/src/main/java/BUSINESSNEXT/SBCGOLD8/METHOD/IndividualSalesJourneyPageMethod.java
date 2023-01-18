@@ -79,6 +79,17 @@ public class IndividualSalesJourneyPageMethod extends HomePageMethod {
 		IndividualSalesJourneyPageObject.ent_ldmobile.sendKeys(mnumbername);
 	}
 
+	public void EnterMobile(String mobile) {
+		
+		IndividualSalesJourneyPageObject.ent_ldmobile.sendKeys(mobile);
+	}
+	
+	public void chooseDedupe() throws InterruptedException {
+		Thread.sleep(2000);
+		IndividualSalesJourneyPageObject.clk_ldDedupeSelect.click();
+	}
+	
+
 	public void NTBJourneynext1()
 
 	{
@@ -462,6 +473,14 @@ public void checkboxTreasury() throws InterruptedException
   IndividualSalesJourneyPageObject.chk_ldTreasury.click();
   Thread.sleep(200);
 	}
+public void checkboxTreasuryETB() throws InterruptedException
+
+{
+
+
+IndividualSalesJourneyPageObject.chk_ldTreasuryForETB.click();
+Thread.sleep(200);
+}
 
 
 	public void SDAdvanceSearchByMobile() throws InterruptedException {
@@ -709,8 +728,6 @@ public void checkboxTreasury() throws InterruptedException
 
 	  //IndividualSalesJourneyPageObject.clk_NTBONBourneynext2.click();
 	  Thread.sleep(1000);
-	  System.out.println("Click on Next");
-	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
 	  try {
 
@@ -746,6 +763,10 @@ public void checkboxTreasury() throws InterruptedException
 			// sel.selectByValue(Product);
 			sel.selectByVisibleText(InterestedIn);
 		}
+	  
+	  
+		
+	  
 
 
 
