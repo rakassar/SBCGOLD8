@@ -17,6 +17,10 @@ public LeadObjectPageObject (WebDriver driver)
 @FindBy(xpath="//div[contains(@class,'form-element__control')]//div/span[contains(@data-autoid,'LE_NUMBER_ctrl')]")
 public static WebElement get_leadIDCreated ;
 
+@FindBy(xpath="//SPAN[@data-autoid ='AP_APPLICATIONID_ctrl']")
+public static WebElement get_applicationIDCreated ;
+
+
 //quick link and OnBaording journey option
     @FindBy(id="1")
     public static WebElement clk_salesonbaordingjourney ;
@@ -98,11 +102,10 @@ public static WebElement get_leadIDCreated ;
     @FindBy(xpath="//span[normalize-space()='Update to 360']")
     public static WebElement btn_ClickOnUpdtButton;
 
-
     @FindBy(name="cust_2739")
     public static WebElement Sel_popupdt360;
 
-   //update button
+    //update button
     @FindBy(xpath="//span[normalize-space()='Update']")
 	public static WebElement clk_update360;
 

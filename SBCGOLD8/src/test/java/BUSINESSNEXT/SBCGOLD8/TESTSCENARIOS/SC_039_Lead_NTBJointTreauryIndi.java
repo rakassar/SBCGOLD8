@@ -947,6 +947,23 @@ public class SC_039_Lead_NTBJointTreauryIndi extends HomePageMethod
         screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
         lopm.waitTillCSQPerform();
         screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        scrolldown();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        Thread.sleep(500);
+        scrolldown();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        scrolldown();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        Thread.sleep(500);
+        scrolldown();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        scrolldown();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        Thread.sleep(500);
+        scrolldown();
+        screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
+        QuiteBrowser();
+        
 
         
  	}

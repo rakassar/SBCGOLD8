@@ -47,6 +47,13 @@ public class CaseStagePageMethod extends HomePageMethod {
 		CaseStagePageObject.fill_Remarks.sendKeys(Remarks);
 
     }
+	
+	public void NameOfCaller(String Remarks)
+    {
+		//CaseStagePageObject.fill_Remarks.click();
+		CaseStagePageObject.ent_NameOfCaller.sendKeys(Remarks);
+
+    }
 
 	 public void GetCaseId()
 	  {

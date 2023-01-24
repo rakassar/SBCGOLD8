@@ -215,4 +215,53 @@ public static WebElement clk_CRRSCBtnNonIndi;
 
 @FindBy(name="cust_1516")
 public static WebElement sel_ldperaddaspreaddNonIndi;
+
+
+//Payroll fields
+@FindBy(name="cust_2194")
+public static WebElement pic_PrCustomerType;
+
+@FindBy(name="cust_2620")
+public static WebElement pic_PrClientSegment;
+
+@FindBy(name="cust_2197")
+public static WebElement pic_PrSalesID;
+
+@FindBy(name="AP_TERRITORYNAME")
+public static WebElement pic_PrBranch;
+
+@FindBy(name="cust_2199")
+public static WebElement sel_PrEmploymentType;
+
+@FindBy(name="cust_2201")
+public static WebElement sel_PrSourceOfFund;
+
+@FindBy(name="cust_2009")
+public static WebElement sel_PrAccountSCTag;
+
+@FindBy(name="AP_PRODUCT")
+public static WebElement pic_PrProduct;
+
+@FindBy(name="cust_2204")
+public static WebElement pic_PrATMFee;
+
+@FindBy(name="cust_2004")
+public static WebElement pic_PrCardType;
+
+@FindBy(name="cust_2005")
+public static WebElement pic_PrPlastic;
+
+@FindBy(name="cust_2202")
+public static WebElement pic_PrCheckbookType;
+
+
+@FindBy(xpath="//span[normalize-space()='Save']")
+public static WebElement btn_clickSave;
+
+@FindBy(name="qqfile")
+public static WebElement ent_PrAttachFile;
+
+
+
+
 }

@@ -43,6 +43,13 @@ public class HomePageMethod extends LoginPageMethod{
 	   HomePageObject.clk_leadpanesalesjourney.click();
   	}
 
+   public void ClickOnCustomerSearch()
+
+ 	{
+	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+
+	   HomePageObject.clk_leadpaneCustomerSearch.click();
+ 	}
 
    public void ClickOnLoanJouney()
 
