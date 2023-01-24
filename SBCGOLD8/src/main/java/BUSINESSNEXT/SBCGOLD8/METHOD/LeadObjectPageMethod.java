@@ -20,6 +20,12 @@ public class LeadObjectPageMethod extends HomePageMethod{
 	   leadid=LeadObjectPageObject.get_leadIDCreated.getText();
 	     System.out.println("Lead created succesfully ,Lead id:"+leadid);
 	  }
+   
+   public void getApplicationId()
+	  {
+	   String aleadid=LeadObjectPageObject.get_applicationIDCreated.getText();
+	     System.out.println("Application created succesfully ,Application id:"+aleadid);
+	  }
 
    public void ClickOnOnBoardingJourney()
 

@@ -136,9 +136,9 @@ public class SC_024_Lead_NTBEmployedLoanProcessor extends HomePageMethod
         Thread.sleep(500);
         screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
         CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
-        CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
+        CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
         Thread.sleep(1000);
         CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         Thread.sleep(1000);
