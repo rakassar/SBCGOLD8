@@ -222,6 +222,7 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod
     @Test(priority=6)
  	public void SC_040_TC_006() throws InterruptedException
  	{
+    	lopm.waitTillAccountOpen();
     	lopm.waitTillCSQPerform();
     	 
     	 screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
