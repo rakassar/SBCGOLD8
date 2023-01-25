@@ -2,11 +2,15 @@ package BUSINESSNEXT.SBCGOLD8.METHOD;
 
 import java.text.DecimalFormat;
 import java.time.Duration;
+import java.util.List;
 import java.util.Random;
 
+
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
 
@@ -126,6 +130,8 @@ public class IndividualSalesJourneyPageMethod extends HomePageMethod {
 		// sel.selectByValue(Product);
 		sel.selectByVisibleText(ProductCategory);
 	}
+	
+	
 	public void pitchMultipleProduct(String pitchMultipleProduct) {
 		Select sel = new Select(IndividualSalesJourneyPageObject.sel_ldPitchMProduct);
 		// sel.selectByValue(Product);
@@ -763,6 +769,25 @@ Thread.sleep(200);
 			// sel.selectByValue(Product);
 			sel.selectByVisibleText(InterestedIn);
 		}
+	  
+	  public void ProductCategoryassert() {
+			Select sel = new Select(IndividualSalesJourneyPageObject.sel_ldProductCategory);
+			// sel.selectByValue(Product);
+			String[] category= {"","Savings","Checkings","Deal"};
+			
+			List<WebElement> option = sel.getOptions();
+			try{for(int i=0;i<option.size();i++) 
+				Assert.assertEquals(option.get(i).getText(),category[i] );
+			}
+			catch(AssertionError e) {
+				System.out.println(e.getLocalizedMessage());
+				System.out.println( "assertion for product category failed");
+			}
+	  }
+
+			
+		
+	  
 	  
 	  
 		

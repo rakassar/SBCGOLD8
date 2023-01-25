@@ -187,6 +187,107 @@ public class CollectDocsLeadPageMethod extends HomePageMethod{
 				clients.sendKeys(Keys.ENTER);
 
 		    }
+		    
+		    public void customerTypeP(String clntsegment) throws InterruptedException
+		    {
+		    	WebElement clients= CollectDocsLeadPageObject.pic_PrCustomerType;
+		    	clients.sendKeys(clntsegment);
+				Thread.sleep(1000);
+				clients.sendKeys(Keys.ARROW_DOWN);
+				clients.sendKeys(Keys.ENTER);
+
+		    }
+		    
+		    public void clientSegmentP(String clntsegment) throws InterruptedException
+		    {
+		    	WebElement clients= CollectDocsLeadPageObject.pic_PrClientSegment;
+		    	clients.sendKeys(clntsegment);
+				Thread.sleep(1000);
+				clients.sendKeys(Keys.ARROW_DOWN);
+				clients.sendKeys(Keys.ENTER);
+
+		    }
+		    public void salesIDP(String clntsegment) throws InterruptedException
+		    {
+		    	WebElement clients= CollectDocsLeadPageObject.pic_PrSalesID;
+		    	clients.sendKeys(clntsegment);
+				Thread.sleep(1000);
+				clients.sendKeys(Keys.ARROW_DOWN);
+				clients.sendKeys(Keys.ENTER);
+
+		    }
+		    
+		    public void branchP(String clntsegment) throws InterruptedException
+		    {
+		    	WebElement clients= CollectDocsLeadPageObject.pic_PrBranch;
+		    	clients.sendKeys(clntsegment);
+				Thread.sleep(1000);
+				clients.sendKeys(Keys.ARROW_DOWN);
+				clients.sendKeys(Keys.ENTER);
+
+		    }
+		    public void employerTypeP(String soleowner)
+
+		    {
+		    	Select sel=new Select(CollectDocsLeadPageObject.sel_PrEmploymentType);
+		    	//sel.selectByValue(Product);
+		    	sel.selectByVisibleText(soleowner);
+		    }
+		    
+		    public void sourceOfFundP(String soleowner)
+
+		    {
+		    	Select sel=new Select(CollectDocsLeadPageObject.sel_PrSourceOfFund);
+		    	//sel.selectByValue(Product);
+		    	sel.selectByVisibleText(soleowner);
+		    }
+		    
+		    public void accountTagP(String soleowner)
+
+		    {
+		    	Select sel=new Select(CollectDocsLeadPageObject.sel_PrAccountSCTag);
+		    	//sel.selectByValue(Product);
+		    	sel.selectByVisibleText(soleowner);
+		    }
+		    public void accountPlasticP(String salesID) throws InterruptedException
+		    {
+		    	WebElement clients= CollectDocsLeadPageObject.pic_PrPlastic;
+		    	clients.sendKeys(salesID);
+				Thread.sleep(1000);
+				clients.sendKeys(Keys.ARROW_DOWN);
+				Thread.sleep(500);
+				clients.sendKeys(Keys.ENTER);
+				}
+		    
+		    public void checkbookTypeP(String salesID) throws InterruptedException
+		    {
+		    	WebElement clients= CollectDocsLeadPageObject.pic_PrCheckbookType;
+		    	clients.sendKeys(salesID);
+				Thread.sleep(1000);
+				clients.sendKeys(Keys.ARROW_DOWN);
+				Thread.sleep(500);
+				clients.sendKeys(Keys.ENTER);
+				}
+		    
+		    public void atmFee(String soleowner)
+
+		    {
+		    	Select sel=new Select(CollectDocsLeadPageObject.pic_PrATMFee);
+		    	//sel.selectByValue(Product);
+		    	sel.selectByVisibleText(soleowner);
+		    }
+		    
+		    public void clickSave()
+
+		    {
+		    	CollectDocsLeadPageObject.btn_clickSave.click();
+		    }
+		    public void attachCSV() {
+		    	CollectDocsLeadPageObject.ent_PrAttachFile.sendKeys(CSV);
+		    	
+		    }
+
+		    
 		    public void salesID(String salesID) throws InterruptedException
 		    {
 		    	WebElement clients= CollectDocsLeadPageObject.pic_ldSalesid;

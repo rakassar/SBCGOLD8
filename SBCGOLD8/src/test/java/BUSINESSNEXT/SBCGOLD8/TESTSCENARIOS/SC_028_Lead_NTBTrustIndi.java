@@ -10,6 +10,8 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 To run on G7 please change nature of work field and uncomment the CRRSC section
 */
 import BUSINESSNEXT.SBCGOLD8.OBJECT.LeadObjectPageObject;
+import BUSINESSNEXT.SBCGOLD8.SOAPAPI.CSQUpdateForTrustTreasury;
+import BUSINESSNEXT.SBCGOLD8.SOAPAPI.TokenGeneration;
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
@@ -24,6 +26,8 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 	CRRSCLeadPageMethod CRRSC = new CRRSCLeadPageMethod();
 	Screenshot screen = new Screenshot();
 	FillAccountInformationPageMethod FAIPM = new FillAccountInformationPageMethod();
+	TokenGeneration token=new TokenGeneration();
+	CSQUpdateForTrustTreasury CSQ=new CSQUpdateForTrustTreasury();
 
 	@Test(priority = 1)
 	public void SC_028_TC_001() throws InterruptedException, IOException {
@@ -69,7 +73,7 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		Thread.sleep(1000);
 		System.out.print("Trust ");
 		lopm.GetLeadId();
-		lopm.saveLeadId();
+		lopm.Trust_TreasuryLeadId();
 
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		scrollBy();
@@ -523,6 +527,9 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		Thread.sleep(500);
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		NTBSJPM.CaseDedupeOnDocsLead();
+		lopm.GetLeadId();
+		token.Token();
+		CSQ.CSQUpdate();
 		lopm.waitTillCSQPerform();
 		Thread.sleep(30000);
 		QuiteBrowser();

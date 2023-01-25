@@ -281,6 +281,7 @@ ETB onboarding journey, Including open case dedupe
             lopm.ProcessApplicationPopUpClose();
             Thread.sleep(2000);
             lopm.GetLeadId();
+            lopm.waitTillAccountOpen();
             screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
         	QuiteBrowser();
      	}
