@@ -74,7 +74,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
         Thread.sleep(1000);
         System.out.print("Trust ");
         lopm.GetLeadId();
-        lopm.saveLeadId();
+        lopm.Trust_TreasuryLeadId();
 
     	screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
         scrollBy();

@@ -241,7 +241,7 @@ public void ClickOnActivitiestab()
    public void waitTillAccountOpen() throws InterruptedException {
 	  do{
 		  Refresh();
-		  Thread.sleep(2000);
+		  Thread.sleep(3000);
 		  
 	  }while(getStatusCode().equalsIgnoreCase("sent for processing"));
 	  
@@ -250,7 +250,7 @@ public void ClickOnActivitiestab()
    public void waitTillCSQPerform() throws InterruptedException {
 		  do{
 			  Refresh();
-			  Thread.sleep(2000);
+			  Thread.sleep(3000);
 			  
 		  }while(getStatusCode().equalsIgnoreCase("Documents Collection"));
 		  
@@ -382,7 +382,7 @@ public void btn_LeadReject() throws InterruptedException
 	Thread.sleep(1000);
 	LeadObjectPageObject.btn_RejectRemarkupdate.click();
 }
-public void saveLeadId()
+public void Trust_TreasuryLeadId()
 {
 	tLeadID =  LeadObjectPageObject.get_leadIDCreated.getText();
 }
