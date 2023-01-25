@@ -195,6 +195,17 @@ public static WebElement sel_TypeofRequest;
 @FindBy(name="cust_148")
 public static WebElement ent_NameOfCaller;
 
+@FindBy(name="cust_2635")
+public static WebElement sel_AOCode;
+
+
+@FindBy(xpath="//a[@data-autoid = 'cust_654_srch']")
+public static WebElement pic_SACodepic;
+
+
+@FindBy(xpath="//div[@data-autoid = 'DisplayName_0']")
+public static WebElement pic_SACodesel;
+
 
 
 

@@ -391,7 +391,7 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 			lopm.ClickOnUpdtButton();
 			Thread.sleep(500);
 			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
-			lopm.popupdate360("No");
+			lopm.popupdate360("Yes");
 			Thread.sleep(1000);
 			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			lopm.update360();
@@ -420,7 +420,7 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 		lopm.ClickOnUpdtButton();
 		Thread.sleep(500);
 		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
-		lopm.popupdate360("No");
+		lopm.popupdate360("Yes");
 		Thread.sleep(1000);
 		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.update360();

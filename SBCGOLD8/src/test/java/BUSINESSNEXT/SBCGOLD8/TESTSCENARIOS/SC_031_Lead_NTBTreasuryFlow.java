@@ -73,7 +73,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
         Thread.sleep(1000);
         System.out.print("Treasury ");
         lopm.GetLeadId();
-		lopm.saveLeadId();
+		lopm.Trust_TreasuryLeadId();
 
 
     	screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
