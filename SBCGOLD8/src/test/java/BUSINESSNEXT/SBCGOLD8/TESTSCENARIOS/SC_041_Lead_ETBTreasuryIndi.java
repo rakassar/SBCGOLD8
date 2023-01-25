@@ -201,7 +201,7 @@ public class SC_041_Lead_ETBTreasuryIndi extends HomePageMethod
         CLDLPM.fatcaFlag("Yes");
         Thread.sleep(500);
         screen.ScreenshotMethod("SC_041_Lead_ETBTreasuryIndi-");
-        CLDLPM.UpdateDetailsTrustTreasury("No");
+        CLDLPM.UpdateDetailsTrustTreasury("Yes");
         screen.ScreenshotMethod("SC_041_Lead_ETBTreasuryIndi-");
         CLDLPM.ClickOnAddress();
         screen.ScreenshotMethod("SC_041_Lead_ETBTreasuryIndi-");
@@ -222,6 +222,7 @@ public class SC_041_Lead_ETBTreasuryIndi extends HomePageMethod
     @Test(priority=6)
  	public void SC_040_TC_006() throws InterruptedException
  	{
+    	lopm.waitTillAccountOpen();
     	lopm.waitTillCSQPerform();
     	 screen.ScreenshotMethod("SC_041_Lead_ETBTreasuryIndi-");
          scrollBy();
