@@ -206,6 +206,12 @@ public static WebElement pic_SACodepic;
 @FindBy(xpath="//div[@data-autoid = 'DisplayName_0']")
 public static WebElement pic_SACodesel;
 
+@FindBy(xpath="//a[@data-autoid = 'cust_1939_srch']")
+public static WebElement pic_InquiryType;
+
+@FindBy(id="select-all-checkbox")
+public static WebElement pic_InquiryTypeCheckbox;
+
 
 
 

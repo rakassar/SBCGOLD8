@@ -88,6 +88,10 @@ public class CaseStagePageMethod extends HomePageMethod {
 
 	}
 
+	public void clickOk() {
+		CaseStagePageObject.clk_okbutton.click();
+
+	}
 	public void sel_caseview(String caseview) throws InterruptedException
 
 	{
@@ -418,6 +422,13 @@ public class CaseStagePageMethod extends HomePageMethod {
 		Request.selectByVisibleText(TypeofRequest);
 		System.out.println("TypeofRequest");
 		Thread.sleep(2000);
+	}
+	public void balanceInquiryType() {
+		CaseStagePageObject.pic_InquiryType.click();
+	}
+	
+	public void selectCheckbox() {
+		CaseStagePageObject.pic_InquiryTypeCheckbox.click();
 	}
 
 }
