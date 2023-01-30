@@ -198,6 +198,8 @@ public static WebElement ent_NameOfCaller;
 @FindBy(name="cust_2635")
 public static WebElement sel_AOCode;
 
+@FindBy(name="cust_2900")
+public static WebElement pic_natureOfWork;
 
 @FindBy(xpath="//a[@data-autoid = 'cust_654_srch']")
 public static WebElement pic_SACodepic;

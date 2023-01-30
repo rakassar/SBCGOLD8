@@ -93,6 +93,7 @@ Source=Branch Walkin
 		Thread.sleep(1000);
 		
 		cs1pm.ForEmployement("Yes");
+		cs1pm.natureOfWork("Airline");
         screen.ScreenshotMethod("SC_017_CustomerInitiatedInfoMaintenance-");
 
 

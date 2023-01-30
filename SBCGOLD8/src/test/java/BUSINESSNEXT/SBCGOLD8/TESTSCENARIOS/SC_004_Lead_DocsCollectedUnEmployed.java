@@ -363,7 +363,9 @@ public class SC_004_Lead_DocsCollectedUnEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        scrollToTop();
         lopm.GetLeadId();
+        lopm.waitTillAccountOpen();
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
     	QuiteBrowser();
  	}

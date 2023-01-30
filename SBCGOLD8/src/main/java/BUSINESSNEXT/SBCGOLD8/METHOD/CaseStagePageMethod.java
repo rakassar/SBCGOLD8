@@ -78,7 +78,7 @@ public class CaseStagePageMethod extends HomePageMethod {
 		View.selectByVisibleText(assigntodept);
 		Thread.sleep(1000);
 		CaseStagePageObject.clk_arrorw.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		CaseStagePageObject.clk_selectcase.click();
 		Thread.sleep(1000);
 		CaseStagePageObject.clk_selfassigncase.click();
@@ -365,6 +365,22 @@ public class CaseStagePageMethod extends HomePageMethod {
 
 		WebElement eco = CaseStagePageObject.pic_Country;
 		eco.sendKeys(country);
+		Thread.sleep(1000);
+		eco.sendKeys(Keys.DOWN);
+		eco.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+
+	}
+
+	public void natureOfWork(String value) throws InterruptedException {
+		/*
+		 * Select CustomerType1 = new Select(CaseStagePageObject.pic_Country);
+		 * Thread.sleep(2000); CustomerType1.selectByVisibleText(country);
+		 * System.out.println("country"); Thread.sleep(2000);
+		 */
+
+		WebElement eco = CaseStagePageObject.pic_natureOfWork;
+		eco.sendKeys(value);
 		Thread.sleep(1000);
 		eco.sendKeys(Keys.DOWN);
 		eco.sendKeys(Keys.ENTER);

@@ -9,6 +9,8 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 To run on G7 please change nature of work field and uncomment the CRRSC section
 */
 import BUSINESSNEXT.SBCGOLD8.OBJECT.LeadObjectPageObject;
+import BUSINESSNEXT.SBCGOLD8.SOAPAPI.CSQUpdateForTrustTreasury;
+import BUSINESSNEXT.SBCGOLD8.SOAPAPI.TokenGeneration;
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
@@ -24,6 +26,8 @@ public class SC_039_Lead_NTBJointTreauryIndi extends HomePageMethod
 	CRRSCLeadPageMethod CRRSC= new CRRSCLeadPageMethod();
     Screenshot screen=new Screenshot();
     FillAccountInformationPageMethod FAIPM=new FillAccountInformationPageMethod();
+    TokenGeneration token=new TokenGeneration();
+	CSQUpdateForTrustTreasury CSQ=new CSQUpdateForTrustTreasury();
 
 
 
@@ -803,6 +807,7 @@ public class SC_039_Lead_NTBJointTreauryIndi extends HomePageMethod
       Thread.sleep(3000);
       lopm.ProcessApplicationPopUpClose();
       Thread.sleep(3000);
+      scrollToTop();
 
       lopm.waitTillAccountOpen();
       Thread.sleep(3000);
@@ -836,6 +841,7 @@ public class SC_039_Lead_NTBJointTreauryIndi extends HomePageMethod
      screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
      lopm.ProcessApplicationPopUpClose();
      Thread.sleep(2000);
+     scrollToTop();
      lopm.waitTillAccountOpen();
      screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
      CLDLPM.clickClosePopup();
@@ -922,7 +928,9 @@ public class SC_039_Lead_NTBJointTreauryIndi extends HomePageMethod
         Thread.sleep(500);
         screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
         NTBSJPM.CaseDedupeOnDocsLead();
-        System.out.println("Please fill csq");
+        lopm.GetLeadId();
+		token.Token();
+		CSQ.CSQUpdate();
         lopm.waitTillCSQPerform();
         Thread.sleep(3000);
         lopm.goToTChildLead();

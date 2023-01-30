@@ -223,7 +223,8 @@ ETB onboarding journey, Including open case dedupe
     	Thread.sleep(1000);
         screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
     	lopm.saveAndProceed();
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
+        NTBSJPM.CaseDedupeOnDocsLead();
         screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
         scrollBy();
         Thread.sleep(1000);
@@ -280,6 +281,7 @@ ETB onboarding journey, Including open case dedupe
             screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
             lopm.ProcessApplicationPopUpClose();
             Thread.sleep(2000);
+            scrollToTop();
             lopm.GetLeadId();
             lopm.waitTillAccountOpen();
             screen.ScreenshotMethod("SC_006_ETBLeadCreation-");

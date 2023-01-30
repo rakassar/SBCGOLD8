@@ -406,6 +406,7 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			lopm.ProcessApplicationPopUpClose();
 			Thread.sleep(3000);
+			scrollToTop();
 			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 			lopm.waitTillAccountOpen();
 			screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
@@ -457,6 +458,7 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.ProcessApplicationPopUpClose();
 		Thread.sleep(3000);
+		scrollToTop();
 		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.waitTillAccountOpen();
 		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");

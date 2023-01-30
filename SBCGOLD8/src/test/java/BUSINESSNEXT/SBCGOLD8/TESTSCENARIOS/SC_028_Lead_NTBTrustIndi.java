@@ -440,6 +440,7 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		lopm.ProcessApplicationPopUpClose();
 		Thread.sleep(2000);
+		scrollToTop();
 		lopm.waitTillAccountOpen();
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		CLDLPM.clickClosePopup();

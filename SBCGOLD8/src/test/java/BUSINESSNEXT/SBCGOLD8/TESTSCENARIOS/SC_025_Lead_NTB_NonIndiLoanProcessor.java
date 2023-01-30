@@ -328,6 +328,8 @@ public class SC_025_Lead_NTB_NonIndiLoanProcessor extends HomePageMethod
         screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        scrollToTop();
+        lopm.waitTillAccountOpen();
         screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
     	QuiteBrowser();
 
