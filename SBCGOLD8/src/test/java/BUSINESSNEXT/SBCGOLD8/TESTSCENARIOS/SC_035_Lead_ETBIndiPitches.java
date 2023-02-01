@@ -24,7 +24,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	//************************Fill the Info for SD process*****************************-------------//
 	//ListnersClassAnotation css=new ListnersClassAnotation();
     @Test(priority=1)
-	public void SC_026_TC_001() throws Exception
+	public void SC_035_TC_001() throws Exception
 	{
 
     	//rizwan
@@ -69,7 +69,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	}
 
     @Test(priority=2)
-	public void SC_026_TC_002() throws Exception
+	public void SC_035_TC_002() throws Exception
 	{
 
       
@@ -91,7 +91,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 
 
     @Test(priority=3)
-	public void SC_026_TC_003() throws Exception
+	public void SC_035_TC_003() throws Exception
 	{
         scrollBy();
        // NTBSJPM.checkboxSaving(); // ETB field serial number was one ahead so using ntb one's
@@ -121,7 +121,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 
     }
     @Test(priority=4)
-	public void SC_026_TC_004() throws Exception
+	public void SC_035_TC_004() throws Exception
 	{
     	Thread.sleep(7000);
         lopm.GetLeadId();

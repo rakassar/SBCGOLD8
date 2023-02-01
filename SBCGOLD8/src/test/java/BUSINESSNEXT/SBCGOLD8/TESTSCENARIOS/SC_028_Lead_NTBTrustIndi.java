@@ -532,7 +532,8 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		token.Token();
 		CSQ.CSQUpdate();
 		lopm.waitTillCSQPerform();
-		Thread.sleep(30000);
+		Thread.sleep(3000);
+		lopm.waitTillAccountOpen();
 		QuiteBrowser();
 
 	}

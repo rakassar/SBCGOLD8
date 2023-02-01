@@ -41,7 +41,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	public void SC_001_TC_001() throws Exception
 	{
 
-    	//rizwan
+    	
 
     	launchBrowser();
     	Thread.sleep(1000);

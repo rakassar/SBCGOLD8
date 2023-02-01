@@ -34,7 +34,7 @@ Source=Branch Walkin
 	//************************Fill the Info for SD process*****************************-------------//
 	//ListnersClassAnotation css=new ListnersClassAnotation();
     @Test(priority=1)
-	public void SC_018_TC_001() throws Exception
+	public void SC_034_TC_001() throws Exception
 	{
 
     	launchBrowser();

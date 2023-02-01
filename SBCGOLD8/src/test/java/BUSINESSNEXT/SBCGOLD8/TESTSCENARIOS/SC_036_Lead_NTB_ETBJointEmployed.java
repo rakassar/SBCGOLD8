@@ -25,7 +25,7 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
 	FillAccountInformationPageMethod FAIPM = new FillAccountInformationPageMethod();
 
 	@Test
-	public void SC_006_TC_001() throws Exception {
+	public void SC_036_TC_001() throws Exception {
 
 		launchBrowser();
     	screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
@@ -49,7 +49,7 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
 
 
     @Test(priority=2)
-	public void SC_021_TC_002() throws InterruptedException, IOException
+	public void SC_036_TC_002() throws InterruptedException, IOException
 	{
         NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
         NTBSJPM.EnterFirstName();
@@ -95,7 +95,7 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
 	}
 
     @Test(priority=3)
-	public void SC_021_TC_003() throws InterruptedException, IOException
+	public void SC_036_TC_003() throws InterruptedException, IOException
 	{
         CLDLPM.selectstatuscode();
         Thread.sleep(1000);
@@ -129,7 +129,7 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
 
 
     @Test(priority=4)
-	public void SC_021_TC_004() throws InterruptedException, IOException
+	public void SC_036_TC_004() throws InterruptedException, IOException
 	{
        /*employed steps start */
         CLDLPM.Employeetype(TestDataFromExcel.Employeetype);
@@ -161,7 +161,7 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
 
 
     @Test(priority=5)
-	public void SC_021_TC_005() throws InterruptedException, IOException
+	public void SC_036_TC_005() throws InterruptedException, IOException
 	{
         CLDLPM.IDPrrof(TestDataFromExcel.IDPrrof);
         CLDLPM.IDNumner();
@@ -192,7 +192,7 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
 
 
     @Test(priority=6)
- 	public void SC_021_TC_006() throws InterruptedException
+ 	public void SC_036_TC_006() throws InterruptedException
  	{
     	 CLDLPM.clickClosePopup();
     	 screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
@@ -288,7 +288,7 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
  	}
 
     @Test(priority=7)
- 	public void SC_021_TC_007() throws InterruptedException
+ 	public void SC_036_TC_007() throws InterruptedException
  	{
     	Thread.sleep(1000);
    	    CLDLPM.clickClosePopup();
@@ -347,7 +347,7 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
  	}
 
 	@Test(priority = 8)
-	public void SC_021_TC_008() throws InterruptedException {
+	public void SC_036_TC_008() throws InterruptedException {
 		CLDLPM.clickaddScndryLeadButton();
 		//lopm.SwitchToSecondaryWindow();
 		NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
@@ -516,7 +516,7 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
 	}
 
 	@Test(priority = 9)
-	public void SC_021_TC_009() throws InterruptedException {
+	public void SC_036_TC_009() throws InterruptedException {
 		lopm.goToParentLead();
 		Refresh();
 		Thread.sleep(500);
@@ -544,7 +544,7 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
 	}
 
 	@Test(priority = 10)
-	public void SC_021_TC_010() throws InterruptedException {
+	public void SC_036_TC_010() throws InterruptedException {
 		Thread.sleep(1000);
 		screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
 		lopm.ProcessApplication();

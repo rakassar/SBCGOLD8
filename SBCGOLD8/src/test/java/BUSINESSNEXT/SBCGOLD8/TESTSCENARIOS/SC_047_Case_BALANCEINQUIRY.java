@@ -28,7 +28,7 @@ order by caseid desc
 	//************************Fill the Info for SD process*****************************-------------//
 	//ListnersClassAnotation css=new ListnersClassAnotation();
     @Test(priority=1)
-	public void SC_017_TC_001() throws Exception
+	public void SC_047_TC_001() throws Exception
 	{
     	launchBrowser();
     	TestDataFromExcel.DataRead();

@@ -32,7 +32,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
 
 
     @Test(priority=1)
-	public void SC_028_TC_001() throws InterruptedException, IOException
+	public void SC_038_TC_001() throws InterruptedException, IOException
 	{
     	launchBrowser();
     	screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
@@ -56,7 +56,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
 
 
     @Test(priority=2)
-	public void SC_028_TC_002() throws InterruptedException, IOException
+	public void SC_038_TC_002() throws InterruptedException, IOException
 	{
         NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
         NTBSJPM.EnterFirstName();
@@ -105,7 +105,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
 	}
 
     @Test(priority=3)
-	public void SC_028_TC_003() throws InterruptedException, IOException
+	public void SC_038_TC_003() throws InterruptedException, IOException
 	{
         CLDLPM.selectstatuscode();
         Thread.sleep(1000);
@@ -142,7 +142,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
 
 
     @Test(priority=4)
-	public void SC_028_TC_004() throws InterruptedException, IOException
+	public void SC_038_TC_004() throws InterruptedException, IOException
 	{
        /*employed steps start */
         CLDLPM.Employeetype(TestDataFromExcel.Employeetype);
@@ -174,7 +174,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
 
 
     @Test(priority=5)
-	public void SC_028_TC_005() throws InterruptedException, IOException
+	public void SC_038_TC_005() throws InterruptedException, IOException
 	{
         CLDLPM.IDPrrof(TestDataFromExcel.IDPrrof);
         CLDLPM.IDNumner();
@@ -205,7 +205,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
 
 
     @Test(priority=6)
- 	public void SC_028_TC_006() throws InterruptedException
+ 	public void SC_038_TC_006() throws InterruptedException
  	{
     	 CLDLPM.clickClosePopup();
     	 screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
@@ -230,7 +230,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
 
  	}
     @Test(priority=7)
- 	public void SC_028_TC_007() throws InterruptedException
+ 	public void SC_038_TC_007() throws InterruptedException
  	{
     CLDLPM.clickaddScndryLeadButton();
     NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
@@ -374,7 +374,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
     
 }
     @Test(priority=8)
- 	public void SC_028_TC_008() throws InterruptedException
+ 	public void SC_038_TC_008() throws InterruptedException
  	{
     	lopm.goToParentLead();  
     	CLDLPM.clickIndiAccntCreateBtn();
@@ -590,7 +590,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
      screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
  	}
      @Test(priority=9)
-  	public void SC_021_TC_009() throws InterruptedException
+  	public void SC_038_TC_009() throws InterruptedException
   	{
          CLDLPM.clickaddScndryLeadButton();
          
@@ -816,7 +816,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
   	}
      
      @Test(priority=10)
-   	public void SC_021_TC_010() throws InterruptedException
+   	public void SC_038_TC_010() throws InterruptedException
    	{
     	 lopm.goToParentLead();
     	 FAIPM.ClickFillAccountInformation();
@@ -849,7 +849,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
  	}
      
     @Test(priority=11)
-    public void SC_028_TC_011() throws InterruptedException
+    public void SC_038_TC_011() throws InterruptedException
  	{
     	clk_leadobject();
 		lopm.leadSearch(lopm.tLeadID);
@@ -954,7 +954,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
 
 
     @Test(priority=12)
- 	public void SC_028_TC_012() throws InterruptedException, IOException
+ 	public void SC_038_TC_012() throws InterruptedException, IOException
  	{
     	 launchBrowser();
     	    TestDataFromExcel.DataRead();
