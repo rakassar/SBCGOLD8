@@ -15,6 +15,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
 import BUSINESSNEXT.SBCGOLD8.METHOD.LeadObjectPageMethod;
+import BUSINESSNEXT.SBCGOLD8.REPOSITORY.Properties;
 
 
 
@@ -37,8 +38,10 @@ public static void CSQUpdate() {
             Also change the contents of the method createSoapEnvelope() in this class. It constructs
              the inner part of the SOAP envelope that is actually sent.
          */
-        String soapEndpointUrl = "https://sbcdev.crmnext.com/accg7/CRMnextWebApi/CRMnextService.svc";
-        String soapAction = "http://www.crmnext.com/api/ICRMnextApi/Save";
+        //String soapEndpointUrl = "https://sbcdev.crmnext.com/accg7/CRMnextWebApi/CRMnextService.svc";
+
+	String soapEndpointUrl=Properties.WSDLUrl;    
+	String soapAction = "http://www.crmnext.com/api/ICRMnextApi/Save";
        
         callSoapWebService(soapEndpointUrl, soapAction);
     }

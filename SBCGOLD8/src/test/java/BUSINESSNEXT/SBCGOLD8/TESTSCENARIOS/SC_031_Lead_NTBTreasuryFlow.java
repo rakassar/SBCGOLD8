@@ -9,6 +9,8 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 To run on G7 please change nature of work field and uncomment the CRRSC section
 */
 import BUSINESSNEXT.SBCGOLD8.OBJECT.LeadObjectPageObject;
+import BUSINESSNEXT.SBCGOLD8.SOAPAPI.CSQUpdateForTrustTreasury;
+import BUSINESSNEXT.SBCGOLD8.SOAPAPI.TokenGeneration;
 
 //screen shot using listner class
 //@Listeners(crm.mhc.common.ListnersClassAnotation.class)
@@ -24,11 +26,14 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
 	CRRSCLeadPageMethod CRRSC= new CRRSCLeadPageMethod();
     Screenshot screen=new Screenshot();
     FillAccountInformationPageMethod FAIPM=new FillAccountInformationPageMethod();
+    TokenGeneration token=new TokenGeneration();
+	CSQUpdateForTrustTreasury CSQ=new CSQUpdateForTrustTreasury();
+
 
 
 
     @Test(priority=1)
-	public void SC_028_TC_001() throws InterruptedException, IOException
+	public void SC_031_TC_001() throws InterruptedException, IOException
 	{
     	
     	launchBrowser();
@@ -53,7 +58,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
 
 
     @Test(priority=2)
-	public void SC_028_TC_002() throws InterruptedException, IOException
+	public void SC_031_TC_002() throws InterruptedException, IOException
 	{
         NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
         NTBSJPM.EnterFirstName();
@@ -101,7 +106,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
 	}
 
     @Test(priority=3)
-	public void SC_028_TC_003() throws InterruptedException, IOException
+	public void SC_031_TC_003() throws InterruptedException, IOException
 	{
         CLDLPM.selectstatuscode();
         Thread.sleep(1000);
@@ -133,7 +138,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
 
 
     @Test(priority=4)
-	public void SC_028_TC_004() throws InterruptedException, IOException
+	public void SC_031_TC_004() throws InterruptedException, IOException
 	{
        /*employed steps start */
         CLDLPM.Employeetype(TestDataFromExcel.Employeetype);
@@ -165,7 +170,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
 
 
     @Test(priority=5)
-	public void SC_028_TC_005() throws InterruptedException, IOException
+	public void SC_031_TC_005() throws InterruptedException, IOException
 	{
         CLDLPM.IDPrrof(TestDataFromExcel.IDPrrof);
         CLDLPM.IDNumner();
@@ -196,7 +201,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
 
 
     @Test(priority=6)
- 	public void SC_028_TC_006() throws InterruptedException
+ 	public void SC_031_TC_006() throws InterruptedException
  	{
     	 CLDLPM.clickClosePopup();
     	 screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
@@ -222,7 +227,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
  	}
 
     @Test(priority=7)
- 	public void SC_028_TC_007() throws InterruptedException
+ 	public void SC_031_TC_007() throws InterruptedException
  	{
     	CLDLPM.clickIndiAccntCreateBtn();
         NTBSJPM.LeadRating("Hot");
@@ -455,6 +460,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
      screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
      lopm.ProcessApplicationPopUpClose();
      Thread.sleep(2000);
+     scrollToTop();
      lopm.GetLeadId();
      lopm.waitTillAccountOpen();
      screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
@@ -474,7 +480,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
 
  	}
     @Test(priority=8)
-    public void SC_028_TC_008() throws InterruptedException
+    public void SC_031_TC_008() throws InterruptedException
  	{
     	clk_leadobject();
 		lopm.leadSearch(lopm.tLeadID);
@@ -541,6 +547,9 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
         Thread.sleep(500);
         screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
         NTBSJPM.CaseDedupeOnDocsLead();
+        lopm.GetLeadId();
+		token.Token();
+		CSQ.CSQUpdate();
         lopm.waitTillCSQPerform();
         Thread.sleep(30000);
         QuiteBrowser();
@@ -549,7 +558,7 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
 
 
     @Test(priority=9)
- 	public void SC_028_TC_009() throws InterruptedException, IOException
+ 	public void SC_031_TC_009() throws InterruptedException, IOException
  	{
     	 launchBrowser();
     	    TestDataFromExcel.DataRead();

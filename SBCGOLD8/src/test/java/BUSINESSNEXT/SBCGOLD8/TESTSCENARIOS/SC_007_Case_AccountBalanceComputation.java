@@ -95,7 +95,11 @@ Computation request=Available Balance Computation
 		Thread.sleep(1000);
 		//LogoutButtonClick();
 		QuiteBrowser();
-
+	}
+    
+    @Test(priority=2)
+   	public void SC_007_TC_002() throws Exception
+   	{
 		launchBrowser();
 	    //TDFX.DataRead();
 	 	EnterUserName(TestDataFromExcel.UserName_CCGInboundTeamLeader_Pro);

@@ -380,6 +380,7 @@ public class SC_003_Lead_NTBDocsCollectionEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        scrollToTop();
         lopm.GetLeadId();
         lopm.waitTillAccountOpen();
 

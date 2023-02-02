@@ -344,6 +344,7 @@ public class SC_024_Lead_NTBEmployedLoanProcessor extends HomePageMethod
         screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        scrollToTop();
         lopm.waitTillAccountOpen();
         screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
         QuiteBrowser();

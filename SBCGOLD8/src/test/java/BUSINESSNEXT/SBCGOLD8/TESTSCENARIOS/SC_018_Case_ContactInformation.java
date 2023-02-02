@@ -168,6 +168,8 @@ Source=Branch Walkin
         screen.ScreenshotMethod("SC_018_ContactInformation-");
 	    CJPM.casesaveAndProceed();
 	    Thread.sleep(5000);
+	    cs1pm.waitTillClosed();
+
 	    screen.ScreenshotMethod("SC_018_ContactInformation-");
         scrollBy();
         Thread.sleep(1000);

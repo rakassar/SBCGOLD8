@@ -78,7 +78,7 @@ public class CaseStagePageMethod extends HomePageMethod {
 		View.selectByVisibleText(assigntodept);
 		Thread.sleep(1000);
 		CaseStagePageObject.clk_arrorw.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		CaseStagePageObject.clk_selectcase.click();
 		Thread.sleep(1000);
 		CaseStagePageObject.clk_selfassigncase.click();
@@ -88,6 +88,10 @@ public class CaseStagePageMethod extends HomePageMethod {
 
 	}
 
+	public void clickOk() {
+		CaseStagePageObject.clk_okbutton.click();
+
+	}
 	public void sel_caseview(String caseview) throws InterruptedException
 
 	{
@@ -368,6 +372,22 @@ public class CaseStagePageMethod extends HomePageMethod {
 
 	}
 
+	public void natureOfWork(String value) throws InterruptedException {
+		/*
+		 * Select CustomerType1 = new Select(CaseStagePageObject.pic_Country);
+		 * Thread.sleep(2000); CustomerType1.selectByVisibleText(country);
+		 * System.out.println("country"); Thread.sleep(2000);
+		 */
+
+		WebElement eco = CaseStagePageObject.pic_natureOfWork;
+		eco.sendKeys(value);
+		Thread.sleep(1000);
+		eco.sendKeys(Keys.DOWN);
+		eco.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+
+	}
+
 	public void CaseHosueNumber() {
 		Random r = new Random();
 		String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -418,6 +438,13 @@ public class CaseStagePageMethod extends HomePageMethod {
 		Request.selectByVisibleText(TypeofRequest);
 		System.out.println("TypeofRequest");
 		Thread.sleep(2000);
+	}
+	public void balanceInquiryType() {
+		CaseStagePageObject.pic_InquiryType.click();
+	}
+	
+	public void selectCheckbox() {
+		CaseStagePageObject.pic_InquiryTypeCheckbox.click();
 	}
 
 }

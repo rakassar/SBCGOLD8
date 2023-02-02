@@ -372,7 +372,10 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        scrollToTop();
         lopm.GetLeadId();
+        lopm.waitTillAccountOpen();
+
         screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
     	QuiteBrowser();
  	}

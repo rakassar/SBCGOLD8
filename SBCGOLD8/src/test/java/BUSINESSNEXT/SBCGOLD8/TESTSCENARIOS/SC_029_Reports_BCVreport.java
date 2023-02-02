@@ -21,7 +21,7 @@ public class SC_029_Reports_BCVreport extends HomePageMethod
 
 
     @Test(priority=1)
-	public void SC_028_TC_001() throws InterruptedException, IOException
+	public void SC_029_TC_001() throws InterruptedException, IOException
 	{
     	launchBrowser();
     	screen.ScreenshotMethod("SC_029_Reports_BCVreport-");

@@ -198,6 +198,8 @@ public static WebElement ent_NameOfCaller;
 @FindBy(name="cust_2635")
 public static WebElement sel_AOCode;
 
+@FindBy(name="cust_2900")
+public static WebElement pic_natureOfWork;
 
 @FindBy(xpath="//a[@data-autoid = 'cust_654_srch']")
 public static WebElement pic_SACodepic;
@@ -205,6 +207,12 @@ public static WebElement pic_SACodepic;
 
 @FindBy(xpath="//div[@data-autoid = 'DisplayName_0']")
 public static WebElement pic_SACodesel;
+
+@FindBy(xpath="//a[@data-autoid = 'cust_1939_srch']")
+public static WebElement pic_InquiryType;
+
+@FindBy(id="select-all-checkbox")
+public static WebElement pic_InquiryTypeCheckbox;
 
 
 
