@@ -360,6 +360,8 @@ public class SC_022_Lead_NTB_NonIndiDocsCollection extends HomePageMethod
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        scrollToTop();
+        lopm.waitTillAccountOpen();
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
         QuiteBrowser();
  	}

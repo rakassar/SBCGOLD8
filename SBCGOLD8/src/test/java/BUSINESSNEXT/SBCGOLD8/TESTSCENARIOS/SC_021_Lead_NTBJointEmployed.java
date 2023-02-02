@@ -651,6 +651,7 @@ public class SC_021_Lead_NTBJointEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        lopm.waitTillAccountOpen();
         screen.ScreenshotMethod("SC_021_NTBJointEmployed-");
         QuiteBrowser();
  	}

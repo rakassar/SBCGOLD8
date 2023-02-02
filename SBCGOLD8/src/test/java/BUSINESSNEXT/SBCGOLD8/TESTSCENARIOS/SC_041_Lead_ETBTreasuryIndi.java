@@ -28,7 +28,7 @@ public class SC_041_Lead_ETBTreasuryIndi extends HomePageMethod
 
 
     @Test(priority=1)
-	public void SC_040_TC_001() throws InterruptedException, IOException
+	public void SC_041_TC_001() throws InterruptedException, IOException
 	{launchBrowser();
 	screen.ScreenshotMethod("SC_041_Lead_ETBTreasuryIndi-");
 	TestDataFromExcel.DataRead();
@@ -69,7 +69,7 @@ public class SC_041_Lead_ETBTreasuryIndi extends HomePageMethod
 
 }
     @Test(priority=2)
-	public void SC_040_TC_002() throws Exception
+	public void SC_041_TC_002() throws Exception
 	{
 
     	NTBSJPM.LeadRating("Hot");
@@ -118,7 +118,7 @@ public class SC_041_Lead_ETBTreasuryIndi extends HomePageMethod
 	}
 
     @Test(priority=3)
-	public void SC_040_TC_003() throws InterruptedException, IOException
+	public void SC_041_TC_003() throws InterruptedException, IOException
 	{
         CLDLPM.selectstatuscode();
         Thread.sleep(1000);
@@ -145,7 +145,7 @@ public class SC_041_Lead_ETBTreasuryIndi extends HomePageMethod
 
 
     @Test(priority=4)
-	public void SC_040_TC_004() throws InterruptedException, IOException
+	public void SC_041_TC_004() throws InterruptedException, IOException
 	{
     	if (CollectDocsLeadPageMethod.Employeetype.equals("Self-Employed"))
         {
@@ -190,7 +190,7 @@ public class SC_041_Lead_ETBTreasuryIndi extends HomePageMethod
 
 
     @Test(priority=5)
-	public void SC_040_TC_005() throws InterruptedException, IOException
+	public void SC_041_TC_005() throws InterruptedException, IOException
 	{
         CLDLPM.IDPrrof(TestDataFromExcel.IDPrrof);
         CLDLPM.IDNumner();
@@ -220,7 +220,7 @@ public class SC_041_Lead_ETBTreasuryIndi extends HomePageMethod
 
 
     @Test(priority=6)
- 	public void SC_040_TC_006() throws InterruptedException
+ 	public void SC_041_TC_006() throws InterruptedException
  	{
     	lopm.waitTillAccountOpen();
     	lopm.waitTillCSQPerform();
@@ -250,7 +250,7 @@ public class SC_041_Lead_ETBTreasuryIndi extends HomePageMethod
 
 
     @Test(priority=7)
- 	public void SC_040_TC_007() throws InterruptedException, IOException
+ 	public void SC_041_TC_007() throws InterruptedException, IOException
  	{
     	 launchBrowser();
     	    TestDataFromExcel.DataRead();

@@ -38,7 +38,7 @@ public class SC_037_ETBLead_Rejected extends HomePageMethod {
 	// process*****************************-------------//
 	// ListnersClassAnotation css=new ListnersClassAnotation();
 	@Test(priority = 1)
-	public void SC_030_TC_001() throws Exception {
+	public void SC_037_TC_001() throws Exception {
 
 		launchBrowser();
 		screen.ScreenshotMethod("SC_037_ETBLead_Rejected-");
@@ -81,7 +81,7 @@ public class SC_037_ETBLead_Rejected extends HomePageMethod {
 	}
 	
 	@Test(priority = 2)
-	public void SC_006_TC_002() throws Exception {
+	public void SC_037_TC_002() throws Exception {
 
 		NTBSJPM.LeadRating("Hot");
 		screen.ScreenshotMethod("SC_037_ETBLead_Rejected-");

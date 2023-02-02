@@ -62,7 +62,7 @@ public class CaseJourneyPageMethod extends HomePageMethod {
 			  //Select sel=new Select(CaseJourneyPageObject.clk_pagingdropdownlist);
 			  //sel.selectByValue(Product);
 			  //sel.selectByVisibleText("100");
-			  Thread.sleep(1000);
+			  Thread.sleep(2000);
 			  List<WebElement> creditcardproduct = CaseJourneyPageObject.fillcreditcardproduct;
 			  for (WebElement element : creditcardproduct) {
 

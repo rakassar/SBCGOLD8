@@ -128,6 +128,10 @@ public void scrollBy()
        //till page end
        //js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
        }
+public void scrollToTop() {
+	((JavascriptExecutor) driver).executeScript("window.scrollTo(document.body.scrollHeight, 0)");
+	//actions.sendKeys(keys.END).build().perform();
+}
 
 
 }
