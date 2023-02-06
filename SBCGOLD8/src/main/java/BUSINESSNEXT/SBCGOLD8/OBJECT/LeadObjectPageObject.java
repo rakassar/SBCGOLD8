@@ -30,6 +30,10 @@ public static WebElement get_applicationIDCreated ;
 	//process Application
 	@FindBy(xpath="//span[normalize-space()='Process Application']")
 	public static WebElement clk_ProcessApplication;
+	
+	//process Application
+		@FindBy(xpath="//span[normalize-space()='Switch Process']")
+		public static WebElement clk_SwitchProcess;
 
 	//process Application
 		@FindBy(xpath="//button[normalize-space()='Ok']")
@@ -68,6 +72,9 @@ public static WebElement get_applicationIDCreated ;
 
 	     @FindBy(css="[data-autoid='LeadID_0']")
 	     public static WebElement clk_selectthelead ;
+	     
+	     @FindBy(css="[data-autoid='LeadName_0']")
+	     public static WebElement clk_selecttheleadES ;
 
 	     @FindBy(xpath="//i[@title='Self Assign']")
 	     public static WebElement clk_selfassignlead ;

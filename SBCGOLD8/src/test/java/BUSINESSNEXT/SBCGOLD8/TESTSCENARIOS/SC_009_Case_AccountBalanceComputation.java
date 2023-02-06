@@ -97,7 +97,7 @@ Computation request=Account Balance Computation
 
 		launchBrowser();
 	    //TDFX.DataRead();
-	 	EnterUserName(TestDataFromExcel.UserName_CCGInboundTeamLeader_Pro);
+	 	EnterUserName(TestDataFromExcel.UserName_CACAuthorizer);
 	 	Thread.sleep(1000);
 	    screen.ScreenshotMethod("SC_009_CaseAccountBalanceComputation-");
 	    EnterPassword(TestDataFromExcel.Password);

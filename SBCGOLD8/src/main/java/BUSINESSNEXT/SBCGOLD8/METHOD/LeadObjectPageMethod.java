@@ -83,6 +83,13 @@ public class LeadObjectPageMethod extends HomePageMethod{
 	   LeadObjectPageObject.clk_selectthelead.click();
 
 	}
+   public void onMyBucketleadEmailSyndication() throws InterruptedException
+
+	{
+
+	   LeadObjectPageObject.clk_selecttheleadES.click();
+
+	}
 
    public void saveAndProceed()
 
@@ -123,6 +130,18 @@ public void ClickOnActivitiestab()
 
 
  	}
+   
+   
+   public void SwitchProcess()
+
+	{
+	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+
+	   LeadObjectPageObject.clk_SwitchProcess.click();
+
+
+	}
+   
    public void bttnUpdateCreate() throws InterruptedException {
 	   Thread.sleep(1000);
 	   LeadObjectPageObject.clk_ldUpdateCreate.click();
@@ -241,7 +260,7 @@ public void ClickOnActivitiestab()
    public void waitTillAccountOpen() throws InterruptedException {
 	  do{
 		  Refresh();
-		  Thread.sleep(3000);
+		  Thread.sleep(5000);
 		  
 	  }while(getStatusCode().equalsIgnoreCase("sent for processing"));
 	  

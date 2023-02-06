@@ -35,6 +35,9 @@ public class TestDataFromExcel implements Properties {
     public static String UserName_DetectionProcesoor;
     public static String UserName_AMDProcessor;
     public static String UserName_ReleasingProcessor;
+    public static String UserName_CACAuthorizer;
+    public static String UserName_EmailTeam;
+
     
 
 
@@ -158,7 +161,9 @@ UserName_BBGCDMaintenanceAnalyst=sheet3.getRow(10).getCell(1).getStringCellValue
  UserName_DetectionProcesoor = sheet3.getRow(18).getCell(1).getStringCellValue();
  UserName_AMDProcessor = sheet3.getRow(19).getCell(1).getStringCellValue();
  UserName_ReleasingProcessor = sheet3.getRow(20).getCell(1).getStringCellValue();
-
+ UserName_CACAuthorizer =sheet3.getRow(21).getCell(1).getStringCellValue();
+ UserName_EmailTeam = sheet3.getRow(22).getCell(1).getStringCellValue();
+ 
 SalutationID=sheet.getRow(2).getCell(1).getStringCellValue();
 ProductCategory=sheet.getRow(3).getCell(1).getStringCellValue();
 Product=sheet.getRow(4).getCell(1).getStringCellValue();

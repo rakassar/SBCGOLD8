@@ -326,6 +326,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
 
 
     CLDLPM.IDPrrof(TestDataFromExcel.IDPrrof);
+    Thread.sleep(1000);
     CLDLPM.IDNumner();
     screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
     CLDLPM.MaidanName();

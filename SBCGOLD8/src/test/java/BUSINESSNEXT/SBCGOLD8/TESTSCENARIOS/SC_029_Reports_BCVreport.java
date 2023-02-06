@@ -36,17 +36,23 @@ public class SC_029_Reports_BCVreport extends HomePageMethod
     	screen.ScreenshotMethod("SC_029_Reports_BCVreport-");
     	RPM.trendingArrowDown();
     	RPM.clk_reportName("Bulk Account Opening Details");
-    	screen.ScreenshotMethod("SC_029_Reports_BCVreport-");
-    	Thread.sleep(1000);
-    	RPM.clk_reportName("case summary report");
-    	screen.ScreenshotMethod("SC_029_Reports_BCVreport-");
-    	Thread.sleep(1000);
-    	RPM.clk_reportName("lead summary report");
-    	screen.ScreenshotMethod("SC_029_Reports_BCVreport-");
     	RPM.jumptoreportwindow();
     	RPM.clickOnExecute();
-    	
+    	Thread.sleep(2000);
+    	screen.ScreenshotMethod("SC_029_Reports_BCVreport-");
+    	RPM.jumptoParentwindow();
 
+    	RPM.clk_reportName("case summary report");
+    	RPM.jumptoreportwindow();
+    	Thread.sleep(2000);
+    	screen.ScreenshotMethod("SC_029_Reports_BCVreport-");
+    	RPM.jumptoParentwindow();
+    	RPM.clk_reportName("lead summary report");
+    	RPM.jumptoreportwindow();
+    	RPM.clickOnExecute();
+    	Thread.sleep(2000);
+    	screen.ScreenshotMethod("SC_029_Reports_BCVreport-");
+	    QuiteBrowser();
  	}
 }
 

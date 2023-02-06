@@ -33,7 +33,7 @@ public static WebElement clk_reportName;
 @FindBy(xpath="//span[@class= 'mh2 cardGroupSection__title']")
 public static WebElement clk_opendropdown;
 
-@FindBy(xpath="//a[@data-autoid='gridHF_REPORT_105']")
+@FindBy(xpath="//a[text() = 'Execute']")
 public static WebElement clk_executeButton;
 
 
