@@ -32,6 +32,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	CollectDocsLeadPageMethod CLDLPM=new CollectDocsLeadPageMethod();
     TestDataFromExcel TDFX=new TestDataFromExcel();
     Screenshot screen=new Screenshot();
+    OracleDbConnection db=new OracleDbConnection();
    // BrowserStart br=new BrowserStart(); 
     //HomePageMethod home=new HomePageMethod();
 
@@ -114,8 +115,8 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         scrollBy();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
-    	QuiteBrowser();
-
+        QuiteBrowser();
+    	
         //CLDLPM.CreatedNewLeadEdit();
         //LoginPageRedircet();
         //LogoutButtonClick();

@@ -101,8 +101,7 @@ public void ETBIndividualSalesJorney()
 public void CustomerServiceJourney()
 
 {
-	//String mainWindowHandle = driver.getWindowHandle();
-    //System.out.println("Main Window"+mainWindowHandle);
+	
     Set<String> multiplewindows=driver.getWindowHandles();
     Iterator<String> iterator = multiplewindows.iterator();
     String mainWindow = iterator.next();

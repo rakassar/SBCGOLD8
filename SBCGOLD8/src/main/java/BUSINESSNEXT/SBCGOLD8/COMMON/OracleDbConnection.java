@@ -23,10 +23,15 @@ public class OracleDbConnection {
 	                System.out.println("Connected with connection #1");
 	            }
 	            Statement st=conn.createStatement();
-                String sql="select  Loginid from az_user where  userid in (select distinct AssignTo  from leads where leadid='"+leadid+"') and AppOwnerID=444 and rownum = 1";
+	            String sql1="select Loginid from az_user where userid in (select distinct leadownerid from leads where leadid=";
+	            String sql2=" ) and AppOwnerID=608 and rownum = 1";
+	            String sql=sql1+leadid+sql2;
+	              
+	            //String sql="select Loginid from az_user where userid in (select distinct leadownerid from leads where leadid='\"+leadid+\"') and AppOwnerID=608 and rownum = 1";
 	            ResultSet rs=st.executeQuery(sql);
 	            while( rs.next() ){
 	            Loginid=rs.getString(1);
+	            System.out.println(Loginid);
 
 	             }
 	             }
