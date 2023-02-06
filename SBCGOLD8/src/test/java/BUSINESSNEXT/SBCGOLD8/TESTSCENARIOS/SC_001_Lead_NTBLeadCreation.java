@@ -115,9 +115,8 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         scrollBy();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
-        db.dboracleConnection(LeadObjectPageMethod.leadid);
-    	QuiteBrowser();
-
+        QuiteBrowser();
+    	
         //CLDLPM.CreatedNewLeadEdit();
         //LoginPageRedircet();
         //LogoutButtonClick();
