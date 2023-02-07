@@ -88,6 +88,9 @@ public static WebElement Slk_caseID ;
 @FindBy(xpath="//label[@for='checkbox0']")
 public static WebElement clk_selectcase ;
 
+@FindBy(xpath="//label[@for='checkbox1']")
+public static WebElement clk_selectcaseES ;
+
 @FindBy(xpath="//i[@title='Self Assign Cases']")
 public static WebElement clk_selfassigncase ;
 

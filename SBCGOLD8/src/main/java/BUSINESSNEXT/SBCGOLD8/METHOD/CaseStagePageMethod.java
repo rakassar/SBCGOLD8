@@ -87,6 +87,26 @@ public class CaseStagePageMethod extends HomePageMethod {
 		Thread.sleep(1000);
 
 	}
+	
+	public void clk_selfassigncaseES(String assigntodept) throws InterruptedException
+
+	{
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,1100)", " ");
+		Select View = new Select(CaseStagePageObject.clk_selectview);
+		View.selectByVisibleText(assigntodept);
+		Thread.sleep(1000);
+		CaseStagePageObject.clk_arrorw.click();
+		Thread.sleep(2000);
+		CaseStagePageObject.clk_selectcaseES.click();
+		Thread.sleep(1000);
+		CaseStagePageObject.clk_selfassigncase.click();
+		Thread.sleep(1000);
+		CaseStagePageObject.clk_okbutton.click();
+		Thread.sleep(1000);
+
+	}
 
 	public void clickOk() {
 		CaseStagePageObject.clk_okbutton.click();

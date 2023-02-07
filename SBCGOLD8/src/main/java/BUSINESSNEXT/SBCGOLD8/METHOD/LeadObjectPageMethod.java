@@ -159,6 +159,17 @@ public void ClickOnActivitiestab()
 
 
 	}
+   public void clickUpdate() throws InterruptedException
+
+  	{
+  	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+
+  	   LeadObjectPageObject.clk_update360.click();
+  	   Thread.sleep(1000);
+
+
+
+  	}
 
    public void BmApproveButtonclk() throws InterruptedException
 

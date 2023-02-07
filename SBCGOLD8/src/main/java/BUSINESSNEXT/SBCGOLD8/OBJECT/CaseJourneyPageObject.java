@@ -45,8 +45,21 @@ public static WebElement sel_PIDSTTAUS ;
 public static WebElement pic_ComplaintCategory;
 
 
+@FindBy(name="cust_1349")
+public static WebElement ent_mobileForDedupe;
+
 @FindBy(xpath="//a[@data-autoid='FlowNext']")
 public static WebElement clk_NextOnCasePage;
+
+
+@FindBy(xpath="//span[normalize-space()='Enter Customer Details']")
+public static WebElement bttn_enterCustomerDetails;
+
+@FindBy(xpath="//span[normalize-space()='Tag Customer']")
+public static WebElement bttn_tagCustomer;
+
+@FindBy(xpath="//span[normalize-space()='Switch Case']")
+public static WebElement clk_SwitchCase;
 
 @FindBy(css="a[data-autoid='FlowNext']")
 public static WebElement clk_casesaveandproceed ;

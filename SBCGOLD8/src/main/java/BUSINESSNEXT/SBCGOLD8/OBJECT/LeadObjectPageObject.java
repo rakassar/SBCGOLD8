@@ -35,7 +35,6 @@ public static WebElement get_applicationIDCreated ;
 		@FindBy(xpath="//span[normalize-space()='Switch Process']")
 		public static WebElement clk_SwitchProcess;
 
-	//process Application
 		@FindBy(xpath="//button[normalize-space()='Ok']")
 		public static WebElement clk_closeProcessApplicationPopup;
 		
@@ -112,9 +111,10 @@ public static WebElement get_applicationIDCreated ;
     @FindBy(name="cust_2739")
     public static WebElement Sel_popupdt360;
 
-    //update button
+  
+    
     @FindBy(xpath="//span[normalize-space()='Update']")
-	public static WebElement clk_update360;
+   	public static WebElement clk_update360;
 
     //BM  approve button
     @FindBy(xpath="//span[normalize-space()='Approved']")

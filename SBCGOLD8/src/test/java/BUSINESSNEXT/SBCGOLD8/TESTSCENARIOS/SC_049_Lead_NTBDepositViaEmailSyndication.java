@@ -25,7 +25,7 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
 	CRRSCLeadPageMethod CRRSC= new CRRSCLeadPageMethod();
     Screenshot screen=new Screenshot();
     FillAccountInformationPageMethod FAIPM=new FillAccountInformationPageMethod();
-
+    OracleDbConnection db =new OracleDbConnection();
 
 
     @Test
@@ -60,6 +60,8 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
     @Test
 	public void SC_003_TC_002() throws InterruptedException, IOException
 	{
+    	
+    	
         NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
         //NTBSJPM.EnterFirstName();
         //NTBSJPM.EnterlastName();
@@ -98,14 +100,40 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
         scrollBy();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
-        CLDLPM.CreatedNewLeadEdit();
-        Thread.sleep(1000);
+      
 
 	}
 
     @Test
 	public void SC_003_TC_003() throws InterruptedException, IOException
 	{
+    	launchBrowser();
+    	screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+    	TestDataFromExcel.DataRead();
+    		EnterUserName(db.dboracleConnection(lopm.leadid));
+        EnterPassword(TestDataFromExcel.Password);
+    	screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        LoginButtonClick();
+        CheckRole();
+    	screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CheckRole();
+        Thread.sleep(100);
+        clk_leadobject();
+        lopm.categoryview("Deposit-Individual");
+        lopm.leadview("Assigned to me");
+        Thread.sleep(500);
+        lopm.onMyBucketlead();
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CLDLPM.CreatedNewLeadEdit();
+        Thread.sleep(1000);
+        
         CLDLPM.selectstatuscode();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
