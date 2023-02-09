@@ -369,6 +369,60 @@ public class SC_004_Lead_DocsCollectedUnEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
     	QuiteBrowser();
  	}
+    
+    @Test
+	public void SC_004_TC_010() throws InterruptedException, IOException
+	{
+    	launchBrowser();
+    	screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+    	TestDataFromExcel.DataRead();
+ 		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+        EnterPassword(TestDataFromExcel.Password);
+    	screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        LoginButtonClick();
+        CheckRole();
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        clk_leadobject();
+        lopm.categoryview("Deposit-Individual");
+        lopm.selfassignlead("Account Opened");
+        lopm.leadview("Assigned Leads");
+        Thread.sleep(500);
+        lopm.onMyBucketlead();
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        CLDLPM.clickClosePopup();
+    	screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        lopm.BBOGlogExceptionButton();
+        lopm.SwitchToLastWindow();
+        lopm.logException("No deficiency");
+        lopm.LeadRemarks("No defect");
+        lopm.clickFinsih();
+        lopm.SwitchToParentWindow();
+        
+        lopm.BBOGVerify();
+        lopm.LeadRemarks("No defect");
+        lopm.BmApproveUpdate();
+        Thread.sleep(1000);
+        scrollToTop();
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        System.out.println("Lead status code is "+lopm.getStatusCode());
+        lopm.goToCustomer360();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        QuiteBrowser();
+
+    
+        
+        
+
+
+	}
 
 
 

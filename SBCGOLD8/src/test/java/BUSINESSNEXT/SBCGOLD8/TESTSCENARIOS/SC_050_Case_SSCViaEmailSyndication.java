@@ -66,7 +66,7 @@ Source=Branch Walkin
         Thread.sleep(500);
         screen.ScreenshotMethod("SC_045_Case_SAIDMaintenance-");
         CJPM.enterCustomerDetails();
-        CJPM.mobileForDedupe("33445566");
+        CJPM.mobileForDedupe("919917193700");
         lopm.update360();
         
         CJPM.tagCustomer();
@@ -88,6 +88,7 @@ Source=Branch Walkin
         screen.ScreenshotMethod("SC_045_Case_SAIDMaintenance-");
         CJPM.SwitchCase();
         Thread.sleep(1000);
+        lopm.SwitchToSecondaryWindow();
         screen.ScreenshotMethod("SC_045_Case_SAIDMaintenance-");
         Thread.sleep(2000);
         CJPM.FillSSC("SA ID/AO Code Maintenance");

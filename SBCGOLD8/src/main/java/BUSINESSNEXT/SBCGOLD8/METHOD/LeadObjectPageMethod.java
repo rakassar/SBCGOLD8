@@ -98,6 +98,15 @@ public class LeadObjectPageMethod extends HomePageMethod{
 
 	  LeadObjectPageObject.clk_saveandproceed.click();
  	}
+   
+   public void clickFinsih()
+
+	{
+	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+
+	  LeadObjectPageObject.clk_Finish.click();
+	}
+   
    public void ClickOnCRRSCtab()
 
 	{
@@ -164,11 +173,8 @@ public void ClickOnActivitiestab()
   	{
   	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
 
-  	   LeadObjectPageObject.clk_update360.click();
+  	   LeadObjectPageObject.clk_update.click();
   	   Thread.sleep(1000);
-
-
-
   	}
 
    public void BmApproveButtonclk() throws InterruptedException
@@ -179,6 +185,19 @@ public void ClickOnActivitiestab()
 	   LeadObjectPageObject.clk_BmApproveBttn.click();
 	   Thread.sleep(1000);
 	}
+   
+   public void BBOGlogExceptionButton() throws InterruptedException
+  	{
+  	   LeadObjectPageObject.clk_LogExceptionBttn.click();
+  	   Thread.sleep(1000);
+  	}
+   
+   public void BBOGVerify() throws InterruptedException
+ 	{
+ 	   LeadObjectPageObject.clk_VerifyBttn.click();
+ 	   Thread.sleep(1000);
+ 	}
+   
    public void TustOpsConvertLeadCLK() throws InterruptedException
 
 	{
@@ -254,6 +273,13 @@ public void ClickOnActivitiestab()
    	Select sel1=new Select(LeadObjectPageObject.Sel_popupdt360);
    	sel1.selectByVisibleText(popupdt360);
    }
+   
+   public void logException(String logException)
+
+   {
+   	Select sel1=new Select(LeadObjectPageObject.sel_ExceptionDetails);
+   	sel1.selectByVisibleText(logException);
+   }
 
    public void ProcessApplicationPopUpClose()
 
@@ -314,7 +340,7 @@ public void ClickOnActivitiestab()
 		}
 		
 	
-public void goToTChildLead() {
+public void goToTChildTrustLead() {
 	LeadObjectPageObject.clk_topLead.click();
 	
 }
@@ -415,6 +441,19 @@ public void btn_LeadReject() throws InterruptedException
 public void Trust_TreasuryLeadId()
 {
 	tLeadID =  LeadObjectPageObject.get_leadIDCreated.getText();
+}
+
+
+public void LeadRemarks(String comment) throws InterruptedException
+
+{
+	LeadObjectPageObject.ent_RejectRemarks.sendKeys(comment);
+	Thread.sleep(1000);
+}
+
+public void goToCustomer360()
+{
+	  LeadObjectPageObject.clk_GoToCustomer360.click();
 }
 
 

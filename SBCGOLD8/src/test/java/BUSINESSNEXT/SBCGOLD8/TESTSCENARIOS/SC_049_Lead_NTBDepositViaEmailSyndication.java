@@ -26,6 +26,8 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
     Screenshot screen=new Screenshot();
     FillAccountInformationPageMethod FAIPM=new FillAccountInformationPageMethod();
     OracleDbConnection db =new OracleDbConnection();
+	CreateLeadAppointmentPageMethod CAPM=new CreateLeadAppointmentPageMethod();
+
 
 
     @Test
@@ -59,15 +61,10 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
 
     @Test
 	public void SC_003_TC_002() throws InterruptedException, IOException
-	{
-    	
-    	
+	{	
         NTBSJPM.SalutationID(TestDataFromExcel.SalutationID);
-        //NTBSJPM.EnterFirstName();
-        //NTBSJPM.EnterlastName();
-        //NTBSJPM.EntermiddleName();
         NTBSJPM.EnterMobile();
-        NTBSJPM.SDBranch("Acropolis");
+        NTBSJPM.SDBranch("SB EQUITIES");
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
 
         NTBSJPM.NTBJourneynext1();
@@ -120,7 +117,62 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
         Thread.sleep(100);
         clk_leadobject();
         lopm.categoryview("Deposit-Individual");
-        lopm.leadview("Assigned to me");
+        lopm.leadview("Assigned Leads");
+        Thread.sleep(500);
+        lopm.onMyBucketlead();
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CLDLPM.CreatedNewLeadEdit();
+      
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
+        CAPM.selectstatuscodeappointment();
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
+        CAPM.PreferredDayTime();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
+        lopm.saveAndProceed();
+        Thread.sleep(1000);
+        lopm.GetLeadId();
+
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
+	}
+    
+    @Test
+   	public void SC_003_TC_004() throws InterruptedException, IOException
+   	{
+    	launchBrowser();
+    	screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+    	TestDataFromExcel.DataRead();
+    		EnterUserName(db.dboracleConnection(lopm.leadid));
+        EnterPassword(TestDataFromExcel.Password);
+    	screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        LoginButtonClick();
+        CheckRole();
+    	screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CheckRole();
+        Thread.sleep(100);
+        clk_leadobject();
+        lopm.categoryview("Deposit-Individual");
+        lopm.leadview("Assigned Leads");
         Thread.sleep(500);
         lopm.onMyBucketlead();
         Thread.sleep(500);
@@ -137,7 +189,6 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
         CLDLPM.selectstatuscode();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
-        CLDLPM.Enteremail();
         Thread.sleep(300);
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
         CLDLPM.dob(TestDataFromExcel.dobmonth, TestDataFromExcel.dobdate, TestDataFromExcel.dobyear);
@@ -160,7 +211,7 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
 
 
     @Test
-	public void SC_003_TC_004() throws InterruptedException, IOException
+	public void SC_003_TC_005() throws InterruptedException, IOException
 	{
        /*employed steps start */
         CLDLPM.Employeetype(TestDataFromExcel.Employeetype);
@@ -192,7 +243,7 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
 
 
     @Test
-	public void SC_003_TC_005() throws InterruptedException, IOException
+	public void SC_003_TC_006() throws InterruptedException, IOException
 	{
         CLDLPM.IDPrrof(TestDataFromExcel.IDPrrof);
         CLDLPM.IDNumner();
@@ -223,7 +274,7 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
 
 
     @Test
- 	public void SC_003_TC_006() throws InterruptedException
+ 	public void SC_003_TC_007() throws InterruptedException
  	{
     	 CLDLPM.clickClosePopup();
     	 screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
@@ -317,7 +368,7 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
  	}
 
     @Test
- 	public void SC_003_TC_007() throws InterruptedException
+ 	public void SC_003_TC_008() throws InterruptedException
  	{
     	Thread.sleep(1000);
    	    CLDLPM.clickClosePopup();
@@ -376,7 +427,7 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
  	}
 
     @Test
- 	public void SC_003_TC_008() throws InterruptedException
+ 	public void SC_003_TC_009() throws InterruptedException
  	{
     	Thread.sleep(500);
     	scrolldown();
@@ -403,7 +454,7 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
 
 
     @Test
- 	public void SC_003_TC_009() throws InterruptedException
+ 	public void SC_003_TC_010() throws InterruptedException
  	{
     	Thread.sleep(1000);
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");

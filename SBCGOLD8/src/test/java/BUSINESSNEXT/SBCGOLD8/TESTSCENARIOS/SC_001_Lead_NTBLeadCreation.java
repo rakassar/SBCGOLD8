@@ -49,7 +49,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
     	TestDataFromExcel.DataRead();
     	Thread.sleep(500);
- 		EnterUserName(TestDataFromExcel.UserName_CA);
+ 		EnterUserName(TestDataFromExcel.UserName_CA); ///
  		Thread.sleep(1000);
         screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         EnterPassword(TestDataFromExcel.Password);
