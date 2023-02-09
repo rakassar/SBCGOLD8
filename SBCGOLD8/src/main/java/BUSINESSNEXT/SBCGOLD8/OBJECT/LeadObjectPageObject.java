@@ -20,12 +20,19 @@ public static WebElement get_leadIDCreated ;
 @FindBy(xpath="//SPAN[@data-autoid ='AP_APPLICATIONID_ctrl']")
 public static WebElement get_applicationIDCreated ;
 
+@FindBy(xpath="//a[@data-autoid = 'LE_COMPANY_ctrl']")
+public static WebElement clk_GoToCustomer360 ;
+
 
 //quick link and OnBaording journey option
     @FindBy(id="1")
     public static WebElement clk_salesonbaordingjourney ;
     @FindBy(css="a[data-autoid='FlowNext']")
     public static WebElement clk_saveandproceed ;
+    
+    //click finish
+    @FindBy(css="a[data-autoid='FlowFinish']")
+    public static WebElement clk_Finish ;
 
 	//process Application
 	@FindBy(xpath="//span[normalize-space()='Process Application']")
@@ -35,7 +42,6 @@ public static WebElement get_applicationIDCreated ;
 		@FindBy(xpath="//span[normalize-space()='Switch Process']")
 		public static WebElement clk_SwitchProcess;
 
-	//process Application
 		@FindBy(xpath="//button[normalize-space()='Ok']")
 		public static WebElement clk_closeProcessApplicationPopup;
 		
@@ -112,13 +118,30 @@ public static WebElement get_applicationIDCreated ;
     @FindBy(name="cust_2739")
     public static WebElement Sel_popupdt360;
 
-    //update button
+  
+    
     @FindBy(xpath="//span[normalize-space()='Update']")
-	public static WebElement clk_update360;
+   	public static WebElement clk_update360;
+    
+    @FindBy(xpath="//button[normalize-space()='Update']")
+   	public static WebElement clk_update;
 
     //BM  approve button
     @FindBy(xpath="//span[normalize-space()='Approved']")
 	public static WebElement clk_BmApproveBttn;
+    
+  //BBOG Log Exception button
+    @FindBy(xpath="//span[normalize-space()='Log Exception']")
+	public static WebElement clk_LogExceptionBttn;
+    
+    
+    //BBOG Verify button
+    @FindBy(xpath="//span[normalize-space()='Verify']")
+	public static WebElement clk_VerifyBttn;
+    
+  //BBOG Log Exception dropdown field
+    @FindBy(name="cust_1181")
+	public static WebElement sel_ExceptionDetails;
   
     
   //BM  comments box button

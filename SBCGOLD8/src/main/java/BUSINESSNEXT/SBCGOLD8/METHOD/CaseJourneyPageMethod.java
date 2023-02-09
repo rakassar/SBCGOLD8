@@ -88,6 +88,45 @@ public class CaseJourneyPageMethod extends HomePageMethod {
 			 */
 
 	    }
+	  public void enterCustomerDetails()
+	  {
+		  CaseJourneyPageObject.bttn_enterCustomerDetails.click();
+			/*
+			 * Thread.sleep(2000); JavascriptExecutor js = (JavascriptExecutor) driver;
+			 * js.executeScript("window.scrollBy(0,1500)", "");
+			 */
+
+	    }
+	  public void SwitchCase()
+
+		{
+		   
+
+		  CaseJourneyPageObject.clk_SwitchCase.click();
+
+
+		}
+	  public void tagCustomer()
+	  {
+		  CaseJourneyPageObject.bttn_tagCustomer.click();
+			/*
+			 * Thread.sleep(2000); JavascriptExecutor js = (JavascriptExecutor) driver;
+			 * js.executeScript("window.scrollBy(0,1500)", "");
+			 */
+
+	    }
+	  
+	 
+	  
+	  public void mobileForDedupe(String no)
+	  {
+		  CaseJourneyPageObject.ent_mobileForDedupe.sendKeys(no);;
+			/*
+			 * Thread.sleep(2000); JavascriptExecutor js = (JavascriptExecutor) driver;
+			 * js.executeScript("window.scrollBy(0,1500)", "");
+			 */
+
+	    }
 
 
 	  public void casesaveAndProceed()

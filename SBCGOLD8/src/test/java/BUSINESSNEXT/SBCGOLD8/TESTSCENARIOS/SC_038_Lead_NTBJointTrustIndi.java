@@ -923,7 +923,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
         
         lopm.waitTillCSQPerform();
         Thread.sleep(3000);
-        lopm.goToTChildLead();
+        lopm.goToTChildTrustLead();
         screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
 
         CLDLPM.CreatedNewLeadEdit();

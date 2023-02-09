@@ -385,7 +385,32 @@ public class SC_003_Lead_NTBDocsCollectionEmployed extends HomePageMethod
         lopm.waitTillAccountOpen();
 
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
-    	QuiteBrowser();
+    	
+ 	}
+    @Test
+ 	public void SC_003_TC_010() throws InterruptedException
+ 	{
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CLDLPM.clickClosePopup();
+    	screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        lopm.goToCustomer360();
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        Thread.sleep(2000);
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        QuiteBrowser();
+
+    	
     	
  	}
 
