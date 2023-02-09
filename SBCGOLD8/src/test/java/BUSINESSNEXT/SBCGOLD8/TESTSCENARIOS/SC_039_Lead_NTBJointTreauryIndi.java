@@ -933,7 +933,7 @@ public class SC_039_Lead_NTBJointTreauryIndi extends HomePageMethod
 		CSQ.CSQUpdate();
         lopm.waitTillCSQPerform();
         Thread.sleep(3000);
-        lopm.goToTChildLead();
+        lopm.goToTChildTrustLead();
         screen.ScreenshotMethod("SC_039_Lead_NTBJointTreauryIndi-");
 
         CLDLPM.CreatedNewLeadEdit();
