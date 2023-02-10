@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_001_Lead_NTBLeadCreation"/>
+      <!--class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_004_Lead_DocsCollectedUnEmployed"/-->
+      <!--class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_002_Lead_NTBLeadAppointment"/-->
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
