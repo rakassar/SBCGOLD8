@@ -2,7 +2,7 @@ package BUSINESSNEXT.SBCGOLD8.REPOSITORY;
 
         public interface Properties {
         String ChromeDriverPath= "E:\\Rizwan\\Automation\\lib\\chromedriver.exe";
-		//String ChromeWebDriver = "webdriver.chrome.driver";
+		String ChromeWebDriver = "webdriver.chrome.driver";
 		String URL= "https://sbcdev.crmnext.com/accg7/app/login/login";
 		String ExcelInputPath= "E:\\Rizwan\\Automation\\lib\\Data_Read_From_Excel\\SBC\\SBC_Datafromexcel.xlsx";
 		String pots= "E:\\Rizwan\\Automation\\lib\\Pots\\SBC\\";
