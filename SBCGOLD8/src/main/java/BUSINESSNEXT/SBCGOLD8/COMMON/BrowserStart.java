@@ -32,7 +32,7 @@ public class BrowserStart implements Properties{
 	public void launchBrowser()
 	{
 
-    System.setProperty(ChromeWebDriver, ChromeDriverPath);
+    System.setProperty("webdriver.chrome.driver", ChromeDriverPath);
 	driver =new ChromeDriver();
 	//driver.close();
 	ChromeOptions option= new ChromeOptions();
