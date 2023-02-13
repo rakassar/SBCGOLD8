@@ -39,7 +39,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.6.1</version>
-    <scope>test</scope>
+  <!--  <scope>test</scope>-->
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
@@ -86,7 +86,13 @@
 <artifactId>saaj-impl</artifactId>
 <version>1.4.0</version>
 </dependency>
-      
+ 
+ <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <optional>true</optional>
+</dependency>
  
       
  </dependencies>
