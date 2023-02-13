@@ -552,10 +552,146 @@ public class SC_036_Lead_NTB_ETBJointEmployed extends HomePageMethod {
 		screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
 		lopm.ProcessApplicationPopUpClose();
 		Thread.sleep(3000);
+		scrollToTop();
 		screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
 		lopm.waitTillAccountOpen();
-		QuiteBrowser();
-	}
+		screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+		CLDLPM.clickClosePopup();
+		screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+		QuiteBrowser();	
+		}
+	 @Test
+	   	public void SC_036_TC_011() throws InterruptedException, IOException
+	   	{
+	       	launchBrowser();
+	        screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	       	TestDataFromExcel.DataRead();
+	    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+	           EnterPassword(TestDataFromExcel.Password);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           LoginButtonClick();
+	           CheckRole();
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           clk_leadobject();
+	           lopm.categoryview("Deposit-Individual");
+	           lopm.selfassignlead("Account Opened");
+	           lopm.leadview("Assigned Leads");
+	           Thread.sleep(500);
+	           lopm.onMyBucketlead();
+	           Thread.sleep(500);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           CLDLPM.clickClosePopup();
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           lopm.BBOGlogExceptionButton();
+	           lopm.SwitchToLastWindow();
+	           lopm.logException("No deficiency");
+	           lopm.LeadRemarks("No defect");
+	           lopm.clickFinsih();
+	           lopm.SwitchToParentWindow();
+	           
+	           lopm.BBOGVerify();
+	           lopm.LeadRemarks("No defect");
+	           lopm.BmApproveUpdate();
+	           Thread.sleep(1000);
+	           scrollToTop();
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           System.out.println("Lead status code is "+lopm.getStatusCode());
+	           lopm.goToCustomer360();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           cspm.switchCustomerView();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           QuiteBrowser();
+
+
+	   	}
+	 @Test
+	   	public void SC_036_TC_012() throws InterruptedException, IOException
+	   	{
+	       	launchBrowser();
+	        screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	       	TestDataFromExcel.DataRead();
+	    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+	           EnterPassword(TestDataFromExcel.Password);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           LoginButtonClick();
+	           CheckRole();
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           clk_leadobject();
+	           lopm.categoryview("Deposit-Individual");
+	           lopm.selfassignlead("Account Opened");
+	           lopm.leadview("Assigned Leads");
+	           Thread.sleep(500);
+	           lopm.onMyBucketlead();
+	           Thread.sleep(500);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           CLDLPM.clickClosePopup();
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           lopm.BBOGlogExceptionButton();
+	           lopm.SwitchToLastWindow();
+	           lopm.logException("No deficiency");
+	           lopm.LeadRemarks("No defect");
+	           lopm.clickFinsih();
+	           lopm.SwitchToParentWindow();
+	           
+	           lopm.BBOGVerify();
+	           lopm.LeadRemarks("No defect");
+	           lopm.BmApproveUpdate();
+	           Thread.sleep(1000);
+	           scrollToTop();
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           System.out.println("Lead status code is "+lopm.getStatusCode());
+	           lopm.goToCustomer360();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           cspm.switchCustomerView();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_036_Lead_NTB_ETBJointEmployed-");
+	           QuiteBrowser();
+
+
+	   	}
+
 
 	/*
 	 * //screen shot using listner class

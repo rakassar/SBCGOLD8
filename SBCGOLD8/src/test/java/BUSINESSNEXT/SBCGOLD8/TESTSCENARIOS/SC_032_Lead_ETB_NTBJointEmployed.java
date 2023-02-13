@@ -378,14 +378,16 @@ public class SC_032_Lead_ETB_NTBJointEmployed extends HomePageMethod {
 		 * //Thread.sleep(1000);
 		 * CRRSC.ManagerialCRRSC(TestDataFromExcel.managerialCRRSC);
 		 * CRRSC.DirectDealingCRRSC(TestDataFromExcel.DirectDealingCRRSC);
-		 * Thread.sleep(1000); screen.ScreenshotMethod("SC_032_Lead_ETB_NTBJointEmployed-");
+		 * Thread.sleep(1000);
+		 * screen.ScreenshotMethod("SC_032_Lead_ETB_NTBJointEmployed-");
 		 * Thread.sleep(1000); CRRSC.CityCRRSC(TestDataFromExcel.CityCRRSC);
 		 * //CRRSC.ProvinceCRRSC(TestDataFromExcel.ProvinceCRRSC);
 		 * //CRRSC.RiskCRRSC(TestDataFromExcel.RiskCRRSC); Thread.sleep(1000);
 		 * screen.ScreenshotMethod("SC_032_Lead_ETB_NTBJointEmployed-");
 		 * CRRSC.vicinityRRSC(TestDataFromExcel.vicinityRRSC);
 		 * 
-		 * Thread.sleep(1000); screen.ScreenshotMethod("SC_032_Lead_ETB_NTBJointEmployed-");
+		 * Thread.sleep(1000);
+		 * screen.ScreenshotMethod("SC_032_Lead_ETB_NTBJointEmployed-");
 		 * CRRSC.intialdepositeRRSC(TestDataFromExcel.intialdepositeRRSC);
 		 * 
 		 * CRRSC.InwprdOutwordRRSC(TestDataFromExcel.InwprdOutwordRRSC);
@@ -475,7 +477,18 @@ public class SC_032_Lead_ETB_NTBJointEmployed extends HomePageMethod {
 		Thread.sleep(2000);
 		scrollToTop();
 		lopm.waitTillAccountOpen();
-		screen.ScreenshotMethod("SC_032_Lead_ETB_NTBJointEmployed-");
+		screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+		CLDLPM.clickClosePopup();
+		screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
 	}
 
 	@Test(priority = 8)
@@ -526,9 +539,142 @@ public class SC_032_Lead_ETB_NTBJointEmployed extends HomePageMethod {
 		scrollToTop();
 		screen.ScreenshotMethod("SC_032_Lead_ETB_NTBJointEmployed-");
 		lopm.waitTillAccountOpen();
-		screen.ScreenshotMethod("SC_032_Lead_ETB_NTBJointEmployed-");
+		screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+		CLDLPM.clickClosePopup();
+		screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
 		QuiteBrowser();
 	}
+	 @Test
+	   	public void SC_032_TC_010() throws InterruptedException, IOException
+	   	{
+	       	launchBrowser();
+	        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	       	TestDataFromExcel.DataRead();
+	    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+	           EnterPassword(TestDataFromExcel.Password);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           LoginButtonClick();
+	           CheckRole();
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           clk_leadobject();
+	           lopm.categoryview("Deposit-Individual");
+	           lopm.selfassignlead("Account Opened");
+	           lopm.leadview("Assigned Leads");
+	           Thread.sleep(500);
+	           lopm.onMyBucketlead();
+	           Thread.sleep(500);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           CLDLPM.clickClosePopup();
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           lopm.BBOGlogExceptionButton();
+	           lopm.SwitchToLastWindow();
+	           lopm.logException("No deficiency");
+	           lopm.LeadRemarks("No defect");
+	           lopm.clickFinsih();
+	           lopm.SwitchToParentWindow();
+	           
+	           lopm.BBOGVerify();
+	           lopm.LeadRemarks("No defect");
+	           lopm.BmApproveUpdate();
+	           Thread.sleep(1000);
+	           scrollToTop();
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           System.out.println("Lead status code is "+lopm.getStatusCode());
+	           lopm.goToCustomer360();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           cspm.switchCustomerView();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           QuiteBrowser();
+
+
+	   	}
+	 @Test
+	   	public void SC_032_TC_011() throws InterruptedException, IOException
+	   	{
+	       	launchBrowser();
+	        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	       	TestDataFromExcel.DataRead();
+	    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+	           EnterPassword(TestDataFromExcel.Password);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           LoginButtonClick();
+	           CheckRole();
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           clk_leadobject();
+	           lopm.categoryview("Deposit-Individual");
+	           lopm.selfassignlead("Account Opened");
+	           lopm.leadview("Assigned Leads");
+	           Thread.sleep(500);
+	           lopm.onMyBucketlead();
+	           Thread.sleep(500);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           CLDLPM.clickClosePopup();
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           lopm.BBOGlogExceptionButton();
+	           lopm.SwitchToLastWindow();
+	           lopm.logException("No deficiency");
+	           lopm.LeadRemarks("No defect");
+	           lopm.clickFinsih();
+	           lopm.SwitchToParentWindow();
+	           
+	           lopm.BBOGVerify();
+	           lopm.LeadRemarks("No defect");
+	           lopm.BmApproveUpdate();
+	           Thread.sleep(1000);
+	           scrollToTop();
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           System.out.println("Lead status code is "+lopm.getStatusCode());
+	           lopm.goToCustomer360();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           cspm.switchCustomerView();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+	           QuiteBrowser();
+
+
+	   	}
 
 	/*
 	 * //screen shot using listner class

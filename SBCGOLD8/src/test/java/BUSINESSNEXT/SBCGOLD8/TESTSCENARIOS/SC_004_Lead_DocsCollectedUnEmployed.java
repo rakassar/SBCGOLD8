@@ -367,18 +367,29 @@ public class SC_004_Lead_DocsCollectedUnEmployed extends HomePageMethod
         lopm.GetLeadId();
         lopm.waitTillAccountOpen();
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
-    	QuiteBrowser();
+        CLDLPM.clickClosePopup();
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        QuiteBrowser();
  	}
     
     @Test
 	public void SC_004_TC_010() throws InterruptedException, IOException
 	{
     	launchBrowser();
-    	screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
     	TestDataFromExcel.DataRead();
  		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
         EnterPassword(TestDataFromExcel.Password);
-    	screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
         LoginButtonClick();
         CheckRole();
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
@@ -391,7 +402,7 @@ public class SC_004_Lead_DocsCollectedUnEmployed extends HomePageMethod
         Thread.sleep(500);
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
         CLDLPM.clickClosePopup();
-    	screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
         scrollBy();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
@@ -415,11 +426,19 @@ public class SC_004_Lead_DocsCollectedUnEmployed extends HomePageMethod
         lopm.goToCustomer360();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        cspm.switchCustomerView();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
         QuiteBrowser();
-
-    
-        
-        
 
 
 	}

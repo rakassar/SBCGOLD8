@@ -396,6 +396,22 @@ public void ClickOnUpdtButton()
 	LeadObjectPageObject.btn_ClickOnUpdtButton.click();
 }
 
+public void ClickOnCAReassignment()
+{
+	LeadObjectPageObject.btn_CAReassignment.click();
+}
+
+public void fillCAForReassignment(String userID) throws InterruptedException
+{
+	LeadObjectPageObject.pic_FillCAForReassignment.sendKeys(userID);
+	Thread.sleep(900);
+	LeadObjectPageObject.pic_FillCAForReassignment.sendKeys(Keys.DOWN);
+	Thread.sleep(100);
+	LeadObjectPageObject.pic_FillCAForReassignment.sendKeys(Keys.ENTER);
+	
+	
+}
+
 
 public void Clicksearchaftertype()
 

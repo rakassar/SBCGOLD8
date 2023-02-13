@@ -19,6 +19,13 @@ public class CreateLeadAppointmentPageMethod extends HomePageMethod{
 		CreateLeadAppointmentPageObject.clk_statuscodeappointment.click();
 
 	}
+	
+	public void clickAppointmentFixFlag()
+	{
+
+		CreateLeadAppointmentPageObject.clk_appointmentfixFlag.click();
+
+	}
 
 	public void PreferredDayTime()
 	{

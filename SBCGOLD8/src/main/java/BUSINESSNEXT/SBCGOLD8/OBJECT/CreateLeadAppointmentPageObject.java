@@ -19,6 +19,10 @@ public CreateLeadAppointmentPageObject (WebDriver driver)
 @FindBy(id="1")
 public static WebElement clk_statuscodeappointment;
 
+
+@FindBy(xpath="//span[text()='Appointment Fixed']")
+public static WebElement clk_appointmentfixFlag;
+
 @FindBy(xpath="//*[contains(@placeholder,'MM/DD/YYYY')]")
 //@FindBy(xpath="//a[contains(@title,'Today') and @data-autoid='cust_192_today']")//added this one to choose today;s date
 public static WebElement clk_ldPreferredDay;

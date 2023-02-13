@@ -363,8 +363,82 @@ public class SC_022_Lead_NTB_NonIndiDocsCollection extends HomePageMethod
         scrollToTop();
         lopm.waitTillAccountOpen();
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+        CLDLPM.clickClosePopup();
+        screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
         QuiteBrowser();
  	}
+    @Test
+   	public void SC_022_TC_010() throws InterruptedException, IOException
+   	{
+       	launchBrowser();
+        screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+       	TestDataFromExcel.DataRead();
+    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+           EnterPassword(TestDataFromExcel.Password);
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           LoginButtonClick();
+           CheckRole();
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           clk_leadobject();
+           lopm.categoryview("Deposit-Non Individual ");
+           lopm.selfassignlead("Account Opened");
+           lopm.leadview("Assigned Leads");
+           Thread.sleep(500);
+           lopm.onMyBucketlead();
+           Thread.sleep(500);
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           CLDLPM.clickClosePopup();
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           lopm.BBOGlogExceptionButton();
+           lopm.SwitchToLastWindow();
+           lopm.logException("No deficiency");
+           lopm.LeadRemarks("No defect");
+           lopm.clickFinsih();
+           lopm.SwitchToParentWindow();
+           
+           lopm.BBOGVerify();
+           lopm.LeadRemarks("No defect");
+           lopm.BmApproveUpdate();
+           Thread.sleep(1000);
+           scrollToTop();
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           System.out.println("Lead status code is "+lopm.getStatusCode());
+           lopm.goToCustomer360();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           cspm.switchCustomerView();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+           QuiteBrowser();
+
+
+   	}
+
+
 
 
 	/*

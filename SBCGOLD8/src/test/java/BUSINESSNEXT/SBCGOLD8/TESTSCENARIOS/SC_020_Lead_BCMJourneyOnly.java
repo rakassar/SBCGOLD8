@@ -137,9 +137,87 @@ public class SC_020_Lead_BCMJourneyOnly extends HomePageMethod
         screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        scrollToTop();
+        lopm.GetLeadId();
+        lopm.waitTillAccountOpen();
+
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+        CLDLPM.clickClosePopup();
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+        scrollBy();
+        Thread.sleep(1000);
         screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         QuiteBrowser();
  	}
+
+      @Test
+     	public void SC_020_TC_005() throws InterruptedException, IOException
+     	{
+         	launchBrowser();
+          screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+         	TestDataFromExcel.DataRead();
+      		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+             EnterPassword(TestDataFromExcel.Password);
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             LoginButtonClick();
+             CheckRole();
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             clk_leadobject();
+             lopm.categoryview("Deposit-Individual");
+             lopm.selfassignlead("Account Opened");
+             lopm.leadview("Assigned Leads");
+             Thread.sleep(500);
+             lopm.onMyBucketlead();
+             Thread.sleep(500);
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             CLDLPM.clickClosePopup();
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             scrollBy();
+             Thread.sleep(1000);
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             scrollBy();
+             Thread.sleep(1000);
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             lopm.BBOGlogExceptionButton();
+             lopm.SwitchToLastWindow();
+             lopm.logException("No deficiency");
+             lopm.LeadRemarks("No defect");
+             lopm.clickFinsih();
+             lopm.SwitchToParentWindow();
+             
+             lopm.BBOGVerify();
+             lopm.LeadRemarks("No defect");
+             lopm.BmApproveUpdate();
+             Thread.sleep(1000);
+             scrollToTop();
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             System.out.println("Lead status code is "+lopm.getStatusCode());
+             lopm.goToCustomer360();
+             Thread.sleep(1000);
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             cspm.switchCustomerView();
+             Thread.sleep(1000);
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             scrollBy();
+             Thread.sleep(1000);
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             scrollBy();
+             Thread.sleep(1000);
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             scrollBy();
+             Thread.sleep(1000);
+             screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
+             QuiteBrowser();
+
+
+     	}
+
 
 
 	/*

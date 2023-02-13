@@ -114,6 +114,12 @@ public static WebElement clk_GoToCustomer360 ;
 
     @FindBy(xpath="//span[normalize-space()='Update to 360']")
     public static WebElement btn_ClickOnUpdtButton;
+    
+    @FindBy(xpath="//span[normalize-space()='CA Reassignment']")
+    public static WebElement btn_CAReassignment;
+    
+    @FindBy(name="cust_2647")
+    public static WebElement pic_FillCAForReassignment;
 
     @FindBy(name="cust_2739")
     public static WebElement Sel_popupdt360;

@@ -331,9 +331,82 @@ public class SC_025_Lead_NTB_NonIndiLoanProcessor extends HomePageMethod
         scrollToTop();
         lopm.waitTillAccountOpen();
         screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
-    	QuiteBrowser();
-
+        CLDLPM.clickClosePopup();
+        screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+        QuiteBrowser();
  	}
+    @Test
+   	public void SC_025_TC_009() throws InterruptedException, IOException
+   	{
+       	launchBrowser();
+        screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+       	TestDataFromExcel.DataRead();
+    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+           EnterPassword(TestDataFromExcel.Password);
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           LoginButtonClick();
+           CheckRole();
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           clk_leadobject();
+           lopm.categoryview("Deposit-Non Individual ");
+           lopm.selfassignlead("Account Opened");
+           lopm.leadview("Assigned Leads");
+           Thread.sleep(500);
+           lopm.onMyBucketlead();
+           Thread.sleep(500);
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           CLDLPM.clickClosePopup();
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           lopm.BBOGlogExceptionButton();
+           lopm.SwitchToLastWindow();
+           lopm.logException("No deficiency");
+           lopm.LeadRemarks("No defect");
+           lopm.clickFinsih();
+           lopm.SwitchToParentWindow();
+           
+           lopm.BBOGVerify();
+           lopm.LeadRemarks("No defect");
+           lopm.BmApproveUpdate();
+           Thread.sleep(1000);
+           scrollToTop();
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           System.out.println("Lead status code is "+lopm.getStatusCode());
+           lopm.goToCustomer360();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           cspm.switchCustomerView();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_025_Lead_NTB_NonIndiLoanProcessor-");
+           QuiteBrowser();
+
+
+   	}
+
+
 
 
 	/*
