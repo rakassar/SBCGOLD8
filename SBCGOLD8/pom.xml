@@ -93,7 +93,16 @@
             <version>1.18.24</version>
             <optional>true</optional>
 </dependency>
-      
+   
+   <!-- Oracle dependency-->
+  <dependency>
+		<groupId>com.oracle</groupId>
+		<artifactId>ojdbc</artifactId>
+		<version>11</version>
+		<scope>system</scope>
+		<systemPath>E:\Rizwan\Automation\lib\orcalejdbc\ojdbc11.jar</systemPath>
+	   </dependency>
+	      
  </dependencies>
   
 <profiles>
