@@ -27,6 +27,9 @@ public static WebElement ent_ldfirstname;
 public static WebElement ent_ldlastname;
 @FindBy(name="MIDDLENAME")
 public static WebElement ent_ldmiddlename;
+@FindBy(name="LE_LEADSOURCE")
+public static WebElement sel_leadSource;
+
 
 
 @FindBy(name="LE_TERRITORY")

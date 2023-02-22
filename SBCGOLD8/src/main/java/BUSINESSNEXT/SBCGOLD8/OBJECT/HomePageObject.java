@@ -73,7 +73,7 @@ public class HomePageObject extends LoginPageObject {
      //case--
 
 
-     @FindBy(xpath="//*[@id=\"QuickLinksDiv\"]/ul/li[5]/a")
+     @FindBy(xpath="//span[text()='Case Journey']")
   	 public static WebElement clk_leadpaneCasejourney ;
 
 

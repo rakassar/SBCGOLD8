@@ -460,8 +460,141 @@ public class SC_033_Lead_ETB_ETBJointEmployed extends HomePageMethod {
 		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		lopm.waitTillAccountOpen();
 		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+		CLDLPM.clickClosePopup();
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+		scrollBy();
+		Thread.sleep(1000);
+		screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
 		QuiteBrowser();
 	}
+	 @Test
+	   	public void SC_033_TC_010() throws InterruptedException, IOException
+	   	{
+	       	launchBrowser();
+	        screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	       	TestDataFromExcel.DataRead();
+	    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+	           EnterPassword(TestDataFromExcel.Password);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           LoginButtonClick();
+	           CheckRole();
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           clk_leadobject();
+	           lopm.categoryview("Deposit-Individual");
+	           lopm.selfassignlead("Account Opened");
+	           lopm.leadview("Assigned Leads");
+	           Thread.sleep(500);
+	           lopm.onMyBucketlead();
+	           Thread.sleep(500);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           CLDLPM.clickClosePopup();
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           lopm.BBOGlogExceptionButton();
+	           lopm.SwitchToLastWindow();
+	           lopm.logException("No deficiency");
+	           lopm.LeadRemarks("No defect");
+	           lopm.clickFinsih();
+	           lopm.SwitchToParentWindow();
+	           
+	           lopm.BBOGVerify();
+	           lopm.LeadRemarks("No defect");
+	           lopm.BmApproveUpdate();
+	           Thread.sleep(1000);
+	           scrollToTop();
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           System.out.println("Lead status code is "+lopm.getStatusCode());
+	           lopm.goToCustomer360();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           cspm.switchCustomerView();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           QuiteBrowser();
+
+
+	   	}
+	 @Test
+	   	public void SC_033_TC_011() throws InterruptedException, IOException
+	   	{
+	       	launchBrowser();
+	        screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	       	TestDataFromExcel.DataRead();
+	    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+	           EnterPassword(TestDataFromExcel.Password);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           LoginButtonClick();
+	           CheckRole();
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           clk_leadobject();
+	           lopm.categoryview("Deposit-Individual");
+	           lopm.selfassignlead("Account Opened");
+	           lopm.leadview("Assigned Leads");
+	           Thread.sleep(500);
+	           lopm.onMyBucketlead();
+	           Thread.sleep(500);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           CLDLPM.clickClosePopup();
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           lopm.BBOGlogExceptionButton();
+	           lopm.SwitchToLastWindow();
+	           lopm.logException("No deficiency");
+	           lopm.LeadRemarks("No defect");
+	           lopm.clickFinsih();
+	           lopm.SwitchToParentWindow();
+	           
+	           lopm.BBOGVerify();
+	           lopm.LeadRemarks("No defect");
+	           lopm.BmApproveUpdate();
+	           Thread.sleep(1000);
+	           scrollToTop();
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           System.out.println("Lead status code is "+lopm.getStatusCode());
+	           lopm.goToCustomer360();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           cspm.switchCustomerView();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_033_Lead_ETB_ETBJointEmployed-");
+	           QuiteBrowser();
+
+
+	   	}
 
 	/*
 	 * //screen shot using listner class

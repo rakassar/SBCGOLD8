@@ -40,6 +40,13 @@ public class IndividualSalesJourneyPageMethod extends HomePageMethod {
 
 		IndividualSalesJourneyPageObject.ent_ldfirstname.sendKeys(firstname);
 	}
+	
+	public void leadSource(String source) {
+		Select sel = new Select(IndividualSalesJourneyPageObject.sel_leadSource);
+
+		sel.selectByVisibleText(source);
+		
+	}
 
 	public void EnterlastName() {
 		Random r = new Random();
