@@ -605,6 +605,67 @@ public class SC_031_Lead_NTBTreasuryFlow extends HomePageMethod
             screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
     	    QuiteBrowser();
     	 	}
+    @Test(priority = 10)
+   	public void SC_031_TC_010() throws InterruptedException, IOException
+   	{
+       	launchBrowser();
+        screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+       	TestDataFromExcel.DataRead();
+    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+           EnterPassword(TestDataFromExcel.Password);
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           LoginButtonClick();
+           CheckRole();
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           clk_leadobject();
+           lopm.categoryview("Deposit-Individual");
+           lopm.selfassignlead("Account Opened");
+           lopm.leadview("Assigned Leads");
+           Thread.sleep(500);
+           lopm.onMyBucketlead();
+           Thread.sleep(500);
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           CLDLPM.clickClosePopup();
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           lopm.BBOGlogExceptionButton();
+           lopm.SwitchToLastWindow();
+           lopm.logException("No deficiency");
+           lopm.LeadRemarks("No defect");
+           lopm.clickFinsih();
+           lopm.SwitchToParentWindow();
+           
+           lopm.BBOGVerify();
+           lopm.LeadRemarks("No defect");
+           lopm.BmApproveUpdate();
+           Thread.sleep(1000);
+           scrollToTop();
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           System.out.println("Lead status code is "+lopm.getStatusCode());
+           lopm.goToCustomer360();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           cspm.switchCustomerView();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_031_Lead_NTBTreasuryFlow-");
+           QuiteBrowser();
+
+
+   	}
  	}
 
 

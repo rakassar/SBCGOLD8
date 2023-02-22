@@ -97,6 +97,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         Thread.sleep(1000);
         lopm.GetLeadId();
+        System.out.println("Lead status code is "+lopm.getStatusCode());
         scrollBy();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_001_NTBLeadCreation-");

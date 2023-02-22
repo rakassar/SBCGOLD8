@@ -585,7 +585,67 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		QuiteBrowser();
 	}
+	@Test(priority = 10)
+	   	public void SC_028_TC_010() throws InterruptedException, IOException
+	   	{
+	       	launchBrowser();
+	        screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	       	TestDataFromExcel.DataRead();
+	    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+	           EnterPassword(TestDataFromExcel.Password);
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           LoginButtonClick();
+	           CheckRole();
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           clk_leadobject();
+	           lopm.categoryview("Deposit-Individual");
+	           lopm.selfassignlead("Account Opened");
+	           lopm.leadview("Assigned Leads");
+	           Thread.sleep(500);
+	           lopm.onMyBucketlead();
+	           Thread.sleep(500);
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           CLDLPM.clickClosePopup();
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           lopm.BBOGlogExceptionButton();
+	           lopm.SwitchToLastWindow();
+	           lopm.logException("No deficiency");
+	           lopm.LeadRemarks("No defect");
+	           lopm.clickFinsih();
+	           lopm.SwitchToParentWindow();
+	           
+	           lopm.BBOGVerify();
+	           lopm.LeadRemarks("No defect");
+	           lopm.BmApproveUpdate();
+	           Thread.sleep(1000);
+	           scrollToTop();
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           System.out.println("Lead status code is "+lopm.getStatusCode());
+	           lopm.goToCustomer360();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           cspm.switchCustomerView();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           scrollBy();
+	           Thread.sleep(1000);
+	           screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
+	           QuiteBrowser();
 
+
+	   	}
 }
 
 /*

@@ -107,7 +107,7 @@ public class SC_049_Lead_NTBDepositViaEmailSyndication extends HomePageMethod
     	launchBrowser();
     	screen.ScreenshotMethod("SC_049_Lead_NTBDepositViaEmailSyndication-");
     	TestDataFromExcel.DataRead();
-    		EnterUserName(db.dboracleConnection(lopm.leadid));
+    	EnterUserName(db.dboracleConnection(lopm.leadid));
         EnterPassword(TestDataFromExcel.Password);
     	screen.ScreenshotMethod("SC_049_Lead_NTBDepositViaEmailSyndication-");
         LoginButtonClick();
