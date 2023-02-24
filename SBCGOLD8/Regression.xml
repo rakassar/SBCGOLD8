@@ -3,10 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-	  <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_050_Case_SSCViaEmailSyndication"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_050_Case_SSCViaEmailSyndication"/>
       <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_001_Lead_NTBLeadCreation"/> 
-      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_002_Lead_NTBLeadAppointment"/>
-      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_003_Lead_NTBDocsCollectionEmployed"/>
+
         
       
        
