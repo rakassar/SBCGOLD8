@@ -6,7 +6,7 @@
    
       <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_001_Lead_NTBLeadCreation"/> 
       <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_002_Lead_NTBLeadAppointment"/>
-      
+       <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_003_Lead_NTBDocsCollectionEmployed"/>
        
     </classes>
   </test> <!-- Test -->
