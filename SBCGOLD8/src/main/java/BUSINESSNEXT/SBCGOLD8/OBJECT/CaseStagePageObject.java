@@ -88,6 +88,9 @@ public static WebElement Slk_caseID ;
 @FindBy(xpath="//label[@for='checkbox0']")
 public static WebElement clk_selectcase ;
 
+@FindBy(xpath="//label[@for='checkbox1']")
+public static WebElement clk_selectcaseES ;
+
 @FindBy(xpath="//i[@title='Self Assign Cases']")
 public static WebElement clk_selfassigncase ;
 
@@ -159,6 +162,9 @@ public static WebElement Sel_UpdateCRRSC;
 public static WebElement sel_ContactInformationactipntype;
 
 
+@FindBy(xpath="//span[@data-autoid= 'CASE_STATUSCODE_ctrl']")
+public static WebElement get_CaseStatusCode;
+
 @FindBy(name="cust_723")
 public static WebElement sel_CustomerType;
 @FindBy(name="cust_1817")
@@ -172,9 +178,44 @@ public static WebElement ent_Mobile;
 @FindBy(name="cust_2371")
 public static WebElement sel_forEmployment;
 
+@FindBy(name="cust_2768")
+public static WebElement sel_documentClassification;
+
+
+@FindBy(name="cust_2792")
+public static WebElement ent_deliveryAdress;
+
+@FindBy(name="cust_2766")
+public static WebElement ent_emailAddress;
+
+
+
+
+
 @FindBy(name="cust_670")
-public static WebElement sel_TypeofRequest
-;
+public static WebElement sel_TypeofRequest;
+
+@FindBy(name="cust_148")
+public static WebElement ent_NameOfCaller;
+
+@FindBy(name="cust_2635")
+public static WebElement sel_AOCode;
+
+@FindBy(name="cust_2900")
+public static WebElement pic_natureOfWork;
+
+@FindBy(xpath="//a[@data-autoid = 'cust_654_srch']")
+public static WebElement pic_SACodepic;
+
+
+@FindBy(xpath="//div[@data-autoid = 'DisplayName_0']")
+public static WebElement pic_SACodesel;
+
+@FindBy(xpath="//a[@data-autoid = 'cust_1939_srch']")
+public static WebElement pic_InquiryType;
+
+@FindBy(id="select-all-checkbox")
+public static WebElement pic_InquiryTypeCheckbox;
 
 
 

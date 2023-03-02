@@ -136,9 +136,9 @@ public class SC_024_Lead_NTBEmployedLoanProcessor extends HomePageMethod
         Thread.sleep(500);
         screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
         CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
-        CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
+       // CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
         Thread.sleep(1000);
         CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         Thread.sleep(1000);
@@ -344,11 +344,85 @@ public class SC_024_Lead_NTBEmployedLoanProcessor extends HomePageMethod
         screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        scrollToTop();
+        lopm.waitTillAccountOpen();
+        screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+        CLDLPM.clickClosePopup();
+        screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+        scrollBy();
+        Thread.sleep(1000);
         screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
         QuiteBrowser();
 
 
  	}
+    @Test
+   	public void SC_024_TC_009() throws InterruptedException, IOException
+   	{
+       	launchBrowser();
+        screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+       	TestDataFromExcel.DataRead();
+    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+           EnterPassword(TestDataFromExcel.Password);
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           LoginButtonClick();
+           CheckRole();
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           clk_leadobject();
+           lopm.categoryview("Deposit-Individual");
+           lopm.selfassignlead("Account Opened");
+           lopm.leadview("Assigned Leads");
+           Thread.sleep(500);
+           lopm.onMyBucketlead();
+           Thread.sleep(500);
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           CLDLPM.clickClosePopup();
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           lopm.BBOGlogExceptionButton();
+           lopm.SwitchToLastWindow();
+           lopm.logException("No deficiency");
+           lopm.LeadRemarks("No defect");
+           lopm.clickFinsih();
+           lopm.SwitchToParentWindow();
+           
+           lopm.BBOGVerify();
+           lopm.LeadRemarks("No defect");
+           lopm.BmApproveUpdate();
+           Thread.sleep(1000);
+           scrollToTop();
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           System.out.println("Lead status code is "+lopm.getStatusCode());
+           lopm.goToCustomer360();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           cspm.switchCustomerView();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
+           QuiteBrowser();
+
+
+   	}
 
 
 

@@ -38,6 +38,15 @@ public class CaseJourneyPageMethod extends HomePageMethod {
           SSCSearch.sendKeys(Keys.ENTER);
 
 	      }
+        
+       public void loanProduct() throws InterruptedException
+       {
+    	   CaseJourneyPageObject.fillcardproduct.click();
+    	   Thread.sleep(1500);
+    	   CaseJourneyPageObject.loanProduct.click();
+    	   
+    	   
+       }
 
 
 			  public void creditcardproduct() throws InterruptedException
@@ -53,7 +62,7 @@ public class CaseJourneyPageMethod extends HomePageMethod {
 			  //Select sel=new Select(CaseJourneyPageObject.clk_pagingdropdownlist);
 			  //sel.selectByValue(Product);
 			  //sel.selectByVisibleText("100");
-			  Thread.sleep(1000);
+			  Thread.sleep(2000);
 			  List<WebElement> creditcardproduct = CaseJourneyPageObject.fillcreditcardproduct;
 			  for (WebElement element : creditcardproduct) {
 
@@ -73,6 +82,45 @@ public class CaseJourneyPageMethod extends HomePageMethod {
 	  public void NextOnCasePage()
 	  {
 		  CaseJourneyPageObject.clk_NextOnCasePage.click();
+			/*
+			 * Thread.sleep(2000); JavascriptExecutor js = (JavascriptExecutor) driver;
+			 * js.executeScript("window.scrollBy(0,1500)", "");
+			 */
+
+	    }
+	  public void enterCustomerDetails()
+	  {
+		  CaseJourneyPageObject.bttn_enterCustomerDetails.click();
+			/*
+			 * Thread.sleep(2000); JavascriptExecutor js = (JavascriptExecutor) driver;
+			 * js.executeScript("window.scrollBy(0,1500)", "");
+			 */
+
+	    }
+	  public void SwitchCase()
+
+		{
+		   
+
+		  CaseJourneyPageObject.clk_SwitchCase.click();
+
+
+		}
+	  public void tagCustomer()
+	  {
+		  CaseJourneyPageObject.bttn_tagCustomer.click();
+			/*
+			 * Thread.sleep(2000); JavascriptExecutor js = (JavascriptExecutor) driver;
+			 * js.executeScript("window.scrollBy(0,1500)", "");
+			 */
+
+	    }
+	  
+	 
+	  
+	  public void mobileForDedupe(String no)
+	  {
+		  CaseJourneyPageObject.ent_mobileForDedupe.sendKeys(no);;
 			/*
 			 * Thread.sleep(2000); JavascriptExecutor js = (JavascriptExecutor) driver;
 			 * js.executeScript("window.scrollBy(0,1500)", "");

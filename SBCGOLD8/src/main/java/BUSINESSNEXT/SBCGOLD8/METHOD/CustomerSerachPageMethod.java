@@ -3,6 +3,8 @@ package BUSINESSNEXT.SBCGOLD8.METHOD;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.openqa.selenium.support.ui.Select;
+
 import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
 
 public class CustomerSerachPageMethod extends HomePageMethod {
@@ -55,6 +57,28 @@ public void clickstartjourney()
 
 }
 
+public void switchCustomerView()
+
+{
+ CustomerSearchPageObject.btn_clickSwitchView.click();
+
+}
+
+public void clickBulkAccountOpeningTab()
+
+{
+ CustomerSearchPageObject.btn_BulkAccountOpening.click();
+
+}
+
+public void clickNewPayrollRequest()
+
+{
+ CustomerSearchPageObject.btn_clickNewPayrollRequest.click();
+
+}
+
+
 public void ETBIndividualSalesJorney()
 
 {
@@ -77,8 +101,7 @@ public void ETBIndividualSalesJorney()
 public void CustomerServiceJourney()
 
 {
-	//String mainWindowHandle = driver.getWindowHandle();
-    //System.out.println("Main Window"+mainWindowHandle);
+	
     Set<String> multiplewindows=driver.getWindowHandles();
     Iterator<String> iterator = multiplewindows.iterator();
     String mainWindow = iterator.next();
@@ -109,6 +132,13 @@ public void ChooseBBNfromListNonIndi()
 
 {
  CustomerSearchPageObject.clk_topBBNNonIndi.click();
+
+}
+public void chooseCstmerToSrch(String value)
+
+{
+ Select s1 = new Select(CustomerSearchPageObject.sel_chooseCstmerToSrch);
+ s1.selectByVisibleText(value);
 
 }
 

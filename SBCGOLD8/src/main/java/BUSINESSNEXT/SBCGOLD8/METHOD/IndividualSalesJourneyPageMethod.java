@@ -2,11 +2,15 @@ package BUSINESSNEXT.SBCGOLD8.METHOD;
 
 import java.text.DecimalFormat;
 import java.time.Duration;
+import java.util.List;
 import java.util.Random;
 
+
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
 
@@ -35,6 +39,13 @@ public class IndividualSalesJourneyPageMethod extends HomePageMethod {
 		String firstname = sb.toString();
 
 		IndividualSalesJourneyPageObject.ent_ldfirstname.sendKeys(firstname);
+	}
+	
+	public void leadSource(String source) {
+		Select sel = new Select(IndividualSalesJourneyPageObject.sel_leadSource);
+
+		sel.selectByVisibleText(source);
+		
 	}
 
 	public void EnterlastName() {
@@ -79,6 +90,17 @@ public class IndividualSalesJourneyPageMethod extends HomePageMethod {
 		IndividualSalesJourneyPageObject.ent_ldmobile.sendKeys(mnumbername);
 	}
 
+	public void EnterMobile(String mobile) {
+		
+		IndividualSalesJourneyPageObject.ent_ldmobile.sendKeys(mobile);
+	}
+	
+	public void chooseDedupe() throws InterruptedException {
+		Thread.sleep(2000);
+		IndividualSalesJourneyPageObject.clk_ldDedupeSelect.click();
+	}
+	
+
 	public void NTBJourneynext1()
 
 	{
@@ -115,6 +137,8 @@ public class IndividualSalesJourneyPageMethod extends HomePageMethod {
 		// sel.selectByValue(Product);
 		sel.selectByVisibleText(ProductCategory);
 	}
+	
+	
 	public void pitchMultipleProduct(String pitchMultipleProduct) {
 		Select sel = new Select(IndividualSalesJourneyPageObject.sel_ldPitchMProduct);
 		// sel.selectByValue(Product);
@@ -462,6 +486,14 @@ public void checkboxTreasury() throws InterruptedException
   IndividualSalesJourneyPageObject.chk_ldTreasury.click();
   Thread.sleep(200);
 	}
+public void checkboxTreasuryETB() throws InterruptedException
+
+{
+
+
+IndividualSalesJourneyPageObject.chk_ldTreasuryForETB.click();
+Thread.sleep(200);
+}
 
 
 	public void SDAdvanceSearchByMobile() throws InterruptedException {
@@ -709,8 +741,6 @@ public void checkboxTreasury() throws InterruptedException
 
 	  //IndividualSalesJourneyPageObject.clk_NTBONBourneynext2.click();
 	  Thread.sleep(1000);
-	  System.out.println("Click on Next");
-	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
 	  try {
 
@@ -746,6 +776,29 @@ public void checkboxTreasury() throws InterruptedException
 			// sel.selectByValue(Product);
 			sel.selectByVisibleText(InterestedIn);
 		}
+	  
+	  public void ProductCategoryassert() {
+			Select sel = new Select(IndividualSalesJourneyPageObject.sel_ldProductCategory);
+			// sel.selectByValue(Product);
+			String[] category= {"","Savings","Checkings","Deal"};
+			
+			List<WebElement> option = sel.getOptions();
+			try{for(int i=0;i<option.size();i++) 
+				Assert.assertEquals(option.get(i).getText(),category[i] );
+			}
+			catch(AssertionError e) {
+				System.out.println(e.getLocalizedMessage());
+				System.out.println( "assertion for product category failed");
+			}
+	  }
+
+			
+		
+	  
+	  
+	  
+		
+	  
 
 
 

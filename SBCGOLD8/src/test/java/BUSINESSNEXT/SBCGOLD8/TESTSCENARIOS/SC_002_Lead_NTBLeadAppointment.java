@@ -17,21 +17,21 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 public class SC_002_Lead_NTBLeadAppointment extends HomePageMethod
 {
 
-
+	//Object for methods class
+	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();
+	LeadObjectPageMethod lopm=new LeadObjectPageMethod();
+	IndividualSalesJourneyPageMethod NTBSJPM=new IndividualSalesJourneyPageMethod();
+	CollectDocsLeadPageMethod CLDLPM=new CollectDocsLeadPageMethod();
+	TestDataFromExcel TDFX=new TestDataFromExcel();
+	CreateLeadAppointmentPageMethod CAPM=new CreateLeadAppointmentPageMethod();
+	Screenshot screen=new Screenshot();
 	//************************Fill the Info for SD process*****************************-------------//
 
     @Test
 	public void SC_002_TC_001() throws InterruptedException, IOException
 	{
 
-	    //Object for methods class
-    	CustomerSerachPageMethod cspm=new CustomerSerachPageMethod();
-    	LeadObjectPageMethod lopm=new LeadObjectPageMethod();
-    	IndividualSalesJourneyPageMethod NTBSJPM=new IndividualSalesJourneyPageMethod();
-    	CollectDocsLeadPageMethod CLDLPM=new CollectDocsLeadPageMethod();
-    	TestDataFromExcel TDFX=new TestDataFromExcel();
-    	CreateLeadAppointmentPageMethod CAPM=new CreateLeadAppointmentPageMethod();
-    	Screenshot screen=new Screenshot();
+	    
 
     	launchBrowser();
     	Thread.sleep(1000);
@@ -85,7 +85,7 @@ public class SC_002_Lead_NTBLeadAppointment extends HomePageMethod
         lopm.saveAndProceed();
         Thread.sleep(1000);
         lopm.GetLeadId();
-
+        System.out.println("Lead status code is "+lopm.getStatusCode());
         screen.ScreenshotMethod("SC_002_NTBLeadAppointment-");
         scrollBy();
         Thread.sleep(1000);

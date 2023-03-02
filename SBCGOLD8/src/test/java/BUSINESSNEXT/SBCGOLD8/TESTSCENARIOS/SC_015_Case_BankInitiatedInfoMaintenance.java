@@ -7,9 +7,9 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 
 
 /*select a.statuscodeid,a.* from cases a
-where caseid in ( select CAS_EX1_id from CAS_EX1 where CAS_EX1_1='14300000797')
+where caseid in ( select CAS_EX1_id from CAS_EX1 where CAS_EX1_1='12400000117')
 order by caseid desc
---update cases set statuscodeid=5 where caseid in ( select CAS_EX1_id from CAS_EX1 where CAS_EX1_1='14300000797')
+--update cases set statuscodeid=5 where caseid in ( select CAS_EX1_id from CAS_EX1 where CAS_EX1_1='12400000117')
 */
 
 //screen shot using listner class
@@ -141,8 +141,10 @@ Source=Branch Walkin
 	    cs1pm.fill_Remarks("rizwan");
 	    Thread.sleep(1000);
         screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
-	    CJPM.casesaveAndProceed();
-	    Thread.sleep(5000);
+        CJPM.casesaveAndProceed();
+        Thread.sleep(5000);
+
+	    cs1pm.waitTillClosed();
         screen.ScreenshotMethod("SC_015_BankInitiatedInfoMaintenance-");
         scrollBy();
         Thread.sleep(500);

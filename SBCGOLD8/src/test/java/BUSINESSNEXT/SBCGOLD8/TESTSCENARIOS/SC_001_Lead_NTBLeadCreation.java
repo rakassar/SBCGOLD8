@@ -32,6 +32,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	CollectDocsLeadPageMethod CLDLPM=new CollectDocsLeadPageMethod();
     TestDataFromExcel TDFX=new TestDataFromExcel();
     Screenshot screen=new Screenshot();
+    OracleDbConnection db=new OracleDbConnection();
    // BrowserStart br=new BrowserStart(); 
     //HomePageMethod home=new HomePageMethod();
 
@@ -41,14 +42,14 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
 	public void SC_001_TC_001() throws Exception
 	{
 
-    	//rizwan
+    	
 
     	launchBrowser();
     	Thread.sleep(1000);
         screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
     	TestDataFromExcel.DataRead();
     	Thread.sleep(500);
- 		EnterUserName(TestDataFromExcel.UserName_CA);
+ 		EnterUserName(TestDataFromExcel.UserName_CA); ///
  		Thread.sleep(1000);
         screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         EnterPassword(TestDataFromExcel.Password);
@@ -96,6 +97,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
         Thread.sleep(1000);
         lopm.GetLeadId();
+        System.out.println("Lead status code is "+lopm.getStatusCode());
         scrollBy();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
@@ -114,8 +116,8 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
         scrollBy();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_001_NTBLeadCreation-");
-    	QuiteBrowser();
-
+        QuiteBrowser();
+    	
         //CLDLPM.CreatedNewLeadEdit();
         //LoginPageRedircet();
         //LogoutButtonClick();

@@ -17,20 +17,42 @@ public LeadObjectPageObject (WebDriver driver)
 @FindBy(xpath="//div[contains(@class,'form-element__control')]//div/span[contains(@data-autoid,'LE_NUMBER_ctrl')]")
 public static WebElement get_leadIDCreated ;
 
+@FindBy(xpath="//SPAN[@data-autoid ='AP_APPLICATIONID_ctrl']")
+public static WebElement get_applicationIDCreated ;
+
+@FindBy(xpath="//a[@data-autoid = 'LE_COMPANY_ctrl']")
+public static WebElement clk_GoToCustomer360 ;
+
+
 //quick link and OnBaording journey option
     @FindBy(id="1")
     public static WebElement clk_salesonbaordingjourney ;
     @FindBy(css="a[data-autoid='FlowNext']")
     public static WebElement clk_saveandproceed ;
+    
+    //click finish
+    @FindBy(css="a[data-autoid='FlowFinish']")
+    public static WebElement clk_Finish ;
 
 	//process Application
 	@FindBy(xpath="//span[normalize-space()='Process Application']")
 	public static WebElement clk_ProcessApplication;
-
+	
 	//process Application
+		@FindBy(xpath="//span[normalize-space()='Switch Process']")
+		public static WebElement clk_SwitchProcess;
+
 		@FindBy(xpath="//button[normalize-space()='Ok']")
 		public static WebElement clk_closeProcessApplicationPopup;
+		
+		
 
+		@FindBy(xpath="//span[@data-autoid= 'LE_STATUSCODE_ctrl']")
+		public static WebElement get_LeadStatusCode;
+		
+		@FindBy(xpath="//button[normalize-space()='Update/Create']")
+		public static WebElement clk_ldUpdateCreate;
+		
 		@FindBy(xpath="//span[@title = 'CRRSC']")
 		 public static WebElement clk_CRRSCtab ;
 
@@ -56,6 +78,9 @@ public static WebElement get_leadIDCreated ;
 
 	     @FindBy(css="[data-autoid='LeadID_0']")
 	     public static WebElement clk_selectthelead ;
+	     
+	     @FindBy(css="[data-autoid='LeadName_0']")
+	     public static WebElement clk_selecttheleadES ;
 
 	     @FindBy(xpath="//i[@title='Self Assign']")
 	     public static WebElement clk_selfassignlead ;
@@ -89,23 +114,48 @@ public static WebElement get_leadIDCreated ;
 
     @FindBy(xpath="//span[normalize-space()='Update to 360']")
     public static WebElement btn_ClickOnUpdtButton;
-
+    
+    @FindBy(xpath="//span[normalize-space()='CA Reassignment']")
+    public static WebElement btn_CAReassignment;
+    
+    @FindBy(name="cust_2647")
+    public static WebElement pic_FillCAForReassignment;
 
     @FindBy(name="cust_2739")
     public static WebElement Sel_popupdt360;
 
-   //update button
+  
+    
     @FindBy(xpath="//span[normalize-space()='Update']")
-	public static WebElement clk_update360;
+   	public static WebElement clk_update360;
+    
+    @FindBy(xpath="//button[normalize-space()='Update']")
+   	public static WebElement clk_update;
 
     //BM  approve button
     @FindBy(xpath="//span[normalize-space()='Approved']")
 	public static WebElement clk_BmApproveBttn;
+    
+  //BBOG Log Exception button
+    @FindBy(xpath="//span[normalize-space()='Log Exception']")
+	public static WebElement clk_LogExceptionBttn;
+    
+    
+    //BBOG Verify button
+    @FindBy(xpath="//span[normalize-space()='Verify']")
+	public static WebElement clk_VerifyBttn;
+    
+  //BBOG Log Exception dropdown field
+    @FindBy(name="cust_1181")
+	public static WebElement sel_ExceptionDetails;
   
     
   //BM  comments box button
     @FindBy(name="LE_DESCRIPTION")
 	public static WebElement clk_BmComments;
+    
+    @FindBy(xpath="//a[@data-autoid='cust_1948_ctrl']")
+    public static WebElement clk_ldParentleadField;
     
   //Trust Ops convert lead
     @FindBy(xpath="//span[normalize-space()='Convert Lead']")
@@ -113,7 +163,30 @@ public static WebElement get_leadIDCreated ;
     
     
 
-
+  //Lead Reject Button
+    @FindBy(xpath="//span[normalize-space()='Reject']")
+	public static WebElement btn_RejectButton;
+    
+    //Reject Reamrks
+    @FindBy(name="cust_1331")
+	public static WebElement ent_RejectRemarks;
+   
+    //Reject Reamrks update btn
+    @FindBy(css="span[class='ff-bold']")
+	public static WebElement btn_RejectRemarkupdate;
+    
+    //Lead search box
+    @FindBy(name="10001659")
+	public static WebElement ent_ldLeadID;
+    
+    @FindBy(xpath="//a[@data-autoid='LeadID_0']")
+    public static WebElement clk_topLead;
+    
+    @FindBy(xpath="(//a[@data-autoid='LeadID_0'])[2]")
+    public static WebElement clk_topLead1;
+     
+      
+    
 
 
 

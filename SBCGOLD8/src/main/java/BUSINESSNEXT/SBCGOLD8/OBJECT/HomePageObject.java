@@ -18,6 +18,9 @@ public class HomePageObject extends LoginPageObject {
 
      @FindBy(xpath="//*[@id=\"QuickLinksDiv\"]/ul/li[4]/a")
 	 public static WebElement clk_leadpanesalesjourney ;
+     
+     @FindBy(xpath="//span[text() ='Customer Search']")
+	 public static WebElement clk_leadpaneCustomerSearch ;
 
 
      @FindBy(xpath="//span[text()='Loan Journey']")
@@ -70,7 +73,7 @@ public class HomePageObject extends LoginPageObject {
      //case--
 
 
-     @FindBy(xpath="//*[@id=\"QuickLinksDiv\"]/ul/li[5]/a")
+     @FindBy(xpath="//span[text()='Case Journey']")
   	 public static WebElement clk_leadpaneCasejourney ;
 
 

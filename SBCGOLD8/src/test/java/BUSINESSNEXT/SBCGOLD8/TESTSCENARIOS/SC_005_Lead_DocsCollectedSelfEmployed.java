@@ -30,20 +30,20 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
 
 
     	launchBrowser();
-    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
     	TestDataFromExcel.DataRead();
  		EnterUserName(TestDataFromExcel.UserName_CA);
         EnterPassword(TestDataFromExcel.Password);
-    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         LoginButtonClick();
         CheckRole();
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         ClickOnsaleswidget();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         ClickOnsalesJouney();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         lopm.ClickOnOnBoardingJourney();
         cspm.ClickOnOnBoardingJourneynext();
         Thread.sleep(1000);
@@ -59,39 +59,39 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
         NTBSJPM.EnterlastName();
         NTBSJPM.EntermiddleName();
         NTBSJPM.EnterMobile();
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
 
         NTBSJPM.NTBJourneynext1();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         NTBSJPM.ProductCategory(TestDataFromExcel.ProductCategory);
         Thread.sleep(500);
         NTBSJPM.Product(TestDataFromExcel.Product);
         Thread.sleep(500);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
         lopm.GetLeadId();
 
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
 	}
@@ -102,26 +102,26 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
 
     	CLDLPM.selectstatuscode();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.Enteremail();
         Thread.sleep(300);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.dob(TestDataFromExcel.dobmonth, TestDataFromExcel.dobdate, TestDataFromExcel.dobyear);
         CLDLPM.Gender(TestDataFromExcel.Gender);
         CLDLPM.PlcaeOfBirth();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.CustomerType(TestDataFromExcel.CustomerType);
         CLDLPM.CivilStatus(TestDataFromExcel.CivilStatus);
         CLDLPM.CustomerContact(TestDataFromExcel.CustomerContact);
         CLDLPM.BusinnesSegment(TestDataFromExcel.BusinnesSegment);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.ClientSegment(TestDataFromExcel.ClientSegment);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.SoleOwner(TestDataFromExcel.SoleOwner);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
 	}
 
     @Test
@@ -138,16 +138,16 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
         scrollBy();
         CLDLPM.EconomicActivity(TestDataFromExcel.EconomicActivity);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         Thread.sleep(1000);
         CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         Thread.sleep(1000);
         CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed---");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
 
 
         /*self-employed steps end */
@@ -159,26 +159,26 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
 	{
     	CLDLPM.IDPrrof(TestDataFromExcel.IDPrrof);
         CLDLPM.IDNumner();
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.MaidanName();
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         //CLDLPM.Tin("");
         CLDLPM.AoCode(TestDataFromExcel.AoCode);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.ClickOnAddress();
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.streetfied();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.Zipcode(TestDataFromExcel.Zipcode);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.mailingaddress(TestDataFromExcel.mailingaddress);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         lopm.saveAndProceed();
         Thread.sleep(1000);
-   	    screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+   	    screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         //LogoutButtonClick();
        // QuiteBrowser();
 
@@ -186,28 +186,28 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
  	public void SC_005_TC_006() throws InterruptedException
  	{
     	CLDLPM.clickClosePopup();
-   	 screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+   	 screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.clickCRRSCButton();
         Thread.sleep(1000);
-    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
    	//CLDLPM.leadredbutton();
 
 
@@ -263,14 +263,14 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
         //New CRRSC
         CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
         CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
-    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
         CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
         CRRSC.Sbol(TestDataFromExcel.Sbol);
-    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
         CRRSC.RemarksCRRSC("I am Indian!");
-    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CRRSC.Finish();
 
         Thread.sleep(1000);
@@ -281,57 +281,57 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
  	{
     	Thread.sleep(1000);
    	    CLDLPM.clickClosePopup();
-    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         lopm.ClickOnCRRSCtab();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
     	CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
     	CLDLPM.clickEditOFAC(TestDataFromExcel.Ofac);
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
     	lopm.saveAndProceed();
     	Thread.sleep(1000);
-    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         scrollBy();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
  	}
 
     @Test
@@ -339,23 +339,23 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
  	{
     	Thread.sleep(500);
     	scrolldown();
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         FAIPM.ClickFillAccountInformation();
         FAIPM.RequestType(TestDataFromExcel.RequestTypef);
         FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         FAIPM.PromsEmail(TestDataFromExcel.PromsEmail);
         FAIPM.sel_PromsSMS(TestDataFromExcel.PromsSMS);
         FAIPM.TransactionalEmail(TestDataFromExcel.TransactionalEmail);
         FAIPM.TransactionalSMS(TestDataFromExcel.TransactionalSMS);
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CRRSC.Finish();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         Thread.sleep(1000);
 
 
@@ -366,16 +366,92 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
  	public void SC_005_TC_009() throws InterruptedException
  	{
     	Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         lopm.ProcessApplication();
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        scrollToTop();
         lopm.GetLeadId();
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed--");
-    	QuiteBrowser();
+        lopm.waitTillAccountOpen();
+
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+        CLDLPM.clickClosePopup();
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+        QuiteBrowser();
  	}
+
+    @Test
+   	public void SC_005_TC_010() throws InterruptedException, IOException
+   	{
+       	launchBrowser();
+        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+       	TestDataFromExcel.DataRead();
+    		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+           EnterPassword(TestDataFromExcel.Password);
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           LoginButtonClick();
+           CheckRole();
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           clk_leadobject();
+           lopm.categoryview("Deposit-Individual");
+           lopm.selfassignlead("Account Opened");
+           lopm.leadview("Assigned Leads");
+           Thread.sleep(500);
+           lopm.onMyBucketlead();
+           Thread.sleep(500);
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           CLDLPM.clickClosePopup();
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           lopm.BBOGlogExceptionButton();
+           lopm.SwitchToLastWindow();
+           lopm.logException("No deficiency");
+           lopm.LeadRemarks("No defect");
+           lopm.clickFinsih();
+           lopm.SwitchToParentWindow();
+           
+           lopm.BBOGVerify();
+           lopm.LeadRemarks("No defect");
+           lopm.BmApproveUpdate();
+           Thread.sleep(1000);
+           scrollToTop();
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           System.out.println("Lead status code is "+lopm.getStatusCode());
+           lopm.goToCustomer360();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           cspm.switchCustomerView();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           scrollBy();
+           Thread.sleep(1000);
+           screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+           QuiteBrowser();
+
+
+   	}
 
 
 

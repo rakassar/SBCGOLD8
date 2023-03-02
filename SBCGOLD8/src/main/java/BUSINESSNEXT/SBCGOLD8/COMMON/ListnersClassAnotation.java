@@ -13,6 +13,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
  
 
@@ -20,9 +21,11 @@ public class ListnersClassAnotation extends BrowserStart implements ITestListene
 	
 	
 	
-	ExtentTest test;
-	   //  Extent
+	   ExtentTest test;
+	   //Extent
 	   ExtentReports report = TestExtentReports.reportConfig();
+	   //Thread Setting for sync the execution result report in parallel
+	   ThreadLocal<ExtentTest> extentTest=new ThreadLocal<ExtentTest>();
 
     
       @Override
@@ -30,6 +33,8 @@ public class ListnersClassAnotation extends BrowserStart implements ITestListene
         {
     	  System.out.println(Result.getName()+" test case started"); 
           test=report.createTest(Result.getMethod().getMethodName());
+          extentTest.set(test);//unique therad ID generate to validate error pass or fail
+          
         
         }
    
@@ -37,6 +42,7 @@ public class ListnersClassAnotation extends BrowserStart implements ITestListene
          {
           // not implemented
          report.flush();
+         
           }
    
 	    @Override
@@ -49,7 +55,7 @@ public class ListnersClassAnotation extends BrowserStart implements ITestListene
 	    @Override
 	    public void onTestFailure(ITestResult Result)
 	    {
-	   
+	    	extentTest.get().fail(Result.getThrowable());
 	    }
 
 	    // When Test case get Skipped, this method is called.
@@ -65,7 +71,7 @@ public class ListnersClassAnotation extends BrowserStart implements ITestListene
 	    public void onTestSuccess(ITestResult Result)
 	    {
 
-
+        test.log(Status.PASS,"Test Passed");
 		}
 	    }
 

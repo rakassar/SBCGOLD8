@@ -43,6 +43,13 @@ public class HomePageMethod extends LoginPageMethod{
 	   HomePageObject.clk_leadpanesalesjourney.click();
   	}
 
+   public void ClickOnCustomerSearch()
+
+ 	{
+	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+
+	   HomePageObject.clk_leadpaneCustomerSearch.click();
+ 	}
 
    public void ClickOnLoanJouney()
 
@@ -121,6 +128,10 @@ public void scrollBy()
        //till page end
        //js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
        }
+public void scrollToTop() {
+	((JavascriptExecutor) driver).executeScript("window.scrollTo(document.body.scrollHeight, 0)");
+	//actions.sendKeys(keys.END).build().perform();
+}
 
 
 }

@@ -4,6 +4,7 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 
 import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
@@ -11,11 +12,19 @@ import BUSINESSNEXT.SBCGOLD8.OBJECT.*;
 public class LeadObjectPageMethod extends HomePageMethod{
 
    public static String leadid;
+   public static String tLeadID;
+   
    
    public void GetLeadId()
 	  {
 	   leadid=LeadObjectPageObject.get_leadIDCreated.getText();
 	     System.out.println("Lead created succesfully ,Lead id:"+leadid);
+	  }
+   
+   public void getApplicationId()
+	  {
+	   String aleadid=LeadObjectPageObject.get_applicationIDCreated.getText();
+	     System.out.println("Application created succesfully ,Application id:"+aleadid);
 	  }
 
    public void ClickOnOnBoardingJourney()
@@ -74,6 +83,13 @@ public class LeadObjectPageMethod extends HomePageMethod{
 	   LeadObjectPageObject.clk_selectthelead.click();
 
 	}
+   public void onMyBucketleadEmailSyndication() throws InterruptedException
+
+	{
+
+	   LeadObjectPageObject.clk_selecttheleadES.click();
+
+	}
 
    public void saveAndProceed()
 
@@ -82,6 +98,15 @@ public class LeadObjectPageMethod extends HomePageMethod{
 
 	  LeadObjectPageObject.clk_saveandproceed.click();
  	}
+   
+   public void clickFinsih()
+
+	{
+	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+
+	  LeadObjectPageObject.clk_Finish.click();
+	}
+   
    public void ClickOnCRRSCtab()
 
 	{
@@ -114,6 +139,23 @@ public void ClickOnActivitiestab()
 
 
  	}
+   
+   
+   public void SwitchProcess()
+
+	{
+	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+
+	   LeadObjectPageObject.clk_SwitchProcess.click();
+
+
+	}
+   
+   public void bttnUpdateCreate() throws InterruptedException {
+	   Thread.sleep(1000);
+	   LeadObjectPageObject.clk_ldUpdateCreate.click();
+	   
+   }
    public void update360() throws InterruptedException
 
 	{
@@ -126,6 +168,14 @@ public void ClickOnActivitiestab()
 
 
 	}
+   public void clickUpdate() throws InterruptedException
+
+  	{
+  	   //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+
+  	   LeadObjectPageObject.clk_update.click();
+  	   Thread.sleep(1000);
+  	}
 
    public void BmApproveButtonclk() throws InterruptedException
 
@@ -135,6 +185,19 @@ public void ClickOnActivitiestab()
 	   LeadObjectPageObject.clk_BmApproveBttn.click();
 	   Thread.sleep(1000);
 	}
+   
+   public void BBOGlogExceptionButton() throws InterruptedException
+  	{
+  	   LeadObjectPageObject.clk_LogExceptionBttn.click();
+  	   Thread.sleep(1000);
+  	}
+   
+   public void BBOGVerify() throws InterruptedException
+ 	{
+ 	   LeadObjectPageObject.clk_VerifyBttn.click();
+ 	   Thread.sleep(1000);
+ 	}
+   
    public void TustOpsConvertLeadCLK() throws InterruptedException
 
 	{
@@ -149,8 +212,7 @@ public void ClickOnActivitiestab()
    public void SwitchToSecondaryWindow()
 
    {
-   	//String mainWindowHandle = driver.getWindowHandle();
-       //System.out.println("Main Window"+mainWindowHandle);
+   	
        Set<String> multiplewindows=driver.getWindowHandles();
        Iterator<String> iterator = multiplewindows.iterator();
        String mainWindow = iterator.next();
@@ -160,7 +222,24 @@ public void ClickOnActivitiestab()
        driver.switchTo().window(ChildWindow);
 
    }
+   
+   public void SwitchToLastWindow()
 
+   {
+       Set<String> multiplewindows=driver.getWindowHandles();    
+       Iterator<String> iterator = multiplewindows.iterator();
+       while(iterator.hasNext()) {
+    	   String  Window = iterator.next();
+    	    driver.switchTo().window(Window);
+       }
+        
+   }
+   
+   public void goToParentLead() {
+	   LeadObjectPageObject.clk_ldParentleadField.click();;
+			
+		}
+   
    public void SwitchToParentWindow()
 
    {
@@ -194,6 +273,13 @@ public void ClickOnActivitiestab()
    	Select sel1=new Select(LeadObjectPageObject.Sel_popupdt360);
    	sel1.selectByVisibleText(popupdt360);
    }
+   
+   public void logException(String logException)
+
+   {
+   	Select sel1=new Select(LeadObjectPageObject.sel_ExceptionDetails);
+   	sel1.selectByVisibleText(logException);
+   }
 
    public void ProcessApplicationPopUpClose()
 
@@ -204,6 +290,30 @@ public void ClickOnActivitiestab()
 
 
 	}
+   public String getStatusCode() {
+	   return LeadObjectPageObject.get_LeadStatusCode.getText();
+   }
+ 
+   public void waitTillAccountOpen() throws InterruptedException {
+	  do{
+		  Refresh();
+		  Thread.sleep(5000);
+		  
+	  }while(getStatusCode().equalsIgnoreCase("sent for processing"));
+	  
+   }
+   
+   public void waitTillCSQPerform() throws InterruptedException {
+		  do{
+			  Refresh();
+			  Thread.sleep(3000);
+			  
+		  }while(getStatusCode().equalsIgnoreCase("Documents Collection"));
+		  
+	   }
+	  
+   
+   
 
 
 
@@ -217,7 +327,23 @@ public void ClickOnActivitiestab()
 
 
 
+   public void leadSearch(String leadid) throws InterruptedException
 
+	{
+		LeadObjectPageObject.ent_ldLeadID.sendKeys(leadid);  //input lead id
+		LeadObjectPageObject.ent_ldLeadID.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+		try {
+		LeadObjectPageObject.clk_topLead1.click();}
+		catch(Exception e) {
+			LeadObjectPageObject.clk_topLead.click();}
+		}
+		
+	
+public void goToTChildTrustLead() {
+	LeadObjectPageObject.clk_topLead.click();
+	
+}
 
 
 
@@ -270,6 +396,22 @@ public void ClickOnUpdtButton()
 	LeadObjectPageObject.btn_ClickOnUpdtButton.click();
 }
 
+public void ClickOnCAReassignment()
+{
+	LeadObjectPageObject.btn_CAReassignment.click();
+}
+
+public void fillCAForReassignment(String userID) throws InterruptedException
+{
+	LeadObjectPageObject.pic_FillCAForReassignment.sendKeys(userID);
+	Thread.sleep(900);
+	LeadObjectPageObject.pic_FillCAForReassignment.sendKeys(Keys.DOWN);
+	Thread.sleep(100);
+	LeadObjectPageObject.pic_FillCAForReassignment.sendKeys(Keys.ENTER);
+	
+	
+}
+
 
 public void Clicksearchaftertype()
 
@@ -301,5 +443,36 @@ public void ClickOnOnBoardingJourneyNonIndi()
 	driver.findElements(By.id("1")).get(2).click();
   // LeadObjectPageObject.clk_salesonbaordingjourney.get(2).click();;
 }
+
+
+public void btn_LeadReject() throws InterruptedException
+
+{
+	LeadObjectPageObject.btn_RejectButton.click();
+	Thread.sleep(1000);
+	LeadObjectPageObject.ent_RejectRemarks.sendKeys("Customer is not interested");
+	Thread.sleep(1000);
+	LeadObjectPageObject.btn_RejectRemarkupdate.click();
+}
+public void Trust_TreasuryLeadId()
+{
+	tLeadID =  LeadObjectPageObject.get_leadIDCreated.getText();
+}
+
+
+public void LeadRemarks(String comment) throws InterruptedException
+
+{
+	LeadObjectPageObject.ent_RejectRemarks.sendKeys(comment);
+	Thread.sleep(1000);
+}
+
+public void goToCustomer360()
+{
+	  LeadObjectPageObject.clk_GoToCustomer360.click();
+}
+
+
+
 
 }

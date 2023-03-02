@@ -40,6 +40,8 @@ public class SC_003_Lead_NTBDocsCollectionEmployed extends HomePageMethod
         LoginButtonClick();
         CheckRole();
     	screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CheckRole();
+        Thread.sleep(100);
         ClickOnsaleswidget();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
@@ -364,6 +366,7 @@ public class SC_003_Lead_NTBDocsCollectionEmployed extends HomePageMethod
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
         Thread.sleep(1000);
+        
 
  	}
 
@@ -378,10 +381,90 @@ public class SC_003_Lead_NTBDocsCollectionEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
         lopm.ProcessApplicationPopUpClose();
         Thread.sleep(2000);
+        scrollToTop();
         lopm.GetLeadId();
+        lopm.waitTillAccountOpen();
+
         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
-    	QuiteBrowser();
+        CLDLPM.clickClosePopup();
+    	screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        QuiteBrowser();
+    	
  	}
+    @Test
+ 	public void SC_003_TC_010() throws InterruptedException, IOException
+ 	{
+    	launchBrowser();
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+    	TestDataFromExcel.DataRead();
+ 		EnterUserName(TestDataFromExcel.UserName_BBGCDMaintenanceAnalyst);
+        EnterPassword(TestDataFromExcel.Password);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        LoginButtonClick();
+        CheckRole();
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        clk_leadobject();
+        lopm.categoryview("Deposit-Individual");
+        lopm.selfassignlead("Account Opened");
+        lopm.leadview("Assigned Leads");
+        Thread.sleep(500);
+        lopm.onMyBucketlead();
+        Thread.sleep(500);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CLDLPM.clickClosePopup();
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        lopm.BBOGlogExceptionButton();
+        lopm.SwitchToLastWindow();
+        lopm.logException("No deficiency");
+        lopm.LeadRemarks("No defect");
+        lopm.clickFinsih();
+        lopm.SwitchToParentWindow();
+        
+        lopm.BBOGVerify();
+        lopm.LeadRemarks("No defect");
+        lopm.BmApproveUpdate();
+        Thread.sleep(1000);
+        scrollToTop();
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        System.out.println("Lead status code is "+lopm.getStatusCode());
+        lopm.goToCustomer360();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        cspm.switchCustomerView();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        scrollBy();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        QuiteBrowser();
+
+    
+        
+        
+
+
+	}
 
 
 	/*
