@@ -100,7 +100,7 @@
 		<artifactId>ojdbc</artifactId>
 		<version>11</version>
 		<scope>system</scope>
-		<systemPath>E:\Rizwan\Automation\lib\orcalejdbc\ojdbc11.jar</systemPath>
+		<systemPath>D:\Rizwan\Automation\lib\orcalejdbc\ojdbc11.jar</systemPath>
 	   </dependency>
 	      
  </dependencies>
