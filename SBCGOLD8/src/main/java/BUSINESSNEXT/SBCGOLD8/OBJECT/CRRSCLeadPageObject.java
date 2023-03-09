@@ -90,6 +90,8 @@ import org.openqa.selenium.support.FindBy;
 		public static WebElement sel_ComfortableDocumentsRRSC;
 		@FindBy(name="2032")
 		public static WebElement sel_customersdeclaredsRRSC;
+		@FindBy(id="WEBR_25")
+		public static WebElement click_OfacMashup;
 
 
 		//Remarks

@@ -85,6 +85,10 @@ public static WebElement sel_ldNatureWork;
 @FindBy(name="cust_2835")
 public static WebElement sel_ldNatureWorkNEW;
 
+@FindBy(name="cust_2836")
+public static WebElement sel_ldNatureWorkNEW_SC;
+
+
 @FindBy(name="cust_77")
 public static WebElement sel_ldOccupation;
 @FindBy(name="cust_80")
@@ -260,6 +264,20 @@ public static WebElement btn_clickSave;
 
 @FindBy(name="qqfile")
 public static WebElement ent_PrAttachFile;
+
+//Communication Channel Preference
+@FindBy(xpath="(//a[@data-autoid = '1'])[1]")
+public static WebElement btn_PhoneCall_NO;
+
+@FindBy(xpath="(//a[@data-autoid = '1'])[2]")
+public static WebElement btn_SMS_NO;
+
+@FindBy(xpath="(//a[@data-autoid = '1'])[3]")
+public static WebElement btn_Viber_NO;
+
+@FindBy(xpath="(//a[@data-autoid = '1'])[4]")
+public static WebElement btn_Email_NO;
+
 
 
 

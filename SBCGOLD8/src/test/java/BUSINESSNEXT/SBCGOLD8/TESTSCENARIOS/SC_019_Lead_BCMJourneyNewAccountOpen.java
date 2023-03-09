@@ -130,20 +130,21 @@ public class SC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
         CLDLPM.employername();
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
-        CLDLPM.occupation(TestDataFromExcel.occupation);
-        CLDLPM.IncomeRange(TestDataFromExcel.IncomeRange);
+        CLDLPM.occupation("Laborers and Unskilled Workers");
+        CLDLPM.IncomeRange("305k to 470k");
         Thread.sleep(1000);
         CLDLPM.workingsince(TestDataFromExcel.workingsincemonth, TestDataFromExcel.workingsinceyear);
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
         scrollBy();
-        CLDLPM.EconomicActivity(TestDataFromExcel.EconomicActivity);
+        CLDLPM.EconomicActivity("Other Service Activities");
         Thread.sleep(500);
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
-        CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
+        CLDLPM.Industry_Classification("ACTIVITIES OF BUSINESS AND EMPLOYERS MEMBERSHIP ORGANIZATIONS");
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
-        CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);
+        CLDLPM.NatureOfWorkNEW("Social Services");
+        CLDLPM.NatureOfWorkNEW_SC( "Social Services - other");
         Thread.sleep(1000);
         CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         Thread.sleep(1000);
@@ -164,6 +165,23 @@ public class SC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
         //CLDLPM.Tin("");
         CLDLPM.AoCode(TestDataFromExcel.AoCode);
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
+        // CRRSC section
+        CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
+        CRRSC.Sbol(TestDataFromExcel.Sbol);
+        
+        //Communication Channel Preference
+        CLDLPM.ChannelPreference_PhoneCall();
+        Thread.sleep(500);
+        CLDLPM.ChannelPreference_SMS();
+        Thread.sleep(500);
+        scrolldown();
+         CLDLPM.ChannelPreference_Viber();
+         Thread.sleep(500);
+          CLDLPM.ChannelPreference_Email();
+          screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+
+          
+        scrollToTop();
         CLDLPM.ClickOnAddress();
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
         CLDLPM.streetfied();
@@ -262,23 +280,36 @@ public class SC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
 
 */
 
-		  //New CRRSC CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
-         CRRSC.AmlcUnJmf("Yes");
-         CRRSC.typeOfWatchlist("SBC Internal Watchlist - POI");
-		  CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
-		  screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
-		  CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
-		  CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
-		  CRRSC.Sbol(TestDataFromExcel.Sbol);
-		  screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
-		  CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
-		 
+         /*     //New CRRSC
+         CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
+         CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
+         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
+         CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
+         CRRSC.Sbol(TestDataFromExcel.Sbol);
+         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
          CRRSC.RemarksCRRSC("I am Indian!");
-         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
-         CRRSC.Finish();
+         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         CRRSC.Finish(); */
+         
+         //Latest CRRSC
+         CRRSC.OtherRskFctr("Unreasonable reliance on the gatekeeper such as lawyers and accountants");
+         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         CRRSC.OFAC_mashup();
+         Thread.sleep(1000);
+         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
+         CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
+         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         CRRSC.RemarksCRRSC("I am Indian!");
+         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         CRRSC.Finish(); 
+      
 
          Thread.sleep(1000);
  	}
+
 
     @Test(priority=7)
  	public void SC_019_TC_007() throws InterruptedException
@@ -321,9 +352,7 @@ public class SC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
     	CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
-    	CLDLPM.clickEditOFAC(TestDataFromExcel.Ofac);
-    	Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
+    	 screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
     	lopm.saveAndProceed();
     	Thread.sleep(1000);
     	screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
@@ -419,10 +448,15 @@ public class SC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
         FAIPM.ClickFillAccountInformation();
         FAIPM.RequestType(TestDataFromExcel.RequestTypef);
-        FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
+        Thread.sleep(400);
+        scrollBy();
+
+        FAIPM.PromoCode();
+        //FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
+        
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
-        FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+      FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
         FAIPM.PromsEmail(TestDataFromExcel.PromsEmail);
         FAIPM.sel_PromsSMS(TestDataFromExcel.PromsSMS);
@@ -467,7 +501,7 @@ public class SC_019_Lead_BCMJourneyNewAccountOpen extends HomePageMethod
         screen.ScreenshotMethod("SC_019__Lead_BCMJourneyNewAccount-");
         QuiteBrowser();
  	}
-      @Test
+      @Test(priority=12)
      	public void SC_019_TC_012() throws InterruptedException, IOException
      	{
          	launchBrowser();

@@ -34,6 +34,16 @@ import org.openqa.selenium.support.FindBy;
 		public static WebElement sel_TransactionalEmail ;
 		@FindBy(name="cust_107")
 		public static WebElement sel_TransactionalSMS;
+		
+		
+		@FindBy(xpath="//a[@data-autoid ='cust_2916_srch']")
+		public static WebElement pic_promoPicker;
+		
+		@FindBy(xpath="//div[@data-autoid ='DESCRIPTION_0']")
+		public static WebElement pic_promoSelect;
+		
+		
+
 
 
 

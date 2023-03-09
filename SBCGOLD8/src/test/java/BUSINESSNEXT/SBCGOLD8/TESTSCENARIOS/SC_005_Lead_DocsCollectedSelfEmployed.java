@@ -165,6 +165,23 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
         //CLDLPM.Tin("");
         CLDLPM.AoCode(TestDataFromExcel.AoCode);
         screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+        // CRRSC section
+        CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
+        CRRSC.Sbol(TestDataFromExcel.Sbol);
+        
+        //Communication Channel Preference
+        CLDLPM.ChannelPreference_PhoneCall();
+        Thread.sleep(500);
+        CLDLPM.ChannelPreference_SMS();
+        Thread.sleep(500);
+        scrolldown();
+         CLDLPM.ChannelPreference_Viber();
+         Thread.sleep(500);
+          CLDLPM.ChannelPreference_Email();
+          screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+
+          
+        scrollToTop();
         CLDLPM.ClickOnAddress();
         screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         CLDLPM.streetfied();
@@ -260,21 +277,36 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
        */
 
 
-        //New CRRSC
+    	 /*     //New CRRSC
         CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
         CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
-    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
         CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
         CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
         CRRSC.Sbol(TestDataFromExcel.Sbol);
-    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
         CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
         CRRSC.RemarksCRRSC("I am Indian!");
-    	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
-        CRRSC.Finish();
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.Finish(); */
+        
+        //Latest CRRSC
+        CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.OFAC_mashup();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
+        CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.RemarksCRRSC("I am Indian!");
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.Finish(); 
+     
 
         Thread.sleep(1000);
- 	}
+	}
+
 
     @Test
  	public void SC_005_TC_007() throws InterruptedException
@@ -317,9 +349,7 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
     	CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
-    	CLDLPM.clickEditOFAC(TestDataFromExcel.Ofac);
-    	Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
+      screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
     	lopm.saveAndProceed();
     	Thread.sleep(1000);
     	screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
@@ -342,10 +372,15 @@ public class SC_005_Lead_DocsCollectedSelfEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         FAIPM.ClickFillAccountInformation();
         FAIPM.RequestType(TestDataFromExcel.RequestTypef);
-        FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
+        Thread.sleep(400);
+        scrollBy();
+
+        FAIPM.PromoCode();
+        //FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
+        
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
-        FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+      FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
         screen.ScreenshotMethod("SC_005_LeadDocsCollectedSelfEmployed-");
         FAIPM.PromsEmail(TestDataFromExcel.PromsEmail);
         FAIPM.sel_PromsSMS(TestDataFromExcel.PromsSMS);
