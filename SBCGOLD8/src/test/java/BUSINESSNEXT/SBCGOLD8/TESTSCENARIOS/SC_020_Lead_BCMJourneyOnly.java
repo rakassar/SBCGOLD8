@@ -106,10 +106,15 @@ public class SC_020_Lead_BCMJourneyOnly extends HomePageMethod
         screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         FAIPM.ClickFillAccountInformation();
         FAIPM.RequestType(TestDataFromExcel.RequestTypef);
-        FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
+        Thread.sleep(400);
+        scrollBy();
+
+        FAIPM.PromoCode();
+        //FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
+        
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
-        FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+    FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
         screen.ScreenshotMethod("SC_020__Lead_BCMJourneyOnly-");
         FAIPM.PromsEmail(TestDataFromExcel.PromsEmail);
         FAIPM.sel_PromsSMS(TestDataFromExcel.PromsSMS);

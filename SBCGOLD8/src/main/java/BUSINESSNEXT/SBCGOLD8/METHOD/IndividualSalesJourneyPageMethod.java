@@ -150,6 +150,12 @@ public class IndividualSalesJourneyPageMethod extends HomePageMethod {
 		// sel.selectByValue(Product);
 		sel.selectByVisibleText(Product);
 	}
+	
+	public void SourceOfInfo(String source) {
+		Select sel = new Select(IndividualSalesJourneyPageObject.sel_ldSourceOfInfo);
+		// sel.selectByValue(Product);
+		sel.selectByVisibleText(source);
+	}
 
 	public void NTBJourneynext2() throws InterruptedException
 
