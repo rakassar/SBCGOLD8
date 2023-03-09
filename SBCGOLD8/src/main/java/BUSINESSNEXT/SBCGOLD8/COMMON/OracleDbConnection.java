@@ -31,7 +31,7 @@ public class OracleDbConnection {
 	            ResultSet rs=st.executeQuery(sql);
 	            while( rs.next() ){
 	            Loginid=rs.getString(1);
-	            System.out.println(Loginid);
+	            System.out.println("Lead assigned to :"+Loginid);
 
 	             }
 	             }
