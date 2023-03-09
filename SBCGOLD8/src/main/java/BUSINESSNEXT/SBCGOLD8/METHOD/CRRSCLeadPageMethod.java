@@ -233,6 +233,11 @@ public class CRRSCLeadPageMethod  extends HomePageMethod{
     	//sel.selectByValue(Product);
     	sel.selectByVisibleText(customersdeclaredsRRSC);
     }
+	
+	public void OFAC_mashup()
+    {
+    CRRSCLeadPageObject.click_OfacMashup.click();
+    }
 
 	//Remarks
 

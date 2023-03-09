@@ -93,8 +93,8 @@ import BUSINESSNEXT.SBCGOLD8.SOAPAPI.TokenCreate_V;
         screen.ScreenshotMethod("SC_062_EKYC_ETBLeadJourney-");
         scrollToTop();
         
-        CSA.accountOpen(lopm.leadid);
-        
+        CSA.EtbAccountOpen(lopm.leadid ,TDFX.BBN, TDFX.accountId);
+       
         Refresh();
         scrollToTop();
 		Thread.sleep(300);

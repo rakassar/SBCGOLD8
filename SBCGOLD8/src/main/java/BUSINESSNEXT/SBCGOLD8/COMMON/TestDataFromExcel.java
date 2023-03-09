@@ -79,6 +79,7 @@ public class TestDataFromExcel implements Properties {
 	public static String PermanentAddresssameasPresentAddress;
 
 	public static String Ofac;
+	public static String accountId;
 
 
 
@@ -199,6 +200,7 @@ SourceoffundsSelemp=sheet.getRow(30).getCell(1).getStringCellValue();
 BBN=sheet.getRow(31).getCell(1).getStringCellValue();
 PermanentAddresssameasPresentAddress=sheet.getRow(32).getCell(1).getStringCellValue();
 Ofac=sheet.getRow(33).getCell(1).getStringCellValue();
+accountId =sheet.getRow(34).getCell(1).getStringCellValue();
 
 
 

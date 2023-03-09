@@ -130,7 +130,6 @@ public class SC_004_Lead_DocsCollectedUnEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
         CLDLPM.Sourceoffunds(TestDataFromExcel.SourceoffundsUnemp);
         scrollBy();
-        CLDLPM.IncomeRange(TestDataFromExcel.IncomeRange);
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
 
@@ -151,6 +150,24 @@ public class SC_004_Lead_DocsCollectedUnEmployed extends HomePageMethod
         //CLDLPM.Tin("");
         CLDLPM.AoCode(TestDataFromExcel.AoCode);
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        
+        // CRRSC section
+        CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
+        CRRSC.Sbol(TestDataFromExcel.Sbol);
+        
+        //Communication Channel Preference
+        CLDLPM.ChannelPreference_PhoneCall();
+        Thread.sleep(500);
+        CLDLPM.ChannelPreference_SMS();
+        Thread.sleep(500);
+        scrolldown();
+         CLDLPM.ChannelPreference_Viber();
+         Thread.sleep(500);
+          CLDLPM.ChannelPreference_Email();
+          screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+
+          
+        scrollToTop();
         CLDLPM.ClickOnAddress();
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
         CLDLPM.streetfied();
@@ -251,21 +268,36 @@ public class SC_004_Lead_DocsCollectedUnEmployed extends HomePageMethod
        */
 
 
-        //New CRRSC
+        /*     //New CRRSC
         CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
         CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
-        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
         CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
         CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
         CRRSC.Sbol(TestDataFromExcel.Sbol);
-        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
         CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
         CRRSC.RemarksCRRSC("I am Indian!");
-        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
-        CRRSC.Finish();
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.Finish(); */
+        
+        //Latest CRRSC
+        CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.OFAC_mashup();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
+        CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.RemarksCRRSC("I am Indian!");
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.Finish(); 
+     
 
         Thread.sleep(1000);
- 	}
+	}
+
 
     @Test
  	public void SC_004_TC_007() throws InterruptedException
@@ -308,9 +340,7 @@ public class SC_004_Lead_DocsCollectedUnEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
     	CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
-    	CLDLPM.clickEditOFAC(TestDataFromExcel.Ofac);
-    	Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
+       screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
     	lopm.saveAndProceed();
     	Thread.sleep(1000);
     	screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
@@ -333,10 +363,15 @@ public class SC_004_Lead_DocsCollectedUnEmployed extends HomePageMethod
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
         FAIPM.ClickFillAccountInformation();
         FAIPM.RequestType(TestDataFromExcel.RequestTypef);
-        FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
+        Thread.sleep(400);
+        scrollBy();
+
+        FAIPM.PromoCode();
+        //FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
+        
         Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
-        FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
         screen.ScreenshotMethod("SC_004_LeadDocsCollectedUnEmployed-");
         FAIPM.PromsEmail(TestDataFromExcel.PromsEmail);
         FAIPM.sel_PromsSMS(TestDataFromExcel.PromsSMS);

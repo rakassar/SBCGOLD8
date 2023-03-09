@@ -61,6 +61,14 @@ public class FillAccountInformationPageMethod  extends HomePageMethod{
     {
 		FillAccountInformationPageObject.clk_FillAccountInformation.click();
     }
+	
+	public void PromoCode() throws InterruptedException
+    {
+		FillAccountInformationPageObject.pic_promoPicker.click();
+		Thread.sleep(500);
+		FillAccountInformationPageObject.pic_promoSelect.click();
+    }
+	
 
 
 }

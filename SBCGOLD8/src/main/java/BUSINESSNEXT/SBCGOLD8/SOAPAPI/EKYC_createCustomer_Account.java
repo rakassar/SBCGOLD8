@@ -16,8 +16,10 @@ public class EKYC_createCustomer_Account {
 	String leadIdType = "NTB";  //NTB, ETB
 	
 	
-	public void EtbAccountOpen(String leadID , String BBN) throws IOException {
+	public void EtbAccountOpen(String leadID , String BBN ,String accountId) throws IOException {
 		this.BBN = BBN;
+		this.leadIdType = "ETB";
+		this.accountID = accountId;
 		accountOpen(leadID);
 		
 	}
