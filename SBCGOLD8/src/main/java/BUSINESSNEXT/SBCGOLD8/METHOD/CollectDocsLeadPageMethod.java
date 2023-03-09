@@ -386,6 +386,19 @@ public class CollectDocsLeadPageMethod extends HomePageMethod{
 		    	Nature_work .sendKeys(Keys.ENTER);
 		    	Thread.sleep(1000);
 		    }
+		    
+		    public void NatureOfWorkNEW_SC(String NTWORK) throws InterruptedException
+		    {
+
+		    	WebElement Nature_workSC  = CollectDocsLeadPageObject.sel_ldNatureWorkNEW_SC;
+		    	Thread.sleep(300);
+		    	Nature_workSC .sendKeys(NTWORK);
+		    	Thread.sleep(2000);
+		    	Nature_workSC .sendKeys(Keys.DOWN);
+		    	Thread.sleep(2000);
+		    	Nature_workSC .sendKeys(Keys.ENTER);
+		    	Thread.sleep(1000);
+		    }
 
 		    public void dosriFlag (String flag)
 		    {
@@ -488,7 +501,7 @@ public class CollectDocsLeadPageMethod extends HomePageMethod{
 		    	Thread.sleep(500);
 		    	WebElement ID = CollectDocsLeadPageObject.pic_ldIdProof;
 				ID.sendKeys(IDPrrof);
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				ID.sendKeys(Keys.DOWN);
 				Thread.sleep(1000);
 				ID.sendKeys(Keys.ENTER);
@@ -745,6 +758,31 @@ public class CollectDocsLeadPageMethod extends HomePageMethod{
   		    	Select sel1 = new Select(CollectDocsLeadPageObject.sel_ldperaddaspreaddNonIndi);
   		    	sel1.selectByVisibleText(padassameprad);
 
+
+  		    }
+              
+              public void ChannelPreference_PhoneCall()
+    		    {
+    				
+    		    	CollectDocsLeadPageObject.btn_PhoneCall_NO.click();
+
+    		    }
+              public void ChannelPreference_SMS()
+  		    {
+  				
+  		    	CollectDocsLeadPageObject.btn_SMS_NO.click();
+
+  		    }
+              public void ChannelPreference_Viber()
+  		    {
+  				
+  		    	CollectDocsLeadPageObject.btn_Viber_NO.click();
+
+  		    }
+              public void ChannelPreference_Email()
+  		    {
+  				
+  		    	CollectDocsLeadPageObject.btn_Email_NO.click();
 
   		    }
 

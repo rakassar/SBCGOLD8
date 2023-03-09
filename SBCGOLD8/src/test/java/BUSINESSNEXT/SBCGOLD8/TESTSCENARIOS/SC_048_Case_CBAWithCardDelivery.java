@@ -158,9 +158,8 @@ order by caseid desc
     screen.ScreenshotMethod("SC_048_Case_CBAWithCardDelivery-");
     scrollBy();
 	QuiteBrowser();
-
-
 }
+    
     @Test(priority=3)
 	public void SC_048_TC_003() throws Exception
 	{

@@ -141,7 +141,7 @@ ETB onboarding journey, Including open case dedupe
         	  CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         	  Thread.sleep(1000);
               screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
-              CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  
+            //  CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  
 
 			  Thread.sleep(2000);
 			  System.out.println("EmployeeType is self-employed");
@@ -165,8 +165,6 @@ ETB onboarding journey, Including open case dedupe
              Thread.sleep(1000);
              CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
              Thread.sleep(1000);
-
-             CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  
              Thread.sleep(1000);
              screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
         	 System.out.println("EmployeeType is Employed");
@@ -179,9 +177,29 @@ ETB onboarding journey, Including open case dedupe
 
     	{
         	CLDLPM.IDPrrof(TestDataFromExcel.IDPrrof);
+            Thread.sleep(1000);
+
             CLDLPM.IDNumner();
             screen.ScreenshotMethod("TC_005_LeadDocsCollectedSelfEmployed");
             Thread.sleep(2000);
+            // CRRSC section
+            CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
+            CRRSC.Sbol(TestDataFromExcel.Sbol);
+            
+            //Communication Channel Preference
+            CLDLPM.ChannelPreference_PhoneCall();
+            Thread.sleep(500);
+            CLDLPM.ChannelPreference_SMS();
+            Thread.sleep(500);
+            scrolldown();
+             CLDLPM.ChannelPreference_Viber();
+             Thread.sleep(500);
+              CLDLPM.ChannelPreference_Email();
+              screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+
+              
+            scrollToTop();
+           
     	}
 
 
@@ -219,9 +237,7 @@ ETB onboarding journey, Including open case dedupe
         screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
     	CLDLPM.CreatedNewLeadEdit();
         Thread.sleep(1000);
-    	CLDLPM.clickEditOFAC(TestDataFromExcel.Ofac);
-    	Thread.sleep(1000);
-        screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+    	   screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
     	lopm.saveAndProceed();
     	Thread.sleep(2000);
         NTBSJPM.CaseDedupeOnDocsLead();
@@ -253,9 +269,14 @@ ETB onboarding journey, Including open case dedupe
             screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
             FAIPM.ClickFillAccountInformation();
             FAIPM.RequestType(TestDataFromExcel.RequestTypef);
-            FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
+            Thread.sleep(400);
+            scrollBy();
+
+            FAIPM.PromoCode();
+            //FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
+            
             Thread.sleep(1000);
-            screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
+            screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
             FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
             screen.ScreenshotMethod("SC_006_ETBLeadCreation-");
             FAIPM.PromsEmail(TestDataFromExcel.PromsEmail);
