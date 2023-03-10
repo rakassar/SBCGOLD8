@@ -185,6 +185,29 @@ public static WebElement clk_ldDosriFlag;
 @FindBy(name="cust_1575")
 public static WebElement clk_ldFatcaFlag;
 
+//trust/treasury attachment fields added in sales cross
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[2]")
+public static WebElement attch_ldCSQWaiver;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[3]")
+public static WebElement attch_ldCHECKLIST;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[4]")
+public static WebElement attch_ldPTA;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[5]")
+public static WebElement attch_ldCRRSC;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[6]")
+public static WebElement attch_ldMTAF;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[7]")
+public static WebElement attch_ldsigned;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[8]")
+public static WebElement attch_ldRDS;
+
 /*
  * @FindBy(xpath="//*[contains(@class,'icon icon icon-screenflow')]") public
  * static WebElement clk_CRRSCTAB;

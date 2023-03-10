@@ -170,6 +170,21 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		CLDLPM.dosriFlag("No");
 		CLDLPM.fatcaFlag("Yes");
 		Thread.sleep(500);
+		scrollBy();
+		scrollBy();
+		
+		//Trust related documents
+		CLDLPM.attachCSQWaiver();
+		CLDLPM.attachPTA();
+		CLDLPM.attachCRRSC();
+		CLDLPM.attachMTAF();
+		CLDLPM.attachRDS();
+		CLDLPM.attachChecklist();
+		CLDLPM.attachSigned();
+		
+		
+		
+		
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		CLDLPM.ClickOnAddress();
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
@@ -263,7 +278,7 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
 		Thread.sleep(500);
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
-		CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork); // remove New to run on g7
+		//CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork); // remove New to run on g7
 
 		Thread.sleep(500);
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
@@ -274,7 +289,8 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		 // CRRSC section
         CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
         CRRSC.Sbol(TestDataFromExcel.Sbol);
-        
+		scrollBy();
+
         //Communication Channel Preference
         CLDLPM.ChannelPreference_PhoneCall();
         Thread.sleep(500);

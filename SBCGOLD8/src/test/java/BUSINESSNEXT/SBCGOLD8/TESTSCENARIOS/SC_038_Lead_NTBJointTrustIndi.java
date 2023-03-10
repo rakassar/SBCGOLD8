@@ -163,7 +163,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
         CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
-        CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
+        CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork);  // remove New to run on g7
         Thread.sleep(1000);
         CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
         Thread.sleep(1000);
@@ -185,6 +185,17 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
         CLDLPM.dosriFlag("No");
         CLDLPM.fatcaFlag("Yes");
         Thread.sleep(500);
+        scrollBy();
+		scrollBy();
+		
+		//Trust related documents
+		CLDLPM.attachCSQWaiver();
+		CLDLPM.attachPTA();
+		CLDLPM.attachCRRSC();
+		CLDLPM.attachMTAF();
+		CLDLPM.attachRDS();
+		CLDLPM.attachChecklist();
+		CLDLPM.attachSigned();
         screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
         CLDLPM.ClickOnAddress();
         screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
@@ -238,6 +249,8 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
     NTBSJPM.EnterlastName();
     NTBSJPM.EntermiddleName();
     NTBSJPM.EnterMobile();
+    NTBSJPM.SourceOfInfo("Branch");
+
     NTBSJPM.NTBJourneynext2();
     Thread.sleep(1000);
     System.out.print("Child ");
@@ -309,7 +322,7 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
     screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
     scrollBy();
     CLDLPM.EconomicActivity(TestDataFromExcel.EconomicActivity);
-    Thread.sleep(500);
+    Thread.sleep(1000);
     screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
     CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
     Thread.sleep(1000);
@@ -336,6 +349,10 @@ public class SC_038_Lead_NTBJointTrustIndi extends HomePageMethod
     //CLDLPM.fatcaFlag("Yes");
     Thread.sleep(500);
     screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
+    scrollBy();
+	 // CRRSC section
+      CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
+      CRRSC.Sbol(TestDataFromExcel.Sbol);
     CLDLPM.ClickOnAddress();
     screen.ScreenshotMethod("SC_038_Lead_NTBJointTrustIndi-");
     CLDLPM.streetfied();

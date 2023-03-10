@@ -411,7 +411,56 @@ public class CollectDocsLeadPageMethod extends HomePageMethod{
 		    	Select sel = new Select(CollectDocsLeadPageObject.clk_ldFatcaFlag);
 		    	sel.selectByVisibleText(flag);
 
+		    	
 		    }
+		    
+		    public void attachCSQWaiver()
+		    {
+		    	CollectDocsLeadPageObject.attch_ldCSQWaiver.sendKeys(CSV);
+		    	
+
+		    	
+		    }
+		    
+		    public void attachPTA()
+		    {
+		    	CollectDocsLeadPageObject.attch_ldPTA.sendKeys(CSV);
+		    	
+
+		    	
+		    }
+		    public void attachCRRSC()
+		    {
+		    	CollectDocsLeadPageObject.attch_ldCRRSC.sendKeys(CSV);
+		    	
+
+		    	
+		    }
+		    public void attachMTAF()
+		    {
+		    	CollectDocsLeadPageObject.attch_ldMTAF.sendKeys(CSV);
+		    	
+
+		    	
+		    }
+		    public void attachSigned()
+		    {
+		    	CollectDocsLeadPageObject.attch_ldsigned.sendKeys(CSV);
+		    			    	
+		    }
+		    
+		    public void attachRDS()
+		    {
+		    	CollectDocsLeadPageObject.attch_ldRDS.sendKeys(CSV);
+		    	 	
+		    }
+		    
+		    public void attachChecklist()
+		    {
+		    	CollectDocsLeadPageObject.attch_ldCHECKLIST.sendKeys(CSV);
+		    		
+		    }
+		    
 		    public void occupation (String Occupation)
 		    {
 		    	Select sel = new Select(CollectDocsLeadPageObject.sel_ldOccupation);
