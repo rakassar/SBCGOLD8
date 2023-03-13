@@ -95,7 +95,7 @@ Source=Branch Walkin
 		cs1pm.ForEmployement("Yes");
 		cs1pm.natureOfWork("Airline");
         screen.ScreenshotMethod("SC_017_CustomerInitiatedInfoMaintenance-");
-
+        cs1pm.attachCIFdcmnt();
 
 
 		cs1pm.fill_DetailsInConcern("Test Details of Concern Field");

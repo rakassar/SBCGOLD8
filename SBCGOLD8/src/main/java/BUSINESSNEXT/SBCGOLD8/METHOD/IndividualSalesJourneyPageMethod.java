@@ -758,6 +758,7 @@ Thread.sleep(200);
 	  }
      catch(Exception n)   {
         System.out.println("No open case for customer maintainence SSC !");
+     
      }
 	}
 

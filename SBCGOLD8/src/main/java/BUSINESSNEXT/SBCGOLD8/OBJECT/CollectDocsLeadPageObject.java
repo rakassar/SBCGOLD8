@@ -95,6 +95,10 @@ public static WebElement sel_ldOccupation;
 public static WebElement sel_ldOtherOccupation;
 @FindBy(name="cust_2353")
 public static WebElement sel_ldForEmployment;
+
+@FindBy(name="cust_2956")
+public static WebElement sel_PrForEmploymentP;
+
 @FindBy(name="cust_86")
 public static WebElement ent_ldTin;
 @FindBy(name="cust_48")

@@ -474,6 +474,13 @@ public class CollectDocsLeadPageMethod extends HomePageMethod{
 		    	sel.selectByVisibleText(foremployment);
 
 		    }
+		    
+		    public void forEmploymentP (String foremployment)
+		    {
+		    	Select sel = new Select(CollectDocsLeadPageObject.sel_PrForEmploymentP);
+		    	sel.selectByVisibleText(foremployment);
+
+		    }
 
 		    public void workingsince (String month,String year)
 		    {
