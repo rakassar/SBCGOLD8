@@ -94,6 +94,7 @@ import BUSINESSNEXT.SBCGOLD8.METHOD.*;
     	CLDLPM.branchP("Acropolis");
     	CLDLPM.employerTypeP("Employed");
     	CLDLPM.sourceOfFundP("Salary");
+    	CLDLPM.forEmploymentP("Yes");
         screen.ScreenshotMethod("SC_042_Lead_PayrollApplication-");
         scrollBy();
 

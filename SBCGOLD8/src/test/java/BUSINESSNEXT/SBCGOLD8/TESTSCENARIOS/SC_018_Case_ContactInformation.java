@@ -95,6 +95,7 @@ Source=Branch Walkin
 		//Thread.sleep(1000);
 		//cs1pm.ForEmployement("Yes");
 
+        cs1pm.attachCIFdcmnt();
 
 		cs1pm.fill_DetailsInConcern("Test Details of Concern Field");
 		Thread.sleep(1000);

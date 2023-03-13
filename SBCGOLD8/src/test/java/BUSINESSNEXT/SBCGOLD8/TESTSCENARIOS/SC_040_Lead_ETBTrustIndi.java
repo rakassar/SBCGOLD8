@@ -148,7 +148,7 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod {
 			CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
 			Thread.sleep(1000);
 			screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
-			CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);
+			//CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);
 
 			Thread.sleep(2000);
 			System.out.println("EmployeeType is self-employed");
@@ -170,7 +170,7 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod {
 			CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
 			Thread.sleep(1000);
 
-			CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);
+		//	CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork);
 			Thread.sleep(1000);
 			screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
 			System.out.println("EmployeeType is Employed");
@@ -189,6 +189,20 @@ public class SC_040_Lead_ETBTrustIndi extends HomePageMethod {
 		CLDLPM.fatcaFlag("Yes");
 		Thread.sleep(500);
 		screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
+				Thread.sleep(500);
+		scrollBy();
+		scrollBy();
+		
+		//Trust related documents
+		CLDLPM.attachCSQWaiver();
+		CLDLPM.attachPTA();
+		CLDLPM.attachCRRSC();
+		CLDLPM.attachMTAF();
+		CLDLPM.attachRDS();
+		CLDLPM.attachChecklist();
+		CLDLPM.attachSigned();
+		
+		
 		CLDLPM.UpdateDetailsTrustTreasury("No");
 		screen.ScreenshotMethod("SC_040_Lead_ETBTrustIndi-");
 		CLDLPM.ClickOnAddress();

@@ -63,6 +63,8 @@ public class SC_022_Lead_NTB_NonIndiDocsCollection extends HomePageMethod
         NTBSJPM.ProductCategory(TestDataFromExcel.ProductCategory);
         Thread.sleep(500);
         NTBSJPM.Product(TestDataFromExcel.Product);
+        NTBSJPM.SourceOfInfo("Branch");
+        
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
         NTBSJPM.NTBJourneynext2();
         Thread.sleep(1000);
@@ -115,6 +117,8 @@ public class SC_022_Lead_NTB_NonIndiDocsCollection extends HomePageMethod
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
         CLDLPM.ClientSegment(TestDataFromExcel.ClientSegment);
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+        CLDLPM.AoCode(TestDataFromExcel.AoCode);
+        screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
         //CLDLPM.SoleOwner(TestDataFromExcel.SoleOwner);
         Thread.sleep(1000);
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
@@ -156,9 +160,25 @@ public class SC_022_Lead_NTB_NonIndiDocsCollection extends HomePageMethod
         Thread.sleep(500);
         lopm.ProcessApplicationPopUpClose();
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
-        CLDLPM.AoCode(TestDataFromExcel.AoCode);
-        screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
+        
         Thread.sleep(500);
+      //Communication Channel Preference
+        scrolldown();
+        scrolldown();
+        scrolldown();
+        CLDLPM.ChannelPreference_PhoneCall();
+        Thread.sleep(500);
+        CLDLPM.ChannelPreference_SMS();
+        Thread.sleep(500);
+        scrolldown();
+         CLDLPM.ChannelPreference_Viber();
+         Thread.sleep(500);
+          CLDLPM.ChannelPreference_Email();
+          screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+
+          
+        scrollToTop();
+        
         CLDLPM.AddressTabNonindi();
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
         CLDLPM.streetfiedNonIndi();
@@ -205,7 +225,9 @@ public class SC_022_Lead_NTB_NonIndiDocsCollection extends HomePageMethod
     	//CLDLPM.leadredbutton();
 
 
-        // OLD CRRSC
+     /* 
+         // OLD CRRSC
+      
      	CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
      	CRRSC.BankInternalChecklist(TestDataFromExcel.BankInternalChecklist);
      	CRRSC.AllegedPerdsonf(TestDataFromExcel.AllegedPerdsonf);
@@ -256,12 +278,29 @@ public class SC_022_Lead_NTB_NonIndiDocsCollection extends HomePageMethod
          CRRSC.Sbol(TestDataFromExcel.Sbol);
          screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
          CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
-         */
+         
          CRRSC.RemarksCRRSC("I am Indian!");
          screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
          CRRSC.Finish();
 
          Thread.sleep(1000);
+         */
+       //  latest CRRSC
+         CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
+         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         CRRSC.OFAC_mashup();
+         Thread.sleep(1000);
+         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
+         CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
+         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         CRRSC.RemarksCRRSC("I am Indian!");
+         screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+         CRRSC.Finish(); 
+      
+
+         Thread.sleep(1000);
+ 	
  	}
 
     @Test(priority=7)
@@ -376,7 +415,7 @@ public class SC_022_Lead_NTB_NonIndiDocsCollection extends HomePageMethod
         screen.ScreenshotMethod("SC_022_NTB_NonIndiDocsCollection-");
         QuiteBrowser();
  	}
-    @Test
+    @Test(priority=9)
    	public void SC_022_TC_010() throws InterruptedException, IOException
    	{
        	launchBrowser();

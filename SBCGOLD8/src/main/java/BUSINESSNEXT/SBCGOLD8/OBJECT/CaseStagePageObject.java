@@ -214,6 +214,10 @@ public static WebElement pic_SACodesel;
 @FindBy(xpath="//a[@data-autoid = 'cust_1939_srch']")
 public static WebElement pic_InquiryType;
 
+
+@FindBy(name="qqfile")
+public static WebElement attch_CIFdcmnt;
+
 @FindBy(id="select-all-checkbox")
 public static WebElement pic_InquiryTypeCheckbox;
 

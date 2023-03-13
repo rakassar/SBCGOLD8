@@ -58,6 +58,9 @@ public static WebElement sel_ldProductCategory;
 @FindBy(name="LE_PRODUCT")
 public static WebElement sel_ldProduct;
 
+@FindBy(name="cust_2925")
+public static WebElement sel_ldSourceOfInfo;
+
 //Gold5.5
 /*
  * @FindBy(xpath="=//*[contains(@class,'icon icon-next')][1]") public static
