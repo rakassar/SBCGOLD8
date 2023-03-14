@@ -95,6 +95,10 @@ public static WebElement sel_ldOccupation;
 public static WebElement sel_ldOtherOccupation;
 @FindBy(name="cust_2353")
 public static WebElement sel_ldForEmployment;
+
+@FindBy(name="cust_2956")
+public static WebElement sel_PrForEmploymentP;
+
 @FindBy(name="cust_86")
 public static WebElement ent_ldTin;
 @FindBy(name="cust_48")
@@ -184,6 +188,29 @@ public static WebElement clk_ldGroupID;
 public static WebElement clk_ldDosriFlag;
 @FindBy(name="cust_1575")
 public static WebElement clk_ldFatcaFlag;
+
+//trust/treasury attachment fields added in sales cross
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[2]")
+public static WebElement attch_ldCSQWaiver;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[3]")
+public static WebElement attch_ldCHECKLIST;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[4]")
+public static WebElement attch_ldPTA;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[5]")
+public static WebElement attch_ldCRRSC;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[6]")
+public static WebElement attch_ldMTAF;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[7]")
+public static WebElement attch_ldsigned;
+
+@FindBy(xpath="(//input[@name=\"qqfile\"])[8]")
+public static WebElement attch_ldRDS;
 
 /*
  * @FindBy(xpath="//*[contains(@class,'icon icon icon-screenflow')]") public

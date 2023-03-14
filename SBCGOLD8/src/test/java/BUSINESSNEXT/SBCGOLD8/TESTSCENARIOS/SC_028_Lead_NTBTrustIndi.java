@@ -150,7 +150,7 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		CLDLPM.Industry_Classification(TestDataFromExcel.Industry_Classification);
 		Thread.sleep(1000);
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
-		CLDLPM.NatureOfWork(TestDataFromExcel.NatureOfWork); // remove New to run on g7
+		CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork); // remove New to run on g7
 		Thread.sleep(1000);
 		CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
 		Thread.sleep(1000);
@@ -170,6 +170,21 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		CLDLPM.dosriFlag("No");
 		CLDLPM.fatcaFlag("Yes");
 		Thread.sleep(500);
+		scrollBy();
+		scrollBy();
+		
+		//Trust related documents
+		CLDLPM.attachCSQWaiver();
+		CLDLPM.attachPTA();
+		CLDLPM.attachCRRSC();
+		CLDLPM.attachMTAF();
+		CLDLPM.attachRDS();
+		CLDLPM.attachChecklist();
+		CLDLPM.attachSigned();
+		
+		
+		
+		
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		CLDLPM.ClickOnAddress();
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
@@ -263,7 +278,7 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		CLDLPM.forEmployment(TestDataFromExcel.forEmployment);
 		Thread.sleep(500);
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
-		CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork); // remove New to run on g7
+		//CLDLPM.NatureOfWorkNEW(TestDataFromExcel.NatureOfWork); // remove New to run on g7
 
 		Thread.sleep(500);
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
@@ -271,6 +286,24 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		Thread.sleep(500);
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		scrollBy();
+		 // CRRSC section
+        CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
+        CRRSC.Sbol(TestDataFromExcel.Sbol);
+		scrollBy();
+
+        //Communication Channel Preference
+        CLDLPM.ChannelPreference_PhoneCall();
+        Thread.sleep(500);
+        CLDLPM.ChannelPreference_SMS();
+        Thread.sleep(500);
+        scrolldown();
+         CLDLPM.ChannelPreference_Viber();
+         Thread.sleep(500);
+          CLDLPM.ChannelPreference_Email();
+          screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+
+          
+        scrollToTop();
 		CLDLPM.ClickOnAddress();
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		Thread.sleep(500);
@@ -352,19 +385,33 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		 * Thread.sleep(1000);
 		 * screen.ScreenshotMethod("SC_024_NTBEmployedLoanProcessor-");
 		 */
-		// New CRRSC
-		CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
-		CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
-		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
-		CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
-		CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
-		CRRSC.Sbol(TestDataFromExcel.Sbol);
-		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
-		CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
+		 /*     //New CRRSC
+        CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
+        CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.BenifOFW(TestDataFromExcel.BenifOFW);
+        CRRSC.PrpsOfAccntOpning(TestDataFromExcel.PrpsOfAccntOpning);
+        CRRSC.Sbol(TestDataFromExcel.Sbol);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
+        CRRSC.RemarksCRRSC("I am Indian!");
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.Finish(); */
+        
+        //Latest CRRSC
+        CRRSC.OtherRskFctr(TestDataFromExcel.OtherRskFctr);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.OFAC_mashup();
+        Thread.sleep(1000);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.AmlcUnJmf(TestDataFromExcel.AmlcUnJmf);
+        CRRSC.HPIOrJoint(TestDataFromExcel.HPIOrJoint);
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.RemarksCRRSC("I am Indian!");
+        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+        CRRSC.Finish(); 
+    
 
-		CRRSC.RemarksCRRSC("I am Indian!");
-		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
-		CRRSC.Finish();
 
 		Thread.sleep(1000);
 		CLDLPM.clickClosePopup();
@@ -404,8 +451,6 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		CLDLPM.CreatedNewLeadEdit();
 		Thread.sleep(1000);
-		CLDLPM.clickEditOFAC(TestDataFromExcel.Ofac);
-		Thread.sleep(1000);
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		lopm.saveAndProceed();
 		Thread.sleep(1000);
@@ -421,10 +466,15 @@ public class SC_028_Lead_NTBTrustIndi extends HomePageMethod {
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		FAIPM.ClickFillAccountInformation();
 		FAIPM.RequestType(TestDataFromExcel.RequestTypef);
-		FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
-		Thread.sleep(1000);
-		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
-		FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
+		  Thread.sleep(400);
+	        scrollBy();
+
+	        FAIPM.PromoCode();
+	        //FAIPM.Purposeofaccountopening(TestDataFromExcel.Purposeofaccountopening);
+	        
+	        Thread.sleep(1000);
+	        screen.ScreenshotMethod("SC_003_NTBDocsCollectionEmployed-");
+	    	FAIPM.ADBRequired(TestDataFromExcel.ADBRequired);
 		screen.ScreenshotMethod("SC_028_Lead_NTBTrustIndi-");
 		FAIPM.PromsEmail(TestDataFromExcel.PromsEmail);
 		FAIPM.sel_PromsSMS(TestDataFromExcel.PromsSMS);

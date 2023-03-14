@@ -31,8 +31,8 @@ public class BrowserStart implements Properties{
 	//@BeforeClass
 	public void launchBrowser()
 	{
-
-    System.setProperty(ChromeWebDriver, ChromeDriverPath);
+		System.setProperty("webdriver.http.factory", "jdk-http-client");
+    //System.setProperty(ChromeWebDriver, ChromeDriverPath);
 	driver =new ChromeDriver();
 	//driver.close();
 	ChromeOptions option= new ChromeOptions();

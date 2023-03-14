@@ -463,6 +463,10 @@ public class CaseStagePageMethod extends HomePageMethod {
 		CaseStagePageObject.pic_InquiryType.click();
 	}
 	
+	public void attachCIFdcmnt() {
+		CaseStagePageObject.attch_CIFdcmnt.sendKeys(CSV);;
+	}
+	
 	public void selectCheckbox() {
 		CaseStagePageObject.pic_InquiryTypeCheckbox.click();
 	}
