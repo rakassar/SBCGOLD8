@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       
-      <!--<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_001_Lead_NTBLeadCreation"/>-->
-      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_049_Lead_NTBDepositViaEmailSyndication"/>
+      <class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_001_Lead_NTBLeadCreation"/>
+      <!--<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_049_Lead_NTBDepositViaEmailSyndication"/>-->
         <!--<class name="BUSINESSNEXT.SBCGOLD8.TESTSCENARIOS.SC_063_DB_ConnectionCheck"/>-->
       
     </classes>
